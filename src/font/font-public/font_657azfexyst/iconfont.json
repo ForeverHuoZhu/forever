@@ -1,0 +1,79 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "974778",
+      "name": "7天退换",
+      "font_class": "7tiantuihuan",
+      "unicode": "e691",
+      "unicode_decimal": 59025
+    },
+    {
+      "icon_id": "1057442",
+      "name": "奖杯",
+      "font_class": "agent_jiangbei",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "1507174",
+      "name": "第三",
+      "font_class": "disan",
+      "unicode": "e711",
+      "unicode_decimal": 59153
+    },
+    {
+      "icon_id": "2038372",
+      "name": "验货",
+      "font_class": "yanhuo",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "2162178",
+      "name": "包裹",
+      "font_class": "baoguo",
+      "unicode": "e6c1",
+      "unicode_decimal": 59073
+    },
+    {
+      "icon_id": "2230619",
+      "name": "赔",
+      "font_class": "pei",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "3061444",
+      "name": "物流",
+      "font_class": "wuliu",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "5057181",
+      "name": "检验",
+      "font_class": "jianyan",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "7328568",
+      "name": "心 爱心",
+      "font_class": "love",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    },
+    {
+      "icon_id": "10305637",
+      "name": "环球",
+      "font_class": "huanqiu",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}

@@ -47,3 +47,18 @@ a{
 #footer{
     background-color: #fcfcfc;
 }
+.footer-inner{
+    width: 970px;
+    margin: 0 auto;
+}
+.footer-vip{
+    height: 105px;
+}
+.footer-vip>li{
+    float: left;
+}
+.footer-vip>li>i{
+    height: 75px;
+    width: 58px;
+    margin: 50px;
+}
