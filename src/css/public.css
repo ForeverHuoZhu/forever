@@ -122,6 +122,11 @@ a{
     padding-left: 8px;
     background: url(../images/public/download.png) no-repeat -6px -494px;
 }
+.footer-list>dl>dd:hover{
+    transform: translateX(2px);
+    background-position: -6px -513px;
+    transition: transform ease-out .2s;
+}
 .footer-list .tc{
     padding-left: 0;
     width: 136px;
@@ -134,6 +139,9 @@ a{
 .footer-list .last>dd{
     background: 0 0;
     padding-left: 0;
+}
+.footer-list .last>dd:hover{
+    transform: none;
 }
 .footer-infor {
     text-align: center;
@@ -149,6 +157,9 @@ a{
     margin-right: 2px;
     color: #fff;
     font-size: 12px;
+}
+.footer-infor-link a:hover{
+    color: grey;
 }
 .footer-infor-txt {
     color: #999;
