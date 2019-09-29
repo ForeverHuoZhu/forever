@@ -1,0 +1,49 @@
+@charset "utf-8";
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,textarea,select,input,form{
+	margin:0;
+	padding:0
+}
+ul,ol,li{
+	list-style:none;
+}
+a,u{
+	text-decoration:none;
+}
+b,strong{
+	font-weight:normal;
+}
+i,em{
+	font-style:normal;
+}
+img{
+	vertical-align:top;
+}
+input{
+	outline:none;
+}
+body{
+	color:#333;
+}
+a{
+	color:#333;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.clear:after{
+	content:".";
+	display:block;
+	clear:both;
+	height:0;
+	overflow:hidden;
+	visibility:hidden;
+}
+.clear{
+	zoom:1;
+}
+#footer{
+    background-color: #fcfcfc;
+}
