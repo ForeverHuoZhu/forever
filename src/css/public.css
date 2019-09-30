@@ -1,7 +1,11 @@
+/* 通用代码 */
 @charset "utf-8";
 body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,textarea,select,input,form{
 	margin:0;
 	padding:0
+}
+body,html{
+    height: 100%;
 }
 ul,ol,li{
 	list-style:none;
@@ -41,6 +45,7 @@ a{
 .clear{
 	zoom:1;
 }
+/* 底部代码 */
 .footer{
     background-color: #fcfcfc;
     color: #4d4d4d;
@@ -121,11 +126,11 @@ a{
 .footer-list>dl>dd{
     padding-left: 8px;
     background: url(../images/public/download.png) no-repeat -6px -494px;
+    transition: transform ease-out .2s;
 }
 .footer-list>dl>dd:hover{
     transform: translateX(2px);
     background-position: -6px -513px;
-    transition: transform ease-out .2s;
 }
 .footer-list .tc{
     padding-left: 0;
@@ -212,4 +217,33 @@ a{
 .footer-pic-ico07 {
     width: 76px;
     background-position: 0 -450px;
+}
+/* 右栏 */
+.sidebarcom-asset, .sidebarcom-brand, .sidebarcom-fav, .sidebarcom-footprint, .sidebarcom-my, .sidebarcom-survey {
+    margin-bottom: 2px;
+}
+.sidebarcom-asset, .sidebarcom-brand, .sidebarcom-cart, .sidebarcom-fav, .sidebarcom-footprint, .sidebarcom-my, .sidebarcom-survey, .sidebarcom-top {
+    position: relative;
+    width: 36px;
+    margin-bottom: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+.m-sidebarcom {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    width: 36px;
+    height: 100%;
+    font-family: "Microsoft YaHei";
+}
+.sidebarcom-nav {
+    position: relative;
+    z-index: 101;
+    height: 100%;
+    background-color: #262626;
+}
+.sidebarcom-my-con {
+    padding: 8px 0 6px;
 }
