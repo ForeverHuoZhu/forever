@@ -117,6 +117,43 @@
     top: 0;
     _top: 3px;
 }
+.bdshare-button-style0-16 .share_hide_sns {
+    padding: 5px 9px;
+    top: 22px;
+    left: 0;
+    position: absolute;
+    border: solid 1px #c2c2c2;
+    border-radius: 2px;
+    border-top-left-radius: 0;
+    background: #fff;
+}
+.bdshare-button-style0-16 .share_gap {
+    margin-right: 8px;
+    width: 20px;
+    line-height: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    outline: 0;
+    text-decoration: none;
+    background: url(../images/xiangqing/share_icon.png) no-repeat;
+    cursor: pointer;
+    vertical-align: top;
+    float: none;
+.bdshare-button-style0-16  .share_gap_one{
+    background-position: -30px -40px;
+}
+.bdshare-button-style0-16  .share_gap_two{
+    background-position: -240px -40px;
+}
+.bdshare-button-style0-16  .share_gap_three{
+    background-position: -210px -40px;
+}
+.bdsharebuttonbox .share_gap_last {
+    margin-right: 0;
+    background-position: 0px -40px;
+}
 .pi-promise-box {
     padding: 15px 0;
     overflow: hidden;

@@ -75,6 +75,12 @@
                             <span class="tit_cnt">分享到:</span>
                             <i class="tit_arrow"></i>
                         </span>
+                        <span class="share_hide_sns" style="width: 104px;display: none">
+                            <a href="" class="share_gap share_gap_one"></a>
+                            <a href="" class="share_gap share_gap_two"></a>
+                            <a href="" class="share_gap share_gap_othree"></a>
+                            <a href="" class="share_gap share_gap_last"></a>
+                        </span>
                     </div>
                 </div>
                 <div class="safeguard-icon">
@@ -94,7 +100,18 @@
             </div>
         </div>
     </div>
+    <script src="../js/jquery.js"></script>
     <script src="../js/fangdajing.js"></script>
+    <script src="../js/xiangqing.js"></script>
+    <script>
+        $(".share_button").hover(function () {
+            $(".share_hide_sns").show()
+            $(".share_tit_wrap").css("border-bottom-color","#fff")
+        }, function () {
+            $(".share_hide_sns").hide()
+            $(".share_tit_wrap").css("border-bottom-color","#c2c2c2")
+        })
+    </script>
 </body>
 
 </html>
