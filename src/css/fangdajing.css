@@ -9,12 +9,12 @@ a{
     text-decoration: none;
 }
 .container{
-    margin: 50px auto;
+    margin: 0 auto;
     width: 420px;
 }
 .big{
     width: 420px;
-    height: 531px;
+    height: 420px;
     margin-bottom: 10px;
     position: relative;
 }
@@ -29,7 +29,7 @@ a{
 }
 .big-item .bigLess{
     width: 420px;
-    height: 531px;
+    height: 420px;
 }
 .big-item .bigLess img{
     width: 100%;
@@ -44,7 +44,7 @@ a{
 }
 .big-item .bigMore{
     width: 420px;
-    height: 531px;
+    height: 420px;
     position: absolute;
     top: 0;
     left: 0;
@@ -64,7 +64,7 @@ a{
 }
 .small-item{
     width: 62px;
-    height: 72px;
+    height: 62px;
     margin-right: 7px;
     border: 1px solid #eee;
 }
