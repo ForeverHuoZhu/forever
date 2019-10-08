@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-01-03 16:35:22
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2019-10-08 09:18:59
+ * @Last Modified time: 2019-10-08 11:59:51
 */
 * {margin:0;border: 0;padding:0;font-family: "微软雅黑";}
 
@@ -403,7 +403,7 @@ ul,li{
 	position: absolute;
 	top: 21px;
 	left: 0px;
-	z-index: 2;
+	z-index: 101;
 }
 .topl>#province>p {
 	line-height: 40px;
@@ -765,7 +765,7 @@ ul,li{
 	position: absolute;
 	top: 27px;
     left: -90px;
-	z-index: 2;
+	z-index: 101;
 }
 
 #shoujiban>dl>dd {
@@ -782,19 +782,27 @@ ul,li{
 #more {
 	position: relative;
 }
-
+#more b{
+	font-weight: bold;
+}
 #more:hover {
 	background: white;
+	
+	border-left: 1px solid #999;
+	border-top: 1px solid #999;
+	border-right: 1px solid #999;
 }
 
 #more:hover #more-cont {
 	display: block;
+	border: 1px solid #999;
+	border-top:none; 
 }
 
 #more>dl {
 	position: absolute;
 	top: 27px;
-	left: -200px;
+	left: -233px;
 	background: white;
 	width: 270px;
 	padding: 10px;
