@@ -43,9 +43,9 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
 	color: #f10180;
-}
+} */
 
 i,
 em {
@@ -56,9 +56,6 @@ b,
 strong {
 	font-weight: normal;
 }
-
-
-
 
 .fl {
 	float: left;
