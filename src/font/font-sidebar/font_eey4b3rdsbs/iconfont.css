@@ -21,6 +21,7 @@
 }
 
 .icon-piaoliusanicon-bi-:before {
+  font-size: 20px;
   content: "\e604";
 }
 
@@ -43,6 +44,7 @@
 }
 
 .icon-xinaixin:before {
+  font-size: 20px;
   content: "\e635";
 }
 
