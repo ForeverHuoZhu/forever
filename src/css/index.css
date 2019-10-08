@@ -1071,7 +1071,7 @@ ul,li{
     background-color: #fff;
     font-size: 14px;
 	color: #fff;
-
+	z-index: 50;
 }
 
 .main-nav .head-inner {

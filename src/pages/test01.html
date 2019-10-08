@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #main {
+            
+            margin: 0 auto;
+        }
+
+        #main>div {
+            width: 800px;
+            height: 500px;
+            margin: 0 auto;
+            border-top: 2px solid red;
+            
+        }
+
+        .ddd {
+            height: 400px;
+        }
+
+
+        #box>div {
+            width: 55px;
+            height: 55px;
+            border: 1px solid red;
+
+
+        }
+        .two{
+            position: relative;
+        }
+
+        .six {
+            background: rgb(243, 239, 7)
+        }
+
+        #box {
+            position: absolute;
+            top: 0;
+            left: -55px;
+            
+        }
+    </style>
+</head>
+
+<body style="height: 5000px">
+
+   
+    <div id="main">
+        <div class="one"></div>
+        <div class="two">
+            <div id="box">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+            </div>
+        </div>
+        <div class="there"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+
+
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script>
+        $(function () {
+            //滚动时一一对应
+
+            $(window).scroll(function () {
+                var a = $(document).scrollTop();
+
+                if (a >= $(".five").offset().top) {
+
+                    $("#box div").eq(4).addClass("six").siblings().removeClass("six");
+                } else if (a >= $(".four").offset().top) {
+                    $("#box div").eq(3).addClass("six").siblings().removeClass("six");
+                } else if (a >= $(".there").offset().top) {
+
+                    $("#box div").eq(2).addClass("six").siblings().removeClass("six");
+                } else if (a >= $(".two").offset().top) {
+                    box.style.position= "fixed";
+                    box.style.top = 100+"px";
+                    box.style.left = 100 +"px";
+                    $("#box div").eq(1).addClass("six").siblings().removeClass("six");
+                } else if (a >= $(".one").offset().top ) {
+                    $("#box div").eq(0).addClass("six").siblings().removeClass("six");
+                    box.style.position = "absolute";
+                    box.style.left=-50+"px";
+
+                }
+            });
+            //点击跳转
+            $("#box div").click(function () {
+                var index = $(this).index();
+                $(this.index).addClass('six').siblings().removeClass('six');
+                $("html,body").animate({
+                    scrollTop: $("#main div").eq(index).offset().top
+                }, 300);
+            });
+        });
+    </script>
+</body>
+
+</html>
