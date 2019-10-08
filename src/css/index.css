@@ -870,7 +870,8 @@ ul,li{
 .head-inner {
     width: 1000px;
     height: 100px;
-    margin: 0 auto;
+	margin: 0 auto;
+	position: relative;
 }
 
 .head-inner .logo {

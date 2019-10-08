@@ -9,9 +9,129 @@
 	<link rel="stylesheet" href="font/iconfont.css">
 	<link rel="stylesheet" href="./font_rx71ur82t4/iconfont.css">
 	<link rel="stylesheet" href="./css/public.css">
+	<style>
+		.menu {
+			width: 1000px;
+			height: 473px;
+			margin: 30px auto;
+			position: absolute;
+			top: 12px;
+			left: 0;
+			display: none;
+		}
+		
+		.menu .menuTop {
+			background-color: #F10215;
+			color: #fff;
+			width: 140px;
+			height: 40px;
+			padding-left: 20px;
+			line-height: 40px;
+			cursor: pointer;
+		}
+
+		.menu ul {
+			width: 156px;
+			background-color: #fff;
+			box-sizing: border-box;
+			position: relative;
+		}
+
+		.menu ul li {
+			height: 43px;
+			padding-left: 32px;
+			text-align: left;
+			line-height: 30px;
+			font-size: 13px;
+			background: #f10180 url(image/1.png) no-repeat right;
+			z-index: 2;
+		}
+
+		.menu ul li a {
+			color: #fff;
+			line-height: 43px;
+		}
+
+		.menu ul li:hover {
+			border-right: 0;
+			background-image: none;
+			background-color: #fff;
+		}
+		.menu ul li:hover a{
+			color: #f10180;
+		}
+
+		.menu ul li:hover .submenu {
+			display: block;
+		}
+
+		.menu ul li .submenu {
+			position: absolute;
+			left: 156px;
+			top: 0;
+			width: 840px;
+			height: 473px;
+			border: 1px solid #DDD;
+			box-shadow: 0 0 8px #DDD;
+			-moz-box-shadow: 0 0 8px #DDD;
+			-webkit-box-shadow: 0 0 8px #DDD;
+			background-color: #FFF;
+			z-index: 3;
+			display: none;
+		}
+
+		.menu ul li .submenu .subleft {
+			margin-left: 0px;
+			width: 600px;
+			height: 473px;
+			float: left;
+			padding: 5px;
+		}
+
+		.menu ul li .submenu .subleft dl {
+			overflow: hidden;
+			border-bottom: 1px solid #D1D1D1;
+			padding: 10px 0;
+		}
+
+		.menu ul li .submenu .subleft dl dt {
+			float: left;
+			height: 22px;
+			line-height: 22px;
+			margin-right: 10px;
+			font-weight: bold;
+			color: #707070;
+			font-size: 12px;
+			cursor: pointer;
+		}
+
+		.menu ul li .submenu .subleft dl dd a {
+			display: block;
+			float: left;
+			border-left: 1px solid #707070;
+			padding: 0 5px;
+			color: #707070;
+			height: 14px;
+			line-height: 14px;
+			margin: 3px 0;
+			font-size: 11px;
+		}
+		.menu ul li .submenu .subleft dl dd a:hover{
+			color: #f10180;
+		}
+
+		.menu ul li .submenu .subright {
+			width: 200px;
+			height: 473px;
+			background-color: blue;
+			float: right;
+		}
+
+	</style>
 </head>
 
 <body>
+	<!-- 左侧边栏 -->
 	<div id="left">
 		<ul style="cursor: pointer">
 			<li><i class="iconfont icon-shoucang" style="font-size: 20px; color:#bbb;"></i>&nbsp;精选</li>
@@ -24,10 +144,7 @@
 			<li><i class="iconfont icon-laba" style="font-size: 20px; color:#bbb;"></i>&nbsp;预告</li>
 		</ul>
 	</div>
-
-
-
-
+	<!-- 右侧边栏 -->
 	<div id="right">
 		<div id="rightCenter">
 			<div id="zhanghao">
@@ -112,7 +229,7 @@
 		</div>
 
 	</div>
-
+	<!-- 顶部 -->
 	<div class="head">
 		<div class="container">
 			<div class="top">
@@ -310,6 +427,7 @@
 		</div>
 
 	</div>
+
 	<div class="head-search">
 		<div class="head-inner">
 			<div class="c-logo">
@@ -341,6 +459,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- 导航 -->
 	<div class="main-nav" id="navbar">
 		<div class="head-inner">
 			<ul class="main-nav-link clearfix">
@@ -349,7 +468,6 @@
 						<img class="lazy" data-original="./img/goods.png" alt="">
 						商品分类
 					</a>
-					
 				</li>
 				<li><a href="" class="main-nav-atag nav-current">首页</a></li>
 				<li><a href="" class="main-nav-atag">最后疯抢</a></li>
@@ -388,20 +506,351 @@
 					</div>
 
 				</li>
-				
+
 			</ul>
+			<div class="menu">
+				<ul>
+					<li> <a herf="javascript:;">女装/男装/内衣</a>
+						<div class="submenu">
+							<div class="subleft">
+								<dl>
+									<dt>二级标题111</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> </dd>
+								</dl>
+							</div>
+							<div class="subright" style="background-color: antiquewhite"> </div>
+						</div>
+					</li>
 
 
+					<li> <a herf="javascript:;">女鞋/男鞋/箱包</a>
+						<div class="submenu">
+							<div class="subleft">
+								<dl>
+									<dt>二级标题222</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题2</a> </dd>
+								</dl>
+							</div>
+							<div class="subright" style="background-color:aquamarine"> </div>
+					</li>
+
+
+					<li> <a herf="javascript:;">护肤彩妆/个护</a>
+						<div class="submenu">
+							<div class="subleft">
+								<dl>
+									<dt>二级标题333</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题3</a> </dd>
+								</dl>
+							</div>
+							<div class="subright" style="background-color:cadetblue"> </div>
+					</li>
+
+
+					<li> <a herf="javascript:;">运动户外</a>
+						<div class="submenu">
+							<div class="subleft">
+								<dl>
+									<dt>二级标题444</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题4</a> </dd>
+								</dl>
+							</div>
+							<div class="subright" style="background-color:darkgrey"> </div>
+					</li>
+
+
+					<li> <a herf="javascript:;">家电数码</a>
+						<div class="submenu">
+							<div class="subleft">
+								<dl>
+									<dt>二级标题555</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题5</a> </dd>
+								</dl>
+							</div>
+							<div class="subright" style="background-color:darkseagreen"> </div>
+					</li>
+
+
+					<li> <a herf="javascript:;">母婴童装</a>
+						<div class="submenu">
+							<div class="subleft">
+								<dl>
+									<dt>二级标题666</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题6</a> </dd>
+								</dl>
+							</div>
+							<div class="subright" style="background-color:lavender"> </div>
+					</li>
+
+
+					<li> <a herf="javascript:;">手表配饰</a>
+						<div class="submenu">
+							<div class="subleft">
+								<dl>
+									<dt>二级标题777</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题7</a> </dd>
+								</dl>
+							</div>
+							<div class="subright"> </div>
+					</li>
+
+
+					<li> <a herf="javascript:;">居家用品</a>
+						<div class="submenu">
+							<div class="subleft">
+								<dl>
+									<dt>二级标题888</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题8</a> </dd>
+								</dl>
+							</div>
+							<div class="subright" style="background-color:lightseagreen"> </div>
+					</li>
+					<li> <a herf="javascript:;">唯品生活</a>
+						<div class="submenu">
+							<div class="subleft">
+								<dl>
+									<dt>二级标题999</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题9</a> </dd>
+								</dl>
+							</div>
+							<div class="subright" style="background-color:mistyrose"> </div>
+					</li>
+
+
+					<li> <a herf="javascript:;">唯品国际/唯品奢</a>
+						<div class="submenu">
+							<div class="subleft">
+								<dl>
+									<dt>二级标题1010</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题10</a> </dd>
+								</dl>
+							</div>
+							<div class="subright" style="background-color:salmon"> </div>
+					</li>
+					<li> <a herf="javascript:;">医药健康</a>
+						<div class="submenu">
+							<div class="subleft">
+								<dl>
+									<dt>二级标题1010</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题</a> </dd>
+								</dl>
+								<dl>
+									<dt>二级标题</dt>
+									<dd> <a href="javascript:;">三级标题</a> <a href="javascript:;">三级标题</a> <a
+											href="javascript:;">三级标题10</a> </dd>
+								</dl>
+							</div>
+							<div class="subright" style="background-color:salmon"> </div>
+					</li>
+
+				</ul>
+
+			</div>
 		</div>
 
 	</div>
 
-	
+	<!-- 轮播图 -->
 	<div class="index">
 		<div class="banner_wrap">
 			<div class="left">
-				< </div> <div class="right">>
-
+				&lt;
+			</div>
+			<div class="right">
+				&gt;
 			</div>
 			<ul>
 				<li class="on" style="display: block;"><img src="./img/lunbo.jpg" height="340px" /></li>
@@ -460,26 +909,26 @@
 					<div class="ltart-clkable"
 						style="background-color: rgb(255, 255, 255); z-index: 52px; left:20px;top:104px;width: 170px;height: 170px;display: absolute;overflow: hidden;">
 					</div>
-					<img class="lazy ltart-clkable must2" data-original="./img/must2.jpg" alt="" >
+					<img class="lazy ltart-clkable must2" data-original="./img/must2.jpg" alt="">
 					<div class="ltart-clkable"
 						style="z-index: 54px;left:20px;top:274px;width:170px;height:78px;overflow:hidden;position: absolute;background-color: rgb(255, 255, 255);">
 					</div>
-					<img class="lazy ltart-clkable must4" data-original="./img/must4.png" alt="" >
-					<img class="lazy ltart-clkable must3" data-original="./img/must3.png" alt="" >
+					<img class="lazy ltart-clkable must4" data-original="./img/must4.png" alt="">
+					<img class="lazy ltart-clkable must3" data-original="./img/must3.png" alt="">
 					<span class="price"><span class="ltart-label-inner">快抢价</span></span>
 					<span class="price2"><span class="ltart-label-inner">￥58</span></span>
 					<span class="price3"><span class="ltart-label-inner">338</span></span>
 					<div class="ltart-clkable"
 						style="background-color: rgb(255, 255, 255); z-index: 52px; left:200px;top:104px;width: 170px;height: 170px;display: absolute;overflow: hidden;">
 					</div>
-					<img class="lazy ltart-clkable must2" data-original="./img/must5.jpg" alt="" 
+					<img class="lazy ltart-clkable must2" data-original="./img/must5.jpg" alt=""
 						style="position:absolute;top:104px;left:200px;">
 					<div class="ltart-clkable"
 						style="z-index: 54px;left:200px;top:274px;width:170px;height:78px;overflow:hidden;position: absolute;background-color: rgb(255, 255, 255);">
 					</div>
-					<img class="lazy ltart-clkable must4" data-original="./img/must4.png" alt="" 
+					<img class="lazy ltart-clkable must4" data-original="./img/must4.png" alt=""
 						style="position: absolute;left: 235px;top: 245px;object-fit: contain;width: 100px;height: 60px;">
-					<img class="lazy ltart-clkable must3" data-original="./img/must5.png" alt="" 
+					<img class="lazy ltart-clkable must3" data-original="./img/must5.png" alt=""
 						style="width:80px;height:40px;position: absolute;left: 245px;top: 255px;overflow: hidden;">
 					<span class="price" style="position: absolute;left:208px;top:320px;"><span
 							class="ltart-label-inner">快抢价</span></span>
@@ -490,14 +939,14 @@
 					<div class="ltart-clkable"
 						style="background-color: rgb(255, 255, 255); z-index: 52px; left:380px;top:104px;width: 170px;height: 170px;display: absolute;overflow: hidden;">
 					</div>
-					<img class="lazy ltart-clkable must2" data-original="./img/must6.jpg" alt="" 
+					<img class="lazy ltart-clkable must2" data-original="./img/must6.jpg" alt=""
 						style="position:absolute;top:104px;left:380px;">
 					<div class="ltart-clkable"
 						style="z-index: 54px;left:380px;top:274px;width:170px;height:78px;overflow:hidden;position: absolute;background-color: rgb(255, 255, 255);">
 					</div>
-					<img class="lazy ltart-clkable must4" data-original="./img/must4.png" alt="" 
+					<img class="lazy ltart-clkable must4" data-original="./img/must4.png" alt=""
 						style="position: absolute;left: 415px;top: 245px;object-fit: contain;width: 100px;height: 60px;">
-					<img class="lazy ltart-clkable must3" data-original="./img/must7.png" alt="" 
+					<img class="lazy ltart-clkable must3" data-original="./img/must7.png" alt=""
 						style="width:80px;height:40px;position: absolute;left: 425px;top: 255px;overflow: hidden;">
 					<span class="price" style="position: absolute;left:388px;top:320px;"><span
 							class="ltart-label-inner">快抢价</span></span>
@@ -510,7 +959,7 @@
 				<div class="ltart-clkable" style="position: absolute;width:500px;height:372px;left:600px;top:0;">
 					<img class="lazy ltart-clkable" data-original="./img/must8.jpg" alt=""
 						style="width:500px;height:372px;position: absolute;top: 0;left: 0;overflow: hidden;">
-					<img class="lazy ltart-clkable" data-original="./img/musta.jpg" alt="" 
+					<img class="lazy ltart-clkable" data-original="./img/musta.jpg" alt=""
 						style="width: 150px;height:217px;position:absolute;left:12px;top:104px;">
 					<div class="ltart-clkable"
 						style="width: 122px;height:76px;overflow:hiddenp;background-color: rgba(255, 255, 255, .8);position: absolute;top:237px;left: 26px;">
@@ -525,8 +974,7 @@
 						text-align: left;position: absolute;">
 						<span class="ltart-label-inner">￥900</span>
 					</span>
-					<img class="lazy ltart-clkable" data-original="./img/must10.png" alt="" 
-					style="left: 48px;top: 245px;width: 80px;
+					<img class="lazy ltart-clkable" data-original="./img/must10.png" alt="" style="left: 48px;top: 245px;width: 80px;
 					height: 40px;overflow: hidden;object-fit: contain;position: absolute;">
 					<img class="lazy ltart-clkable" data-original="./img/must11.jpg" alt=""
 						style="width: 150px;height:217px;position:absolute;left:176px;top:104px;">
@@ -544,7 +992,7 @@
 						text-align: left;position: absolute;">
 						<span class="ltart-label-inner">￥900</span>
 					</span>
-					<img class="lazy ltart-clkable" data-original="./img/must12.png" alt=""  style="left: 215px;top: 245px;width: 80px;
+					<img class="lazy ltart-clkable" data-original="./img/must12.png" alt="" style="left: 215px;top: 245px;width: 80px;
 					height: 40px;overflow: hidden;object-fit: contain;position: absolute;">
 					<img class="lazy ltart-clkable" data-original="./img/mustb.jpg" alt=""
 						style="width: 150px;height:217px;position:absolute;left:339px;top:104px;">
@@ -562,7 +1010,7 @@
 					text-align: left;position: absolute;">
 						<span class="ltart-label-inner">￥900</span>
 					</span>
-					<img class="lazy ltart-clkable" data-original="./img/must14.png" alt=""  style="left: 375px;top: 245px;width: 80px;
+					<img class="lazy ltart-clkable" data-original="./img/must14.png" alt="" style="left: 375px;top: 245px;width: 80px;
 				height: 40px;overflow: hidden;object-fit: contain;position: absolute;">
 				</div>
 			</div>
@@ -1535,6 +1983,110 @@
 		</div>
 	</div>
 
+<<<<<<< HEAD
+	<!-- 底部开始 -->
+	<footer class="footer">
+		<div class="footer-inner clear">
+			<ul class="footer-vip clear">
+				<li>
+					<i class="footer-vip-ico01"></i>
+				</li>
+				<li>
+					<i class="footer-vip-ico02"></i>
+				</li>
+				<li>
+					<i class="footer-vip-ico03"></i>
+				</li>
+				<li>
+					<i class="footer-vip-ico04"></i>
+				</li>
+				<li>
+					<i class="footer-vip-ico05"></i>
+				</li>
+				<li>
+					<i class="footer-vip-ico06"></i>
+				</li>
+				<li>
+					<i class="footer-vip-ico07"></i>
+				</li>
+				<li>
+					<i class="footer-vip-ico08"></i>
+				</li>
+				<li>
+					<i class="footer-vip-ico09"></i>
+				</li>
+				<li>
+					<i class="footer-vip-ico10"></i>
+				</li>
+			</ul>
+			<div class="footer-list clear">
+				<dl>
+					<dt>服务保证</dt>
+					<dd><a href="">正品保证</a></dd>
+					<dd><a href="">7天无理由放心退</a></dd>
+					<dd><a href="">退货返10元唯品币</a></dd>
+					<dd><a href="">7×15小时客服服务</a></dd>
+					<dd><a href="">7天无理由随心换</a></dd>
+				</dl>
+				<dl>
+					<dt>购物指南</dt>
+					<dd><a href="">导购演示</a></dd>
+					<dd><a href="">订单操作</a></dd>
+					<dd><a href="">会员注册</a></dd>
+					<dd><a href="">账户管理</a></dd>
+					<dd><a href="">收货样品</a></dd>
+					<dd><a href="">会员等级</a></dd>
+				</dl>
+				<dl>
+					<dt>付款方式</dt>
+					<dd><a href="">快捷支付</a></dd>
+					<dd><a href="">23家主流网银支付</a></dd>
+					<dd><a href="">支付宝、银联等支付</a></dd>
+					<dd><a href="">信用卡支付</a></dd>
+					<dd><a href="">零钱支付</a></dd>
+				</dl>
+				<dl>
+					<dt>配送方式</dt>
+					<dd><a href="">全场满288元免运费</a></dd>
+					<dd><a href="">配送范围及运费</a></dd>
+					<dd><a href="">验货与签收</a></dd>
+				</dl>
+				<dl>
+					<dt>售后服务</dt>
+					<dd><a href="">退货政策</a></dd>
+					<dd><a href="">退货流程</a></dd>
+					<dd><a href="">退款方式和时效</a></dd>
+					<dd><a href="">换货服务</a></dd>
+				</dl>
+				<dl class="tc last">
+					<dt>唯品会APP二维码</dt>
+					<dd><img src="../images/public/wph-footer.png" alt=""></dd>
+					<dd>下载唯品会移动APP</dd>
+				</dl>
+			</div>
+			<div class="footer-infor">
+				<p class="footer-infor-link">
+					<a href="">关于我们</a>|
+					<a href="">About us</a>|
+					<a href="">Investor Relations</a>|
+					<a href="">媒体报道</a>|
+					<a href="">品牌招商</a>|
+					<a href="">隐私条款</a>|
+					<a href="">诚聘招聘</a>|
+					<a href="">唯品卡</a>|
+					<a href="">联系我们</a>
+				</p>
+				<p class="footer-infor-txt">
+					Copyright © 2008-2019 vip.com，All Rights Reserved 使用本网站即表示接受 <a href="">唯品会用户协议</a> 。版权所有 <a
+						href="">广州唯品会电子商务有限公司</a> <br> <a href="">粤公网安备 44010302111111号</a>&nbsp;&nbsp;<a
+						href="">粤ICP备08114786号</a> <a href="">增值业务经营许可证：粤B2-20170777</a> <a
+						href="">网络文化经营许可证：粤网文〔2018〕5030-1743号</a><br>
+					<a href="">自营主体经营证照</a> &nbsp;&nbsp;<a href="">风险监测信息</a>&nbsp;&nbsp; <a
+						href="">互联网药品信息服务资格证书：（粤）-经营性-2018-0271</a> <a href="">网络食品交易第三方平台备案凭证：粤B2-20170777</a> <a
+						href="">医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号</a>
+				</p>
+			</div>
+=======
  <!-- 底部开始 -->
  <footer class="footer">
 	<div class="footer-inner clear">
@@ -1614,59 +2166,42 @@
 				<dd><img src="./images/public/wph-footer.png" alt=""></dd>
 				<dd>下载唯品会移动APP</dd>
 			</dl>
+>>>>>>> 8003245cc602f7b1d19d6b87bda9fcce77db18fa
 		</div>
-		<div class="footer-infor">
-			<p class="footer-infor-link">
-				<a href="">关于我们</a>|
-				<a href="">About us</a>|
-				<a href="">Investor Relations</a>|
-				<a href="">媒体报道</a>|
-				<a href="">品牌招商</a>|
-				<a href="">隐私条款</a>|
-				<a href="">诚聘招聘</a>|
-				<a href="">唯品卡</a>|
-				<a href="">联系我们</a>
-			</p>
-			<p class="footer-infor-txt">
-					Copyright © 2008-2019 vip.com，All Rights Reserved  使用本网站即表示接受 <a href="">唯品会用户协议</a> 。版权所有 <a href="">广州唯品会电子商务有限公司</a> <br> <a href="">粤公网安备 44010302111111号</a>&nbsp;&nbsp;<a href="">粤ICP备08114786号</a> <a href="">增值业务经营许可证：粤B2-20170777</a> <a href="">网络文化经营许可证：粤网文〔2018〕5030-1743号</a><br>
-					<a href="">自营主体经营证照</a> &nbsp;&nbsp;<a href="">风险监测信息</a>&nbsp;&nbsp; <a href="">互联网药品信息服务资格证书：（粤）-经营性-2018-0271</a> <a href="">网络食品交易第三方平台备案凭证：粤B2-20170777</a> <a href="">医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号</a>
+		<div class="footer-ft">
+			<p class="footer-pic">
+				<a href="">
+					<i class="footer-pic-ico01"></i>
+				</a>
+				<a href="">
+					<i class="footer-pic-ico02"></i>
+				</a>
+				<a href="">
+					<i class="footer-pic-ico03"></i>
+				</a>
+				<a href="">
+					<i class="footer-pic-ico04"></i>
+				</a>
+				<a href="">
+					<i class="footer-pic-ico05"></i>
+				</a>
+				<a href="">
+					<i class="footer-pic-ico06"></i>
+				</a>
+				<a href="">
+					<i class="footer-pic-ico07"></i>
+				</a>
 			</p>
 		</div>
-	</div>
-	<div class="footer-ft">
-		<p class="footer-pic">
-			<a href="">
-				<i class="footer-pic-ico01"></i>
-			</a>
-			<a href="">
-				<i class="footer-pic-ico02"></i>
-			</a>
-			<a href="">
-				<i class="footer-pic-ico03"></i>
-			</a>
-			<a href="">
-				<i class="footer-pic-ico04"></i>
-			</a>
-			<a href="">
-				<i class="footer-pic-ico05"></i>
-			</a>
-			<a href="">
-				<i class="footer-pic-ico06"></i>
-			</a>
-			<a href="">
-				<i class="footer-pic-ico07"></i>
-			</a>
-		</p>
-	</div>
-</footer>
-<!-- 底部结束 -->
+	</footer>
+	<!-- 底部结束 -->
 
 
 
 
-	
 
-	
+
+
 	<script src="./js/jquery-1.11.0.min.js"></script>
 	<script src="./js/jquery.lazyload.min.js"></script>
 	
