@@ -212,8 +212,8 @@ $(document).ready(function () {
 		$(".J_trigger_line").css({
 			"left": (aa * 195)
 		})
-		$(".banner_wrap>ul li").eq(aa).addClass("on").siblings(aa).removeClass("on");
-		$(".banner_wrap>ul li").eq(aa).fadeIn(500).siblings(aa).fadeOut(500);
+		$(".banner_wrap>ul li").eq(aa).addClass("on").siblings(aa).stop().removeClass("on");
+		$(".banner_wrap>ul li").eq(aa).fadeIn(500).siblings(aa).stop().fadeOut(500);
 	}
 
 	var t = setInterval(lunbo, 2000);
