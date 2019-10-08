@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #tb {
+            width: 960px;
+            border-collapse: collapse;
+            table-layout: fixed;
+            margin: 0 auto;
+        }
+
+        #tb thead tr {
+            height: 38px;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+            background-color: #f9f9f9;
+        }
+
+        .th1 {
+            width: 280px;
+            color: #f10180;
+            padding-left: 14px;
+            border-left: 3px solid #f10180;
+            text-align: left;
+            font-weight: normal;
+        }
+
+        .th2 {
+            width: 300px;
+        }
+
+        .th3 {
+            width: 100px;
+        }
+
+        .th4 {
+            width: 145px;
+        }
+
+        .th5 {
+            width: 115px;
+        }
+
+        .th2,
+        .th3,
+        .th4,
+        .th5 {
+            font-size: 12px;
+            font-weight: normal;
+            color: #333;
+        }
+
+        #tb tbody {
+            border-bottom: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+            border-left: 1px solid #e0e0e0;
+            text-align: center;
+        }
+
+        #tb tbody i {
+            display: inline-block;
+            width: 22px;
+            text-align: center;
+            height: 22px;
+            font-style: normal;
+            border: 1px solid #e3e2e2;
+            color: #666;
+        }
+
+        #tb tbody b {
+            display: inline-block;
+            width: 28px;
+            height: 22px;
+            text-align: center;
+            font-weight: normal;
+            line-height: 22px;
+            color: #272525;
+            font-family: 'Microsoft Yahei';
+        }
+
+        #tb tbody tr {
+            height: 90px;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="tb">
+        <thead>
+            <tr>
+                <th class="th1">精选特卖</th>
+                <th class="th2">单价</th>
+                <th class="th3">数量</th>
+                <th class="th4">小计</th>
+                <th class="th5">操作</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <div id="box" style="border:1px solid #000;height:40px;width:600px;margin-top:10px">
+        <input type="checkbox" checked class="allCheck">
+        总计：<b class="total"></b>
+    </div>
+    <script src="./cookie.js"></script>
+    <script>
+        var cart = {
+            total: 0
+        };
+        cart.items = getCookie('items') ? JSON.parse(getCookie('items')) : [];
+        // 根据数据动态生成表格
+        var tbody = document.querySelector('tbody');
+        // 不可以
+        fillCart();
+
+        function fillCart() {
+            // 计算 小计
+
+            subTotal()
+            var str = "";
+            for (var i = 0; i < cart.items.length; i++) {
+                str = str + `
+                <tr>
+                    <td>${cart.items[i].itemName}</td>
+                    <td class="price">${cart.items[i].itemPrice}</td>
+                    <td class="count">
+                        <i class="reduce">-</i>
+                        <b>${cart.items[i].itemNum}</b>
+                        <i class="add">+</i>
+                    </td>
+                    <td class="subTotal">${cart.items[i].subTotal}</td>
+                    <td>
+                        <a href="javascript:;" class="del">删除</a>
+                    </td>
+             </tr>
+                `
+            }
+
+            tbody.innerHTML = str;
+            // 总价格
+            var allCheck = document.querySelectorAll(".allCheck");
+
+            for (var i = 0; i < allCheck.length; i++) {
+                allCheck[i].checked = cart.allChecked;
+
+            }
+            var total = document.querySelector('.total');
+            total.innerHTML = caltTotal(cart.items);
+
+            // 可以获取
+            var add = document.querySelectorAll('.add');
+
+            for (var i = 0; i < add.length; i++) {
+                add[i].index = i;
+                add[i].onclick = function () {
+                    //alert(1);
+                    cart.items[this.index].itemNum = cart.items[this.index].itemNum + 1;
+                    console.log(cart);
+                    fillCart();
+                }
+            }
+            // 商品选中和取消选中
+            // 获取选择框
+            var checks = document.querySelectorAll('.check');
+            for (var i = 0; i < checks.length; i++) {
+                checks[i].index = i;
+                checks[i].onchange = function () {
+                    // console.log(this.index);
+                    // console.log(this.checked);
+                    cart.items[this.index].isChecked = this.checked;
+                    var {
+                        items
+                    } = cart;
+                    if (items.every(el => el.isChecked)) {
+                        cart.allChecked = true;
+                    } else {
+                        cart.allChecked = false;
+                    }
+                    /* var res = items.every(function(el){
+                        return el.isChecked
+                    });
+                    if(res){
+
+                    } */
+                    fillCart();
+                }
+            }
+
+            // 全选 取消全选
+            var allCheck = document.querySelectorAll(".allCheck");
+            for (var i = 0; i < allCheck.length; i++) {
+                allCheck[i].onchange = function () {
+                    cart.allChecked = this.checked;
+                    // 当取消 选中时 所有的商品要取消选择
+                    if (!this.checked) {
+                        cart.items.forEach(function (el) {
+                            el.isChecked = false;
+                        });
+                    } else {
+                        cart.items.map(function (el) {
+                            el.isChecked = true;
+                        });
+                    }
+                    fillCart();
+                }
+            }
+
+            // 删除
+            var del = document.querySelectorAll(".del");
+            for (var i = 0; i < del.length; i++) {
+                del[i].index = i;
+                del[i].onclick = function () {
+                    if (confirm("您确认删除吗")) {
+                        cart.items.splice(this.index, 1);
+                        fillCart();
+                    }
+                }
+            }
+        }
+
+
+        // 计算小计
+        function subTotal() {
+            for (var i = 0; i < cart.items.length; i++) {
+                cart.items[i].subTotal = parseFloat((cart.items[i].itemPrice * cart.items[i].itemNum).toFixed(2));
+            }
+        }
+
+
+        //计算总价格
+        function caltTotal(items) {
+            // 判断 这个数组中  
+
+            var subItem = items.filter(function (el) {
+                return el.isChecked
+            })
+            var total = 0;
+
+            for (var i = 0; i < subItem.length; i++) {
+                total += subItem[i].subTotal;
+            }
+
+            return total;
+        }
+    </script>
+</body>
+
+</html>
