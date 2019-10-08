@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-01-03 16:35:22
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2019-10-08 16:26:44
+ * @Last Modified time: 2019-10-08 20:32:21
 */
 * {margin:0;border: 0;padding:0;font-family: "微软雅黑";}
 
@@ -2223,10 +2223,10 @@ overflow: hidden;
 	top: 0;
 	width: 840px;
 	height: 473px;
-	border: 1px solid #DDD;
+	/* border: 1px solid #DDD;
 	box-shadow: 0 0 8px #DDD;
 	-moz-box-shadow: 0 0 8px #DDD;
-	-webkit-box-shadow: 0 0 8px #DDD;
+	-webkit-box-shadow: 0 0 8px #DDD; */
 	background-color: #FFF;
 	z-index: 3;
 	display: none;
@@ -2242,7 +2242,7 @@ overflow: hidden;
 
 .menu ul li .submenu .subleft dl {
 	overflow: hidden;
-	border-bottom: 1px solid #D1D1D1;
+	/* border-bottom: 1px solid #D1D1D1; */
 	padding: 10px 0;
 }
 
@@ -2260,7 +2260,7 @@ overflow: hidden;
 .menu ul li .submenu .subleft dl dd a {
 	display: block;
 	float: left;
-	border-left: 1px solid #707070;
+	/* border-left: 1px solid #707070; */
 	padding: 0 5px;
 	color: #707070;
 	height: 14px;
