@@ -204,7 +204,7 @@ $(document).ready(function () {
 		$(".J_trigger_line").css({
 			"left": (this.id * 195)
 		})
-		$(".banner_wrap>ul li").eq(this.id).addClass("on").siblings(this).removeClass("on");;
+		$(".banner_wrap>ul li").eq(this.id).addClass("on").siblings(this).stop().removeClass("on");;
 		$(".banner_wrap>ul li").eq(this.id).fadeIn(500).siblings(this).fadeOut(500);
 	});
 
