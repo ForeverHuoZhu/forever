@@ -106,10 +106,15 @@
         var regphone = /^1[34578]\d{9}$/;
         var regyzm = /\w{6}/;
         var regpwd = /^\w{6,20}$/;
+
+        var phone = 0;
+        var pwd = '';
+
         $("#phone").blur(function () {
             if (!regphone.test($("#phone").val())) {
                 $(".input-phone").html("请输入正确的手机号码");
             } else {
+                phone = $("#phone").val();
                 $(".input-phone").html("");
             }
             if (!$("#phone").val()) {
@@ -137,20 +142,26 @@
             if ($("#pwd-a").val() != $("#pwd").val()) {
                 $(".input-pwd2").html("两次输入的密码不一致，请重试");
             } else {
+                pwd = $("#pwd-a").val();
                 $(".input-pwd2").html("");
             }
             if (!$("#pwd-a").val()) {
                 $(".input-pwd2").html("请输入确认密码");
             }
         });
-        $("#phone-agree").blur(function(){
-            if(!$("#phone-agree").is(':checked')){
+        $("#phone-agree").blur(function () {
+            if (!$("#phone-agree").is(':checked')) {
                 $(".input-agree").html("接受服务条款才能注册");
+            } else {
+                $(".input-agree").html("");
             }
         });
         $("#btn-reg").click(function () {
-            if (regphone.test($("#phone").val()) && regyzm.test($("#pvcode").val()) && regpwd.test($("#pwd").val()) && $("#pwd-a").val() == $("#pwd").val() && $("#phone-agree").is(':checked')) {
+            if (regphone.test($("#phone").val()) && regyzm.test($("#pvcode").val()) && regpwd.test($("#pwd")
+                    .val()) && $("#pwd-a").val() == $("#pwd").val() && $("#phone-agree").is(':checked')) {
                 alert("注册成功");
+                setCookie($("#phone").val(),$("#phone").val(),5);
+                setCookie($("#pwd-a").val()+"pwd",$("#pwd-a").val(),5)
             } else {
                 return false;
             }
