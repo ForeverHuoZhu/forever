@@ -271,15 +271,15 @@ $(function () {
 (function () {
 	var menutimer = null;
 	$(".nav-category").hover(function () {
-		$(".menu").slideToggle();
+		$(".menu").stop().slideToggle();
 	}, function () {
 		menutimer = setTimeout(function () {
 			$(".menu").slideToggle();
-		}, 500)
+		}, 300)
 	});
 	$(".menu").hover(function () {
 		clearTimeout(menutimer);
 	}, function () {
-		$(".menu").slideToggle();
+		$(".menu").stop().slideToggle();
 	})
 }())
