@@ -176,7 +176,6 @@
     height: 50px;
     color: #fff;
     background: #f31189;
-    cursor: not-allowed;
     font-size: 18px;
     letter-spacing: 5px;
     text-decoration: none;
@@ -202,4 +201,12 @@
 
 .two {
     margin: 0 32px;
+}
+
+.subTotal{
+    color: #f10180;
+}
+
+.count i{
+    cursor: pointer;
 }
