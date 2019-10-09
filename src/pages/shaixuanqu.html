@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/shaixuanqu/style.css">
+    <link rel="stylesheet" href="../css/shaixuanqu/reset.css">
+    <link rel="stylesheet" href="../font/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../font/iconfont/jiantou/iconfont.css">
+</head>
+
+<body>
+    <div style="width:1000px; margin:0 auto;">
+        <div class="clearfix">
+            <p class="shaixuan-tj floatLeft clearfix">
+                <span><a href="">Clarks其乐秋冬新品靴子...</a></span>
+                <span><strong>1.7折起</strong></span>
+            </p>
+            <p id="sxbtn" class="shaixuan-btn clearfix">
+                <a href="zhuce.html">
+                    <span><i class="iconfont icon-xin"></i>
+                    <em>收藏品牌</em><i class="math">(77,777)</i></span>
+                </a>
+            </p>
+        </div>
+        <div id="page-search-store" class="mb10 border sxcon">
+            <div class="tab_box2" id="tab_box2">
+                <dl class="relative1 clearfix">
+                    <dt class="floatLeft"><a href="">品类</a></dt>
+                    <dd class="floatLeft show-con">
+                        <a href="" class="">被芯</a>
+                        <a href="" class="">床褥/薄床垫</a>
+                        <a href="" class="">枕头</a>
+                        <a href="" class="">凉席</a>
+                    </dd>
+                    <dd class="floatLeft show-more">
+                        <h3 class="pointer clearfix"><span>+&nbsp&nbsp多选</span><i class="icon-angle-down"></i></h3>
+                    </dd>
+                </dl>
+                <dl class="relative2 clearfix">
+                    <dt class="floatLeft"><a href="">尺码</a></dt>
+                    <dd class="floatLeft show-con">
+                        <a href="" class="">1.2m床</a>
+                        <a href="" class="">1.5m床</a>
+                        <a href="" class="">1.8m床</a>
+                        <a href="" class="">单个装</a>
+                        <a href="" class="">其他</a>
+                    </dd>
+                    <dd class="floatLeft show-more">
+                        <h3 class="pointer clearfix"><span>+&nbsp&nbsp多选</span><i class="icon-angle-down"></i></h3>
+                    </dd>
+                </dl>
+                <dl class="relative3 clearfix">
+                    <dt class="floatLeft"><a href="">填充物</a></dt>
+                    <dd class="floatLeft show-con">
+                        <a href="" class="">蚕丝</a>
+                        <a href="" class="">化纤</a>
+                        <a href="" class="">乳胶</a>
+                        <a href="" class="">驼毛</a>
+                        <a href="" class="">羊毛</a>
+                        <a href="" class="">羽绒</a>
+                    </dd>
+                    <dd class="floatLeft show-more">
+                        <h3 class="pointer clearfix"><span>+&nbsp&nbsp多选</span><i class="icon-angle-down"></i></h3>
+                    </dd>
+                </dl>
+                <dl class="relative clearfix">
+                    <dt class="floatLeft"><a href="">重量</a></dt>
+                    <dd class="floatLeft show-con">
+                        <a href="" class="">1.1-3斤</a>
+                        <a href="" class="">3.1-6斤</a>
+                        <a href="" class="">6.1-10斤</a>
+                        <a href="" class="">5.1-6斤</a>
+                        <a href="" class="">7.1-8斤</a>
+                    </dd>
+                    <dd class="floatLeft show-more">
+                        <h3 class="pointer clearfix"><span>+&nbsp&nbsp多选</span><i class="icon-angle-down"></i></h3>
+                    </dd>
+                </dl>
+                <dl class="relative clearfix">
+                    <dt class="floatLeft"><a href="">服装类型</a></dt>
+                    <dd class="floatLeft show-con">
+                        <a href="" class="">春秋被</a>
+                        <a href="" class="">冬被</a>
+                        <a href="" class="">凉席套件</a>
+                        <a href="" class="">四季被/子母被</a>
+                        <a href="" class="">夏凉被/空调被</a>
+                    </dd>
+                    <dd class="floatLeft show-more">
+                        <h3 class="pointer clearfix"><span>+&nbsp&nbsp多选</span><i class="icon-angle-down"></i></h3>
+                    </dd>
+                </dl>
+                <dl class="relative clearfix">
+                    <dt class="floatLeft"><a href="">填充物含量</a></dt>
+                    <dd class="floatLeft show-con">
+                        <a href="" class="">51%~60%</a>
+                        <a href="" class="">100%</a>
+                    </dd>
+                    <dd class="floatLeft show-more">
+                        <h3 class="pointer clearfix"><span>+&nbsp&nbsp多选</span><i class="icon-angle-down"></i></h3>
+                    </dd>
+                </dl>
+                <dl class="relative clearfix">
+                    <dt class="floatLeft"><a href="">适用人群</a></dt>
+                    <dd class="floatLeft show-con">
+                        <a href="" class="">成人</a>
+                        <a href="" class="">通用</a>
+                        <a href="" class="">老人</a>
+                    </dd>
+                    <dd class="floatLeft show-more">
+                        <h3 class="pointer clearfix"><span>+&nbsp&nbsp多选</span><i class="icon-angle-down"></i></h3>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="zkmore">
+            <p class="sm_open" id="sm_open">更多选项<i class="iconfont "></p>
+            <p class="sm_close" id="sm_close">点击收起<i class="iconfont icon-shangjiantou"></i></p>
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            var sm_open = document.getElementById("sm_open"); //展开操作详情按钮 
+            var sm_close = document.getElementById("sm_close"); //关闭操作详情按钮
+            //操作详情表的展开和收起
+            sm_open.onclick = function() {
+                tab_box2.style.height = "360px";
+                sm_close.style.display = "block";
+                sm_open.style.display = "none";
+            };
+            sm_close.onclick = function() {
+                tab_box2.style.height = "200px";
+                sm_close.style.display = "none";
+                sm_open.style.display = "block";
+            };
+        };
+    </script>
+    <div>
+        <div class="entry">
+            <dl>
+                <dt><a href=""><img src="../images/zhuce/shoes.png" width="235px" height="297px"></a></dt>
+                <dd class="entry-1">
+                    <p style="color: white">&nbsp&nbsp折后价 ￥<span>199</span></p>
+                </dd>
+                <dd class="entry-2">唯品会 ￥199 &nbsp<s>￥998</s> &nbsp <span>1.1折</span> </dd>
+                <dd class="entry-3">其乐PattieRosy Jnr亲子休闲鞋儿童短靴女童时装靴</dd>
+            </dl>
+            <dl>
+                <dt><a href=""><img src="../images/zhuce/shoes1.png" width="235px" height="297px"></a></dt>
+                <dd class="entry-1">
+                    <p style="color: white">&nbsp&nbsp折后价 ￥<span>651</span></p>
+                </dd>
+                <dd class="entry-2">唯品会 ￥969 &nbsp<s>￥1999</s> &nbsp <span>3.3折</span> </dd>
+                <dd class="entry-3">其乐Maypearl Tulsa英伦女鞋靴子女</dd>
+            </dl>
+            <dl>
+                <dt><a href=""><img src="../images/zhuce/shoes2.png" width="235px" height="297px"></a></dt>
+                <dd class="entry-1">
+                    <p style="color: white">&nbsp&nbsp折后价 ￥<span>509</span></p>
+                </dd>
+                <dd class="entry-2">唯品会 ￥899 &nbsp<s>￥1699</s> &nbsp <span>3.0折</span> </dd>
+                <dd class="entry-3">其乐PattieRosy Jnr亲子休闲鞋儿童短靴女童时装靴</dd>
+            </dl>
+            <dl>
+                <dt><a href=""><img src="../images/zhuce/shoes3.png" width="235px" height="297px"></a></dt>
+                <dd class="entry-1">
+                    <p style="color: white">&nbsp&nbsp折后价 ￥<span>543</span></p>
+                </dd>
+                <dd class="entry-2">唯品会 ￥869 &nbsp<s>￥1599</s> &nbsp <span>3.4折</span> </dd>
+                <dd class="entry-3">其乐PattieRosy Jnr亲子休闲鞋儿童短靴女童时装靴</dd>
+            </dl>
+        </div>
+        <div class="entry">
+            <dl>
+                <dt><a href=""><img src="../images/zhuce/shoes4.png" width="235px" height="297px"></a></dt>
+                <dd class="entry-1">
+                    <p style="color: white">&nbsp&nbsp折后价 ￥<span>359</span></p>
+                </dd>
+                <dd class="entry-2">唯品会 ￥519 &nbsp<s>￥999</s> &nbsp <span>3.6折</span> </dd>
+                <dd class="entry-3">其乐Step Urban Hi英伦男靴</dd>
+            </dl>
+            <dl>
+                <dt><a href=""><img src="../images/zhuce/shoes5.png" width="235px" height="297px"></a></dt>
+                <dd class="entry-1">
+                    <p style="color: white">&nbsp&nbsp折后价 ￥<span>356</span></p>
+                </dd>
+                <dd class="entry-2">唯品会 ￥519 &nbsp<s>￥999</s> &nbsp <span>3.6折</span> </dd>
+                <dd class="entry-3">其乐Sillian Rima英伦女靴</dd>
+            </dl>
+            <dl>
+                <dt><a href=""><img src="../images/zhuce/shoes6.png" width="235px" height="297px"></a></dt>
+                <dd class="entry-1">
+                    <p style="color: white">&nbsp&nbsp折后价 ￥<span>509</span></p>
+                </dd>
+                <dd class="entry-2">唯品会 ￥699 &nbsp<s>￥1899</s> &nbsp <span>2.7折</span> </dd>
+                <dd class="entry-3">其乐Desert Mali英伦沙漠靴男靴复古休闲靴潮靴</dd>
+            </dl>
+            <dl>
+                <dt><a href=""><img src="../images/zhuce/shoes7.png" width="235px" height="297px"></a></dt>
+                <dd class="entry-1">
+                    <p style="color: white">&nbsp&nbsp折后价 ￥<span>493</span></p>
+                </dd>
+                <dd class="entry-2">唯品会 ￥699 &nbsp<s>￥1799</s> &nbsp <span>2.7折</span> </dd>
+                <dd class="entry-3">其乐Pola Rain切尔西女靴平底坡跟短靴女靴</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="page">
+        <ul>
+            <li>共4页</li>
+            <li class="btn"><a href="">1</a></li>
+            <li class="btn"><a href="">2</a></li>
+            <li class="btn"><a href="">3</a></li>
+            <li class="btn"><a href="">4</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
