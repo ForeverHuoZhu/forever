@@ -117,9 +117,11 @@ function fillCart() {
     for (var i = 0; i < del.length; i++) {
         del[i].index = i;
         del[i].onclick = function () {
+            var index1 = this.index;
             if (confirm("您确认删除吗")) {
                 cart.items.splice(this.index, 1);
                 fillCart();
+                setCookie("goods", JSON.stringify(goods),6);
             }
         }
     }
