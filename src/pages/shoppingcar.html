@@ -5,92 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        #tb {
-            width: 960px;
-            border-collapse: collapse;
-            table-layout: fixed;
-            margin: 0 auto;
-        }
-
-        #tb thead tr {
-            height: 38px;
-            border-top: 1px solid #e0e0e0;
-            border-bottom: 1px solid #e0e0e0;
-            border-right: 1px solid #e0e0e0;
-            background-color: #f9f9f9;
-        }
-
-        .th1 {
-            width: 280px;
-            color: #f10180;
-            padding-left: 14px;
-            border-left: 3px solid #f10180;
-            text-align: left;
-            font-weight: normal;
-        }
-
-        .th2 {
-            width: 300px;
-        }
-
-        .th3 {
-            width: 100px;
-        }
-
-        .th4 {
-            width: 145px;
-        }
-
-        .th5 {
-            width: 115px;
-        }
-
-        .th2,
-        .th3,
-        .th4,
-        .th5 {
-            font-size: 12px;
-            font-weight: normal;
-            color: #333;
-        }
-
-        #tb tbody {
-            border-bottom: 1px solid #e0e0e0;
-            border-right: 1px solid #e0e0e0;
-            border-left: 1px solid #e0e0e0;
-            text-align: center;
-        }
-
-        #tb tbody i {
-            display: inline-block;
-            width: 22px;
-            text-align: center;
-            height: 22px;
-            font-style: normal;
-            border: 1px solid #e3e2e2;
-            color: #666;
-        }
-
-        #tb tbody b {
-            display: inline-block;
-            width: 28px;
-            height: 22px;
-            text-align: center;
-            font-weight: normal;
-            line-height: 22px;
-            color: #272525;
-            font-family: 'Microsoft Yahei';
-        }
-
-        #tb tbody tr {
-            height: 90px;
-        }
-    </style>
+    <title>购物袋</title>
+    <link rel="shortcut icon" href="../images/public/favicon.ico" />
+    <link rel="bookmark" href="../images/public/favicon.ico" />
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../font/font-public/font_657azfexyst/iconfont.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/shoppingcar.css">
 </head>
 
 <body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="header-logo">
+            <h1 class="fl"><a href=""><img class="logo" src="../images/register/cartHeader.png" alt=""></a></h1>
+            <div class="header-service fr"><img src="../images/register/right.png" alt=""></div>
+        </div>
+
+    </div>
+    <!-- 表格 -->
     <table id="tb">
         <thead>
             <tr>
@@ -102,7 +35,13 @@
             </tr>
         </thead>
         <tbody>
-
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
@@ -112,10 +51,88 @@
             </tr>
         </tfoot>
     </table>
-    <div id="box" style="border:1px solid #000;height:40px;width:600px;margin-top:10px">
+    <div id="box">
         <input type="checkbox" checked class="allCheck">
+        <div>
+            <p>商品总计：</p>
+        </div>
         总计：<b class="total"></b>
     </div>
+    <!-- 结算 -->
+    <div class="bar-wrapper">
+        <div class="bar-right">
+            <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+            <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+            <div class="calBtn"><a href="javascript:;">立即结算</a></div>
+        </div>
+    </div>
+    <!-- 三个图片 -->
+    <div class="info">
+        <div class="first fl">
+            <img src="../images/gouwuche/01img.png" alt="">
+        </div>
+        <div class="two fl">
+            <img src="../images/gouwuche/02img.png" alt="">
+        </div>
+        <div class="three fl">
+            <img src="../images/gouwuche/03img.png" alt="">
+        </div>
+    </div>
+    <!-- 底部开始 -->
+    <footer class="footer">
+        <div class="footer-inner clear">
+
+            <div class="footer-infor">
+                <p class="footer-infor-link">
+                    <a href="">关于我们</a>|
+                    <a href="">About us</a>|
+                    <a href="">Investor Relations</a>|
+                    <a href="">媒体报道</a>|
+                    <a href="">品牌招商</a>|
+                    <a href="">隐私条款</a>|
+                    <a href="">诚聘招聘</a>|
+                    <a href="">唯品卡</a>|
+                    <a href="">联系我们</a>
+                </p>
+                <p class="footer-infor-txt">
+                    Copyright © 2008-2019 vip.com，All Rights Reserved 使用本网站即表示接受 <a href="">唯品会用户协议</a> 。版权所有 <a
+                        href="">广州唯品会电子商务有限公司</a> <br> <a href="">粤公网安备 44010302111111号</a>&nbsp;&nbsp;<a
+                        href="">粤ICP备08114786号</a> <a href="">增值业务经营许可证：粤B2-20170777</a> <a
+                        href="">网络文化经营许可证：粤网文〔2018〕5030-1743号</a><br>
+                    <a href="">自营主体经营证照</a> &nbsp;&nbsp;<a href="">风险监测信息</a>&nbsp;&nbsp; <a
+                        href="">互联网药品信息服务资格证书：（粤）-经营性-2018-0271</a> <a href="">网络食品交易第三方平台备案凭证：粤B2-20170777</a> <a
+                        href="">医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-ft">
+            <p class="footer-pic">
+                <a href="">
+                    <i class="footer-pic-ico01"></i>
+                </a>
+                <a href="">
+                    <i class="footer-pic-ico02"></i>
+                </a>
+                <a href="">
+                    <i class="footer-pic-ico03"></i>
+                </a>
+                <a href="">
+                    <i class="footer-pic-ico04"></i>
+                </a>
+                <a href="">
+                    <i class="footer-pic-ico05"></i>
+                </a>
+                <a href="">
+                    <i class="footer-pic-ico06"></i>
+                </a>
+                <a href="">
+                    <i class="footer-pic-ico07"></i>
+                </a>
+            </p>
+        </div>
+    </footer>
+    <!-- 底部结束 -->
+    <!-- 右栏开始 -->
     <script src="./cookie.js"></script>
     <script>
         var cart = {
