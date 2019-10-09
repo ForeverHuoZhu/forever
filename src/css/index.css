@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-01-03 16:35:22
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2019-10-09 10:18:22
+ * @Last Modified time: 2019-10-09 14:31:47
 */
 * {margin:0;border: 0;padding:0;font-family: "微软雅黑";}
 
@@ -2199,7 +2199,7 @@ overflow: hidden;
 	text-align: left;
 	line-height: 30px;
 	font-size: 13px;
-	background: #f10180 url(image/1.png) no-repeat right;
+	background: #f10180;
 	z-index: 2;
 }
 
