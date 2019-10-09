@@ -88,6 +88,10 @@ body {
     height: 24px;
 }
 
+.ui-btn-large{
+    cursor: pointer;
+}
+
 .share_button,
 .share_text {
     position: relative;
