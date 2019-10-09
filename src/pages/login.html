@@ -86,7 +86,7 @@
 
         .table-body {
             display: none;
-            padding-bottom: 0px; 
+            padding-bottom: 0px;
         }
     </style>
 </head>
@@ -140,9 +140,9 @@
                                 <a class="fl">短信验证登录</a>
                                 <a class="fr">忘记密码</a>
                             </div>
-                            <!-- 立即注册 -->
+                            <!-- 登录 -->
                             <div class="btn-register">
-                                <a href="javascript:;" role="button" id="btn-reg">
+                                <a href="../index.html" role="button" id="btn-reg">
                                     <span>登录</span>
                                 </a>
                             </div>
@@ -167,14 +167,24 @@
         <p class="c-copyright">Copyright 2008-2019 vip.com，All Rights Reserved ICP证：粤 B2-20080329</p>
     </div>
     <script src="../js/jquery.js"></script>
+    <script src="../js/cookie.js"></script>
     <script>
         $(".table-header-left").click(function () {
             var index = $(this).index();
-            if(index==2){
-                index=1
+            if (index == 2) {
+                index = 1
             }
             $(this).addClass("active").siblings().removeClass("active");
             $(".cut>div").eq(index).show().siblings().hide();
+        });
+        $("#btn-reg").click(function () {
+            var phone = getCookie($("#phone").val());
+            var pwd = getCookie($("#pwd").val()+"pwd");
+            if ($("#phone").val() == phone && $("#pwd").val() == pwd) {
+                alert("登录成功");
+            } else {
+                alert("请输入正确的帐号或密码！");
+            }
         });
     </script>
 </body>
