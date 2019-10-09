@@ -35,13 +35,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-            </tr>
+            
         </tbody>
         <tfoot>
             <tr>
@@ -51,17 +45,10 @@
             </tr>
         </tfoot>
     </table>
-    <div id="box">
-        <input type="checkbox" checked class="allCheck">
-        <div>
-            <p>商品总计：</p>
-        </div>
-        总计：<b class="total"></b>
-    </div>
     <!-- 结算 -->
     <div class="bar-wrapper">
         <div class="bar-right">
-            <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+            <div class="piece">已选全部商品<strong class="piece_num"></strong></div>
             <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
             <div class="calBtn"><a href="javascript:;">立即结算</a></div>
         </div>
@@ -133,12 +120,18 @@
     </footer>
     <!-- 底部结束 -->
     <!-- 右栏开始 -->
-    <script src="./cookie.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/cookie.js"></script>
     <script>
         var cart = {
-            total: 0
+            allChecked: true, //是否全选
+            total: 0,
+           
         };
-        cart.items = getCookie('items') ? JSON.parse(getCookie('items')) : [];
+        // 取cookie
+        var goods = getCookie("goods")?JSON.parse(getCookie("goods")):[];
+       
+        cart.items = goods;
         // 根据数据动态生成表格
         var tbody = document.querySelector('tbody');
         // 不可以
@@ -152,14 +145,14 @@
             for (var i = 0; i < cart.items.length; i++) {
                 str = str + `
                 <tr>
-                    <td>${cart.items[i].itemName}</td>
-                    <td class="price">${cart.items[i].itemPrice}</td>
+                    <td>${cart.items[i].goodsName}</td>
+                    <td class="price">￥${cart.items[i].goodsPrice}</td>
                     <td class="count">
                         <i class="reduce">-</i>
-                        <b>${cart.items[i].itemNum}</b>
+                        <b class="countNum">1</b>
                         <i class="add">+</i>
                     </td>
-                    <td class="subTotal">${cart.items[i].subTotal}</td>
+                    <td class="subTotal">￥${cart.items[i].subTotal}</td>
                     <td>
                         <a href="javascript:;" class="del">删除</a>
                     </td>
@@ -175,19 +168,27 @@
                 allCheck[i].checked = cart.allChecked;
 
             }
-            var total = document.querySelector('.total');
-            total.innerHTML = caltTotal(cart.items);
+            $(".total_text").html(caltTotal(cart.items));
 
             // 可以获取
             var add = document.querySelectorAll('.add');
-
+            var reduce = document.querySelectorAll('.reduce');
             for (var i = 0; i < add.length; i++) {
                 add[i].index = i;
                 add[i].onclick = function () {
                     //alert(1);
                     cart.items[this.index].itemNum = cart.items[this.index].itemNum + 1;
-                    console.log(cart);
                     fillCart();
+                    $(".countNum").html(cart.items[this.index].itemNum);
+                }
+            }
+            for (var i = 0; i < reduce.length; i++) {
+                reduce[i].index = i;
+                reduce[i].onclick = function () {
+                    //alert(1);
+                    cart.items[this.index].itemNum = cart.items[this.index].itemNum - 1;
+                    fillCart();
+                    $(".countNum").html(cart.items[this.index].itemNum);
                 }
             }
             // 商品选中和取消选中
@@ -253,22 +254,21 @@
         // 计算小计
         function subTotal() {
             for (var i = 0; i < cart.items.length; i++) {
-                cart.items[i].subTotal = parseFloat((cart.items[i].itemPrice * cart.items[i].itemNum).toFixed(2));
+                if(!cart.items[i].itemNum){
+                    cart.items[i].itemNum = 1;
+                }
+                cart.items[i].subTotal = parseFloat((cart.items[i].goodsPrice * cart.items[i].itemNum).toFixed(2));
             }
         }
 
 
         //计算总价格
         function caltTotal(items) {
-            // 判断 这个数组中  
-
-            var subItem = items.filter(function (el) {
-                return el.isChecked
-            })
+            
             var total = 0;
 
-            for (var i = 0; i < subItem.length; i++) {
-                total += subItem[i].subTotal;
+            for (var i = 0; i < items.length; i++) {
+                total += items[i].subTotal;
             }
 
             return total;
