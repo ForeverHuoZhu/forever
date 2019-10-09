@@ -165,8 +165,8 @@
             if (regphone.test($("#phone").val()) && regyzm.test($("#pvcode").val()) && regpwd.test($("#pwd")
                     .val()) && $("#pwd-a").val() == $("#pwd").val() && $("#phone-agree").is(':checked')&&!getCookie($("#phone").val())) {
                 alert("注册成功");
-                setCookie($("#phone").val(),$("#phone").val(),5);
-                setCookie($("#phone").val()+"pwd",$("#pwd-a").val(),5)
+                setCookie($("#phone").val(),$("#phone").val(),6);
+                setCookie($("#phone").val()+"pwd",$("#pwd-a").val(),6)
             } else {
                 return false;
             }
