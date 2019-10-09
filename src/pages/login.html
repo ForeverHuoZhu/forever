@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>唯品会登录</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../font/download (5)/font_7jyb9hgif2n/iconfont.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <style>
+        .table-header a.active {
+            color: #f10180;
+        }
+
+        .table-header {
+            padding: 0;
+        }
+
+        .table-header a {
+            width: 178px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .table-header span {
+            width: 1px;
+            color: #ccc;
+        }
+
+        .table-btm {
+            padding-bottom: 22px;
+        }
+
+        .table-btm a {
+            color: #333;
+            cursor: pointer;
+        }
+
+        .table-btm a:hover {
+            color: #f10180;
+        }
+
+        .saoma {
+            text-align: center;
+            padding-top: 36px;
+            display: none;
+        }
+
+        .other {
+            width: 300px;
+            height: 74px;
+            padding: 30px 30px 15px;
+            position: relative;
+        }
+
+        .other p {
+            height: 40px;
+            color: #ccc;
+        }
+
+        .other a {
+            color: #999;
+            font-size: 12px;
+        }
+
+        .other span {
+            font-size: 12px;
+            color: #e0e0e0;
+            padding: 0px 5px;
+
+        }
+
+        .other .free {
+            position: absolute;
+            right: 30px;
+            font-size: 14px;
+            color: #000;
+        }
+
+        .other .free:hover {
+            color: #f10180;
+        }
+
+        .table-body {
+            display: none;
+            padding-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="header-logo">
+            <h1 class="fl"><a href=""><img src="../images/register/logo.png" alt=""></a></h1>
+            <div class="header-service fr"><img src="../images/register/right.png" alt=""></div>
+        </div>
+
+    </div>
+    <!-- 内容 -->
+    <div class="contain">
+        <div class="content">
+            <div class="right-table">
+                <div class="table-header">
+                    <a class=" table-header-left fl active">扫码登录</a>
+                    <span class="fl">|</span>
+                    <a class=" table-header-left fl">账户登录</a>
+                </div>
+                <div class="cut">
+                    <div class="saoma" style="display: block;">
+                        <img src="../img/erweima.png" alt="">
+                    </div>
+                    <div class="table-body">
+                        <form action="">
+                            <!-- 输入手机号 -->
+                            <div class="table-p">
+                                <div class="phone-num">
+                                    <input id="phone" type="text" placeholder="请输入手机号码">
+                                    <span class=" icon iconfont icon-shouji icon-phone"></span>
+                                    <span></span>
+                                </div>
+                                <div class="input-tip"><span class="text"></span></div>
+                            </div>
+
+                            <!-- 设置密码 -->
+                            <div class="table-p">
+                                <div class="password">
+                                    <input id="pwd" type="text" placeholder="密码由6-20位字母，数字和符号组合">
+                                    <span class=" icon iconfont icon-Group- icon-suo"></span>
+                                    <span></span>
+                                </div>
+                                <div class="input-tip"><span class="text"></span></div>
+                            </div>
+
+                            <!-- 短信登录 -->
+                            <div class="table-btm clear">
+                                <a class="fl">短信验证登录</a>
+                                <a class="fr">忘记密码</a>
+                            </div>
+                            <!-- 立即注册 -->
+                            <div class="btn-register">
+                                <a href="javascript:;" role="button" id="btn-reg">
+                                    <span>登录</span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="other">
+                    <p>—————————————————</p>
+                    <a href="">新浪微博</a><span>|</span>
+                    <a href="">QQ</a><span>|</span>
+                    <a href="">支付宝</a><span>|</span>
+                    <a href="">更多</a>
+                    <a href="../pages/register01.html" class="free">免费注册</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <p class="c-copyright">Copyright 2008-2019 vip.com，All Rights Reserved ICP证：粤 B2-20080329</p>
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script>
+        $(".table-header-left").click(function () {
+            var index = $(this).index();
+            if (index == 2) {
+                index = 1
+            }
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".cut>div").eq(index).show().siblings().hide();
+        });
+        $("#btn-reg").click(function () {
+            var phone = getCookie($("#phone").val());
+            var pwd = getCookie($("#pwd").val()+"pwd");
+            if ($("#phone").val() == phone && $("#pwd").val() == pwd) {
+                alert("登录成功");
+            } else {
+                alert("请输入正确的帐号或密码！");
+            }
+        });
+    </script>
+</body>
+
+</html>
