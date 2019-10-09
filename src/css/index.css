@@ -1075,11 +1075,11 @@ ul,li{
     background-color: #fff;
     font-size: 14px;
 	color: #fff;
-	z-index: 5;
+	z-index: 2;
 }
 
 .main-nav .head-inner {
-    z-index: 100;
+    
 }
 
 .head-inner {

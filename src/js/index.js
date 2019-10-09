@@ -274,7 +274,7 @@ $(function () {
 		$(".menu").stop().slideToggle();
 	}, function () {
 		menutimer = setTimeout(function () {
-			$(".menu").slideToggle();
+			$(".menu").stop().slideToggle();
 		}, 300)
 	});
 	$(".menu").hover(function () {
