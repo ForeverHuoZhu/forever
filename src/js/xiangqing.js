@@ -46,3 +46,30 @@ $(function () {
         }
     })
 })
+
+//加入购物车
+$(function () {
+    var goods = getCookie("goods") ? JSON.parse(getCookie("goods")) : [];
+
+        $(".ui-btn-large").click(function () {
+            // 插入数据
+            // 去重
+            var flag = true;
+            for (var i = 0; i < goods.length; i++) {
+                if (goods[i].goodsName == $(".pib-title-detail").text()) {
+                    flag = false;
+                }
+            }
+            if (flag) {
+                var items = {
+                    goodsName:$(".pib-title-detail").text(),
+                    goodsPrice:$(".goodsprice").text()
+                };
+                goods.push(items);
+                setCookie("goods", JSON.stringify(goods));
+                alert("加入购物车成功");
+            }else{
+                alert("已添加，请勿重复添加");
+            }
+        })
+})
