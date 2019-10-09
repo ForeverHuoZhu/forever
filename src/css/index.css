@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-01-03 16:35:22
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2019-10-09 14:31:47
+ * @Last Modified time: 2019-10-09 15:53:27
 */
  
  * {
@@ -2229,7 +2229,10 @@
      transition: all 0.4s ease;
      /* opacity: 0; */
  }
- 
+ #gouwudai a{
+     display: inline-block;
+     margin-left: 10px;
+ }
  #left>ul {
      display: block;
      width: 97%;
@@ -2724,7 +2727,7 @@
      background: white;
      top: 22px;
      left: -170px;
-     z-index: 2;
+     z-index: 10;
  }
  
  #qiandao>dt {
@@ -2895,7 +2898,7 @@
  #kehufuwu>ul {
      display: none;
      float: none;
-     width: 92px;
+     width: 89px;
      font-size: 13px;
      position: absolute;
      line-height: 28px;
