@@ -1,0 +1,205 @@
+#tb {
+    width: 960px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 0 auto;
+}
+
+#tb thead tr {
+    height: 38px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+}
+
+.th1 {
+
+    color: #f10180;
+    padding-left: 14px;
+    border-left: 3px solid #f10180;
+    text-align: left;
+    font-weight: normal;
+}
+
+.th2 {
+    width: 300px;
+}
+
+.th3 {
+    width: 100px;
+}
+
+.th4 {
+    width: 145px;
+}
+
+.th5 {
+    width: 115px;
+}
+
+.th2,
+.th3,
+.th4,
+.th5 {
+    font-size: 12px;
+    font-weight: normal;
+    color: #333;
+}
+
+#tb tbody {
+    width: 960px;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+#tb tbody i {
+    display: inline-block;
+    width: 22px;
+    text-align: center;
+    height: 22px;
+    font-style: normal;
+    border: 1px solid #e3e2e2;
+    color: #666;
+}
+
+#tb tbody b {
+    display: inline-block;
+    width: 28px;
+    height: 22px;
+    text-align: center;
+    font-weight: normal;
+    line-height: 22px;
+    color: #272525;
+    font-family: 'Microsoft Yahei';
+}
+
+#tb tbody tr {
+    height: 90px;
+}
+
+#box {
+    margin: 30px auto;
+    width: 960px;
+    border: 1px solid #e0e0e0;
+
+}
+
+.header {
+    height: 80px;
+    border-bottom: 2px solid #f10180;
+    margin-bottom: 30px;
+}
+
+.header-logo {
+    margin: 0 auto;
+    width: 960px;
+    height: 80px;
+
+}
+
+.header-logo h1 {
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+.logo {
+    width: 214px;
+    height: 48px;
+}
+
+.header-service img {
+
+    height: 80px;
+}
+
+
+
+.bar-wrapper {
+    width: 960px;
+    height: 50px;
+    margin: 0 auto;
+    background: #e5e5e5;
+}
+
+.bar-wrapper .bar-right {
+    float: right;
+    color: #3c3c3c;
+}
+
+.bar-wrapper .bar-right strong {
+    color: #f40;
+}
+
+.bar-wrapper .bar-right .piece {
+    float: left;
+    min-width: 110px;
+    margin-right: 20px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.bar-wrapper .bar-right .piece .piece_num {
+    display: inline-block;
+    padding: 0 10px;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: tohoma, arial;
+}
+
+.bar-wrapper .bar-right .totalMoney {
+    float: left;
+    min-width: 100px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.bar-wrapper .bar-right .totalMoney .total_text {
+    float: right;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Arial;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+.bar-wrapper .bar-right .calBtn {
+    float: left;
+}
+
+.bar-wrapper .bar-right .calBtn a {
+    display: block;
+    width: 250px;
+    height: 50px;
+    color: #fff;
+    background: #f31189;
+    cursor: not-allowed;
+    font-size: 18px;
+    letter-spacing: 5px;
+    text-decoration: none;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.bar-wrapper .bar-right .calBtn a.btn_sty {
+    background: #f40;
+    cursor: pointer;
+}
+
+.info {
+    margin: 80px auto;
+    width: 960px;
+    height: 140px;
+}
+
+.info div {
+    border: 1px solid #e0e0e0;
+}
+
+.two {
+    margin: 0 32px;
+}

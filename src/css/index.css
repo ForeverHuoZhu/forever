@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-01-03 16:35:22
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2019-10-09 09:41:05
+ * @Last Modified time: 2019-10-09 10:18:22
 */
 * {margin:0;border: 0;padding:0;font-family: "微软雅黑";}
 
@@ -1075,7 +1075,7 @@ ul,li{
     background-color: #fff;
     font-size: 14px;
 	color: #fff;
-	/* z-index: 50; */
+	z-index: 5;
 }
 
 .main-nav .head-inner {

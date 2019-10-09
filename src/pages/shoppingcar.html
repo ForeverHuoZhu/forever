@@ -5,218 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>购物袋</title>
+    <link rel="shortcut icon" href="../images/public/favicon.ico" />
+    <link rel="bookmark" href="../images/public/favicon.ico" />
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../font/download (5)/font_7jyb9hgif2n/iconfont.css">
     <link rel="stylesheet" href="../css/public.css">
-    <style>
-        #tb {
-            width: 960px;
-            border-collapse: collapse;
-            table-layout: fixed;
-            margin: 0 auto;
-        }
-
-        #tb thead tr {
-            height: 38px;
-            border-top: 1px solid #e0e0e0;
-            border-bottom: 1px solid #e0e0e0;
-            border-right: 1px solid #e0e0e0;
-            background-color: #f9f9f9;
-        }
-
-        .th1 {
-
-            color: #f10180;
-            padding-left: 14px;
-            border-left: 3px solid #f10180;
-            text-align: left;
-            font-weight: normal;
-        }
-
-        .th2 {
-            width: 300px;
-        }
-
-        .th3 {
-            width: 100px;
-        }
-
-        .th4 {
-            width: 145px;
-        }
-
-        .th5 {
-            width: 115px;
-        }
-
-        .th2,
-        .th3,
-        .th4,
-        .th5 {
-            font-size: 12px;
-            font-weight: normal;
-            color: #333;
-        }
-
-        #tb tbody {
-            width: 960px;
-            height: 500px;
-            background-color: red;
-            border-bottom: 1px solid #e0e0e0;
-            border-right: 1px solid #e0e0e0;
-            border-left: 1px solid #e0e0e0;
-            text-align: center;
-        }
-
-        #tb tbody i {
-            display: inline-block;
-            width: 22px;
-            text-align: center;
-            height: 22px;
-            font-style: normal;
-            border: 1px solid #e3e2e2;
-            color: #666;
-        }
-
-        #tb tbody b {
-            display: inline-block;
-            width: 28px;
-            height: 22px;
-            text-align: center;
-            font-weight: normal;
-            line-height: 22px;
-            color: #272525;
-            font-family: 'Microsoft Yahei';
-        }
-
-        #tb tbody tr {
-            height: 90px;
-        }
-
-        #box {
-            margin: 30px auto;
-            width: 960px;
-            border: 1px solid #e0e0e0;
-
-        }
-
-        .header {
-            height: 80px;
-            border-bottom: 2px solid #f10180;
-            margin-bottom: 30px;
-        }
-
-        .header-logo {
-            margin: 0 auto;
-            width: 960px;
-            height: 80px;
-
-        }
-
-        .header-logo h1 {
-            margin-top: 16px;
-            margin-bottom: 12px;
-        }
-
-        .logo {
-            width: 214px;
-            height: 48px;
-        }
-
-        .header-service img {
-
-            height: 80px;
-        }
-
-
-
-        .bar-wrapper {
-            width: 960px;
-            height: 50px;
-            margin: 0 auto;
-            background: #e5e5e5;
-        }
-
-        .bar-wrapper .bar-right {
-            float: right;
-            color: #3c3c3c;
-        }
-
-        .bar-wrapper .bar-right strong {
-            color: #f40;
-        }
-
-        .bar-wrapper .bar-right .piece {
-            float: left;
-            min-width: 110px;
-            margin-right: 20px;
-            height: 50px;
-            line-height: 50px;
-        }
-
-        .bar-wrapper .bar-right .piece .piece_num {
-            display: inline-block;
-            padding: 0 10px;
-            font-weight: 700;
-            font-size: 18px;
-            font-family: tohoma, arial;
-        }
-
-        .bar-wrapper .bar-right .totalMoney {
-            float: left;
-            min-width: 100px;
-            height: 50px;
-            line-height: 50px;
-        }
-
-        .bar-wrapper .bar-right .totalMoney .total_text {
-            float: right;
-            font-weight: 400;
-            font-size: 20px;
-            font-family: Arial;
-            vertical-align: middle;
-            margin-right: 10px;
-            margin-left: 15px;
-        }
-
-        .bar-wrapper .bar-right .calBtn {
-            float: left;
-        }
-
-        .bar-wrapper .bar-right .calBtn a {
-            display: block;
-            width: 250px;
-            height: 50px;
-            color: #fff;
-            background: #f31189;
-            cursor: not-allowed;
-            font-size: 18px;
-            letter-spacing: 5px;
-            text-decoration: none;
-            line-height: 50px;
-            text-align: center;
-            border-radius: 2px;
-        }
-
-        .bar-wrapper .bar-right .calBtn a.btn_sty {
-            background: #f40;
-            cursor: pointer;
-        }
-
-        .info {
-            margin: 80px auto;
-            width: 960px;
-            height: 140px;
-        }
-        .info div{
-            border: 1px solid #e0e0e0;
-        }
-        .two{
-            margin: 0 32px;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="../css/shoppingcar.css">
 </head>
 
 <body>
@@ -241,11 +36,11 @@
         </thead>
         <tbody>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
             </tr>
         </tbody>
         <tfoot>
@@ -283,10 +78,10 @@
             <img src="../images/gouwuche/03img.png" alt="">
         </div>
     </div>
-<!-- 底部开始 -->
+    <!-- 底部开始 -->
     <footer class="footer">
         <div class="footer-inner clear">
-            
+
             <div class="footer-infor">
                 <p class="footer-infor-link">
                     <a href="">关于我们</a>|
@@ -300,8 +95,13 @@
                     <a href="">联系我们</a>
                 </p>
                 <p class="footer-infor-txt">
-                        Copyright © 2008-2019 vip.com，All Rights Reserved  使用本网站即表示接受 <a href="">唯品会用户协议</a> 。版权所有 <a href="">广州唯品会电子商务有限公司</a> <br> <a href="">粤公网安备 44010302111111号</a>&nbsp;&nbsp;<a href="">粤ICP备08114786号</a> <a href="">增值业务经营许可证：粤B2-20170777</a> <a href="">网络文化经营许可证：粤网文〔2018〕5030-1743号</a><br>
-                        <a href="">自营主体经营证照</a> &nbsp;&nbsp;<a href="">风险监测信息</a>&nbsp;&nbsp; <a href="">互联网药品信息服务资格证书：（粤）-经营性-2018-0271</a> <a href="">网络食品交易第三方平台备案凭证：粤B2-20170777</a> <a href="">医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号</a>
+                    Copyright © 2008-2019 vip.com，All Rights Reserved 使用本网站即表示接受 <a href="">唯品会用户协议</a> 。版权所有 <a
+                        href="">广州唯品会电子商务有限公司</a> <br> <a href="">粤公网安备 44010302111111号</a>&nbsp;&nbsp;<a
+                        href="">粤ICP备08114786号</a> <a href="">增值业务经营许可证：粤B2-20170777</a> <a
+                        href="">网络文化经营许可证：粤网文〔2018〕5030-1743号</a><br>
+                    <a href="">自营主体经营证照</a> &nbsp;&nbsp;<a href="">风险监测信息</a>&nbsp;&nbsp; <a
+                        href="">互联网药品信息服务资格证书：（粤）-经营性-2018-0271</a> <a href="">网络食品交易第三方平台备案凭证：粤B2-20170777</a> <a
+                        href="">医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号</a>
                 </p>
             </div>
         </div>
@@ -333,7 +133,7 @@
     </footer>
     <!-- 底部结束 -->
     <!-- 右栏开始 -->
-<script src="./cookie.js"></script>
+    <script src="./cookie.js"></script>
     <script>
         var cart = {
             total: 0
