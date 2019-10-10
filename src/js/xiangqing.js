@@ -99,7 +99,7 @@ $(function () {
                 goodsPrice: $(".goodsprice").text()
             };
             goods.push(items);
-            setCookie("goods", JSON.stringify(goods));
+            setCookie("goods", JSON.stringify(goods),6);
             alert("加入购物车成功");
         } else {
             alert("已添加，请勿重复添加");
