@@ -82,7 +82,7 @@ clickLeftli();
 
 function clickLeftli() {
 	for (var i = 0; i < leftli.length; i++) {
-		
+
 		leftli[i].onclick = function () {
 			// console.log(this.index)
 
@@ -284,4 +284,36 @@ $(function () {
 	}, function () {
 		$(".menu").stop().slideUp();
 	})
+}())
+
+
+
+//侧边栏购物数量
+;
+(function () {
+	var goods = getCookie("goods") ? JSON.parse(getCookie("goods")) : [];
+	// $(".spnum").text(goods.length);
+}())
+
+//倒计时
+;
+(function () {
+	function time() {
+		var endDate = (new Date("2019/10/15")).getTime();
+		var nowDate = (new Date()).getTime();
+		var cha = endDate - nowDate;
+		var day = toTwo(parseInt(cha / 1000 / 60 / 60 / 24));
+		var hour = toTwo(parseInt(cha / 1000 / 60 / 60 % 24));
+		var min = toTwo(parseInt(cha / 1000 / 60 % 60));
+		var sec = toTwo(parseInt(cha / 1000 % 60));
+		$(".dsj-hour").text(hour);
+		$(".dsj-min").text(min);
+		$(".dsj-sec").text(sec);
+	}
+	time();
+	setInterval(time, 1000);
+
+	function toTwo(n) {
+		return n < 10 ? '0' + n : '' + n;
+	}
 }())

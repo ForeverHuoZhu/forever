@@ -52,7 +52,7 @@ function fillCart() {
         add[i].index = i;
         add[i].onclick = function () {
             //alert(1);
-            cart.items[this.index].itemNum = cart.items[this.index].itemNum + 1;
+            cart.items[this.index].itemNum = parseInt(cart.items[this.index].itemNum) + 1;
             fillCart();
             $(".countNum").eq(this.index).html(cart.items[this.index].itemNum);
         }
@@ -130,9 +130,6 @@ function fillCart() {
 // 计算小计
 function subTotal() {
     for (var i = 0; i < cart.items.length; i++) {
-        if (!cart.items[i].itemNum) {
-            cart.items[i].itemNum = 1;
-        }
         cart.items[i].subTotal = parseFloat((cart.items[i].goodsPrice * cart.items[i].itemNum).toFixed(2));
     }
 }
