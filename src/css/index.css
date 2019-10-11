@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-01-03 16:35:22
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2019-10-11 16:37:36
+ * @Last Modified time: 2019-10-11 20:25:26
 */
  
  * {
@@ -4100,7 +4100,7 @@
  
  .yglist>dt>form {
      line-height: 30px;
-     margin-top: 14px;
+     margin-top: 4px;
      border: 1px solid #ccc;
      border-radius: 2px;
  }
@@ -4140,7 +4140,7 @@
  }
  
  .yglist>dd>.cover>img {
-     width: 100%;
+     width: 120px;
      height: 70px;
      position: absolute;
      top: 30px;
@@ -4166,7 +4166,7 @@
      width: 100%;
      height: 40px;
      background: white;
-     top: 168px;
+     top: 170px;
      left: 0;
      font-size: 16px;
      line-height: 25px;
