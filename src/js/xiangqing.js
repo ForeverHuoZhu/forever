@@ -83,7 +83,6 @@ $(function () {
 //加入购物车
 $(function () {
     var goods = getCookie("goods") ? JSON.parse(getCookie("goods")) : [];
-
     $(".ui-btn-large").click(function () {
         // 插入数据
         // 去重
@@ -105,4 +104,105 @@ $(function () {
             alert("已添加，请勿重复添加");
         }
     })
-})
+});
+
+//right里面的X
+var cha = document.getElementById("cha");
+var zh = document.getElementById("zh");
+cha.onclick = function () {
+	zh.style.left = 0;
+}
+
+zhanghao.onmouseover = function () {
+	zh.style.left = (-257) + "px";
+}
+
+zhanghao.onmouseleave = function () {
+	zh.style.left = 0;
+}
+
+
+
+
+
+// 地区
+addPlace();
+var ctimer;
+
+function returnTop() {
+	// document.body.scrollTop = 0;
+	cancelAnimationFrame(ctimer) || clearTimeout(ctimer);
+	ctimer = requestAnimationFrame(function fn() {
+		var top = document.body.scrollTop || document.documentElement.scrollTop;
+		if (top > 0) {
+			document.body.scrollTop = document.documentElement.scrollTop = top - 500;
+			ctimer = requestAnimationFrame(fn) || setTimeout(fn, 30)
+		} else {
+			cancelAnimationFrame(ctimer);
+		}
+	})
+}
+
+function addPlace() {
+	for (var i = 0; i < tds.length; i++) {
+		tds[i].index = i;
+		tds[i].children[0].onclick = function () {
+			place.children[0].innerHTML = this.innerHTML;
+			province.style.display = "none";
+			place.style.background = "transparent";
+		}
+	}
+}
+
+
+place.onclick = function () {
+	this.style.background = "white";
+	province.style.display = "block";
+}
+X.onclick = function () {
+	province.style.display = "none";
+	place.style.background = "transparent";
+}
+
+qiandaobtn.onclick = function () {
+	cCount++;
+	cCount = cCount % 8;
+	clearCircle();
+	for (var j = 0; j <= cCount; j++) {
+		if (j == 0) {
+			clearCircle();
+		} else if (j == 1) {
+			circle[j - 1].style.borderColor = "#f10180";
+		} else {
+			circle[j - 1].style.borderColor = "#f10180";
+			line[j - 2].style.borderColor = "#f10180";
+		}
+	}
+}
+
+function clearCircle() {
+	for (var i = 0; i < circle.length; i++) {
+		if (i == 0) {
+			circle[i].style.borderColor = "#ccc";
+		} else {
+			circle[i].style.borderColor = "#ccc";
+			line[i - 1].style.borderColor = "#ccc";
+		}
+	}
+}
+;
+(function () {
+	var menutimer = null;
+	$(".nav-category").hover(function () {
+		$(".menu").stop().slideToggle();
+	}, function () {
+		menutimer = setTimeout(function () {
+			$(".menu").stop().slideToggle();
+		}, 300)
+	});
+	$(".menu").hover(function () {
+		clearTimeout(menutimer);
+	}, function () {
+		$(".menu").stop().slideToggle();
+	})
+}())
