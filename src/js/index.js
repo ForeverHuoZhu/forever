@@ -284,4 +284,4 @@ $(function () {
 	}, function () {
 		$(".menu").stop().slideUp();
 	})
-}())
+}());
