@@ -44,7 +44,7 @@ window.onload = window.onresize = function () {
 			if (scrolltop >= 120) {
 				navbar.style.position = "fixed";
 				navbar.style.top = 0;
-				navbar.style.marginLeft = 30;
+				
 			} else {
 				navbar.style.position = "static";
 
@@ -125,7 +125,7 @@ zhanghao.onmouseleave = function () {
 
 
 
-// 地区
+// 回到顶部
 addPlace();
 var ctimer;
 
@@ -136,7 +136,7 @@ function returnTop() {
 		var top = document.body.scrollTop || document.documentElement.scrollTop;
 		if (top > 0) {
 			document.body.scrollTop = document.documentElement.scrollTop = top - 500;
-			ctimer = requestAnimationFrame(fn) || setTimeout(fn, 30)
+			ctimer = requestAnimationFrame(fn) || setTimeout(fn, 3000)
 		} else {
 			cancelAnimationFrame(ctimer);
 		}
