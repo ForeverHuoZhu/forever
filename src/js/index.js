@@ -307,3 +307,8 @@ $(function () {
         return n < 10 ? '0' + n : '' + n;
     }
 }())
+
+;(function(){
+	var goods = getCookie("goods") ? JSON.parse(getCookie("goods")) : [];
+    $(".spnum").text(goods.length);
+}())
