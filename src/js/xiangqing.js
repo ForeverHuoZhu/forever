@@ -83,6 +83,7 @@ $(function () {
 //加入购物车
 $(function () {
     var goods = getCookie("goods") ? JSON.parse(getCookie("goods")) : [];
+    $(".spnum").text(goods.length);
     $(".ui-btn-large").click(function () {
         // 插入数据
         // 去重
@@ -95,7 +96,8 @@ $(function () {
         if (flag) {
             var items = {
                 goodsName: $(".pib-title-detail").text(),
-                goodsPrice: $(".goodsprice").text()
+                goodsPrice: $(".goodsprice").text(),
+                itemNum:$(".amount").text()
             };
             goods.push(items);
             setCookie("goods", JSON.stringify(goods),6);
