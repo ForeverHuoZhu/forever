@@ -35,7 +35,6 @@ window.onload = window.onresize = function () {
 
 		window.onscroll = function () {
 			var scrolltop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-			console.log(scrolltop);
 			if (scrolltop >= 623) {
 				left.style.display = "block";
 			} else {
