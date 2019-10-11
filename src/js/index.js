@@ -163,7 +163,7 @@ X.onclick = function () {
 	province.style.display = "none";
 	place.style.background = "transparent";
 }
-
+/* 签到 */
 qiandaobtn.onclick = function () {
 	cCount++;
 	cCount = cCount % 8;
