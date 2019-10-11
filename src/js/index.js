@@ -1,6 +1,6 @@
 var body = document.getElementsByTagName("body")[0];
 var cCount = 0;
-var clickArr = [1428, 2488, 3568, 4620, 5666, 6748, 7920, 8961];
+var clickArr = [1428, 2488, 3568, 4620, 5666, 6748, 7920, 8860];
 var scrollArr = [1424, 2340, 3528, 4580, 5633, 6734, 7920, 8834];
 var leftli = document.querySelectorAll("#left>ul>li");
 var place = document.getElementById("place");
@@ -35,7 +35,6 @@ window.onload = window.onresize = function () {
 
 		window.onscroll = function () {
 			var scrolltop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-			console.log(scrolltop);
 			if (scrolltop >= 623) {
 				left.style.display = "block";
 			} else {
@@ -306,4 +305,9 @@ $(function () {
     function toTwo(n) {
         return n < 10 ? '0' + n : '' + n;
     }
+}())
+
+;(function(){
+	var goods = getCookie("goods") ? JSON.parse(getCookie("goods")) : [];
+    $(".spnum").text(goods.length);
 }())
