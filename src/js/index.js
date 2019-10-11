@@ -44,7 +44,7 @@ window.onload = window.onresize = function () {
 			if (scrolltop >= 120) {
 				navbar.style.position = "fixed";
 				navbar.style.top = 0;
-				navbar.style.marginLeft = 30;
+				
 			} else {
 				navbar.style.position = "static";
 
@@ -125,7 +125,7 @@ zhanghao.onmouseleave = function () {
 
 
 
-// 地区
+// 回到顶部
 addPlace();
 var ctimer;
 
@@ -136,7 +136,7 @@ function returnTop() {
 		var top = document.body.scrollTop || document.documentElement.scrollTop;
 		if (top > 0) {
 			document.body.scrollTop = document.documentElement.scrollTop = top - 500;
-			ctimer = requestAnimationFrame(fn) || setTimeout(fn, 30)
+			ctimer = requestAnimationFrame(fn) || setTimeout(fn, 3000)
 		} else {
 			cancelAnimationFrame(ctimer);
 		}
@@ -284,4 +284,26 @@ $(function () {
 	}, function () {
 		$(".menu").stop().slideUp();
 	})
+}());
+//倒计时
+;
+(function () {
+    function time() {
+        var endDate = (new Date("2019/10/15")).getTime();
+        var nowDate = (new Date()).getTime();
+        var cha = endDate - nowDate;
+        var day = toTwo(parseInt(cha / 1000 / 60 / 60 / 24));
+        var hour = toTwo(parseInt(cha / 1000 / 60 / 60 % 24));
+        var min = toTwo(parseInt(cha / 1000 / 60 % 60));
+        var sec = toTwo(parseInt(cha / 1000 % 60));
+        $(".dsj-hour").text(hour);
+        $(".dsj-min").text(min);
+        $(".dsj-sec").text(sec);
+    }
+    time();
+    setInterval(time, 1000);
+
+    function toTwo(n) {
+        return n < 10 ? '0' + n : '' + n;
+    }
 }())
