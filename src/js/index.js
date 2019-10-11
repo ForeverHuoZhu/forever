@@ -1,6 +1,6 @@
 var body = document.getElementsByTagName("body")[0];
 var cCount = 0;
-var clickArr = [1428, 2488, 3568, 4620, 5666, 6748, 7920, 8961];
+var clickArr = [1428, 2488, 3568, 4620, 5666, 6748, 7920, 8860];
 var scrollArr = [1424, 2340, 3528, 4580, 5633, 6734, 7920, 8834];
 var leftli = document.querySelectorAll("#left>ul>li");
 var place = document.getElementById("place");
