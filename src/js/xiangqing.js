@@ -83,7 +83,6 @@ $(function () {
 //加入购物车
 $(function () {
     var goods = getCookie("goods") ? JSON.parse(getCookie("goods")) : [];
-
     $(".ui-btn-large").click(function () {
         // 插入数据
         // 去重
