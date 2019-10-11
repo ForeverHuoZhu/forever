@@ -1,7 +1,7 @@
 var body = document.getElementsByTagName("body")[0];
 var cCount = 0;
-var clickArr = [1428, 2488, 3568, 4620, 5666, 6725, 7720, 8834];
-var scrollArr = [1424, 2340, 3528, 4580, 5633, 6734, 7734, 8834];
+var clickArr = [1428, 2488, 3568, 4620, 5666, 6748, 7920, 8961];
+var scrollArr = [1424, 2340, 3528, 4580, 5633, 6734, 7920, 8834];
 var leftli = document.querySelectorAll("#left>ul>li");
 var place = document.getElementById("place");
 var province = document.getElementById("province");
@@ -26,260 +26,446 @@ var left = document.getElementById("left");
 var navbar = document.getElementById("navbar");
 // 网页滚动事件
 
+<<
+<< << < HEAD
 window.onload = window.onresize = function() {
-    if (window.innerWidth > 1300) {
-        if (document.body.scrollTop >= 400) {
-            left.style.display = "block";
+        if (window.innerWidth > 1300) {
+            if (document.body.scrollTop >= 400) {
+                left.style.display = "block";
+            }
+
+
+            window.onscroll = function() {
+                var scrolltop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+                if (scrolltop >= 623) {
+                    left.style.display = "block";
+                } else {
+                    left.style.display = "none";
+                }
+                if (scrolltop >= 120) {
+                    navbar.style.position = "fixed";
+                    navbar.style.top = 0;
+                    navbar.style.marginLeft = 30;
+                } else {
+                    navbar.style.position = "static";
+
+                    navbar.style.zIndex = 4;
+                }
+
+                for (var i = 0; i <= leftli.length - 1; i++) {
+                    if ((scrolltop >= scrollArr[i] && scrolltop < scrollArr[i + 1]) || scrolltop >= 8834) {
+                        clearLeftli();
+                        leftli[i].style.background = "#f10180";
+                        leftli[i].children[0].style.color = "white";
+                        leftli[i].style.color = "white";
+                    }
+                }
+            }
+
+        } else {
+            left.style.display = "none";
+        } ===
+        === =
+        window.onload = window.onresize = function() {
+            if (window.innerWidth > 1300) {
+                if (document.body.scrollTop >= 400) {
+                    left.style.display = "block";
+                }
+
+
+                window.onscroll = function() {
+                    var scrolltop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+                    console.log(scrolltop);
+                    if (scrolltop >= 623) {
+                        left.style.display = "block";
+                    } else {
+                        left.style.display = "none";
+                    }
+                    if (scrolltop >= 120) {
+                        navbar.style.position = "fixed";
+                        navbar.style.top = 0;
+
+                    } else {
+                        navbar.style.position = "static";
+
+                        navbar.style.zIndex = 4;
+                    }
+
+                    for (var i = 0; i <= leftli.length - 1; i++) {
+                        if ((scrolltop >= scrollArr[i] && scrolltop < scrollArr[i + 1]) || scrolltop >= 8834) {
+                            clearLeftli();
+                            leftli[i].style.background = "#f10180";
+                            leftli[i].children[0].style.color = "white";
+                            leftli[i].style.color = "white";
+                        }
+                    }
+                }
+
+            } else {
+                left.style.display = "none";
+            } >>>
+            >>> > 52634 bea23e9d5dd50731558959a57601bbabb7d
         }
 
 
-        window.onscroll = function() {
-            var scrolltop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-            if (scrolltop >= 623) {
-                left.style.display = "block";
-            } else {
-                left.style.display = "none";
-            }
-            if (scrolltop >= 120) {
-                navbar.style.position = "fixed";
-                navbar.style.top = 0;
-                navbar.style.marginLeft = 30;
-            } else {
-                navbar.style.position = "static";
+        // 给leftli添加索引
+        addindex();
 
-                navbar.style.zIndex = 4;
+        function addindex() {
+            for (var i = 0; i < leftli.length; i++) {
+                leftli[i].index = i;
             }
+        }
 
-            for (var i = 0; i <= leftli.length - 1; i++) {
-                if ((scrolltop >= scrollArr[i] && scrolltop < scrollArr[i + 1]) || scrolltop >= 8834) {
+        // 点击leftli
+        var clicktimer = 0;
+        clickLeftli();
+
+        function clickLeftli() { <<
+            << << < HEAD
+            for (var i = 0; i < leftli.length; i++) {
+                leftli[i].onclick = function() {
+                    // console.log(this.index)
+
                     clearLeftli();
-                    leftli[i].style.background = "#f10180";
-                    leftli[i].children[0].style.color = "white";
-                    leftli[i].style.color = "white";
+                    this.style.background = "#f10180";
+                    this.children[0].style.color = "white";
+                    this.style.color = "white";
+                    window.scrollTo(0, clickArr[this.index]);
+                }
+            } ===
+            === =
+            for (var i = 0; i < leftli.length; i++) {
+
+                leftli[i].onclick = function() {
+                    // console.log(this.index)
+
+                    clearLeftli();
+                    this.style.background = "#f10180";
+                    this.children[0].style.color = "white";
+                    this.style.color = "white";
+                    window.scrollTo(0, clickArr[this.index]);
+                }
+            } >>>
+            >>> > 52634 bea23e9d5dd50731558959a57601bbabb7d
+        }
+
+
+
+        // 清除left里面li的样式
+        function clearLeftli() {
+            for (var i = 0; i < leftli.length; i++) {
+                leftli[i].style.background = "transparent";
+                leftli[i].style.color = "#666";
+                leftli[i].children[0].style.color = "#bbb";
+            }
+        }
+
+        //right里面的X
+        var cha = document.getElementById("cha");
+        var zh = document.getElementById("zh");
+        cha.onclick = function() {
+            zh.style.left = 0;
+        }
+
+        zhanghao.onmouseover = function() {
+            zh.style.left = (-257) + "px";
+        }
+
+        zhanghao.onmouseleave = function() {
+            zh.style.left = 0;
+        }
+
+
+
+
+
+        // 回到顶部
+        addPlace();
+        var ctimer;
+
+        function returnTop() { <<
+            << << < HEAD
+            // document.body.scrollTop = 0;
+            cancelAnimationFrame(ctimer) || clearTimeout(ctimer);
+            ctimer = requestAnimationFrame(function fn() {
+                    var top = document.body.scrollTop || document.documentElement.scrollTop;
+                    if (top > 0) {
+                        document.body.scrollTop = document.documentElement.scrollTop = top - 500;
+                        ctimer = requestAnimationFrame(fn) || setTimeout(fn, 30)
+                    } else {
+                        cancelAnimationFrame(ctimer);
+                    }
+                }) ===
+                === =
+                // document.body.scrollTop = 0;
+                cancelAnimationFrame(ctimer) || clearTimeout(ctimer);
+            ctimer = requestAnimationFrame(function fn() {
+                    var top = document.body.scrollTop || document.documentElement.scrollTop;
+                    if (top > 0) {
+                        document.body.scrollTop = document.documentElement.scrollTop = top - 500;
+                        ctimer = requestAnimationFrame(fn) || setTimeout(fn, 3000)
+                    } else {
+                        cancelAnimationFrame(ctimer);
+                    }
+                }) >>>
+                >>> > 52634 bea23e9d5dd50731558959a57601bbabb7d
+        }
+
+        function addPlace() {
+            for (var i = 0; i < tds.length; i++) {
+                tds[i].index = i;
+                tds[i].children[0].onclick = function() {
+                    place.children[0].innerHTML = this.innerHTML;
+                    province.style.display = "none";
+                    place.style.background = "transparent";
                 }
             }
         }
 
-    } else {
-        left.style.display = "none";
-    }
-}
 
-
-// 给leftli添加索引
-addindex();
-
-function addindex() {
-    for (var i = 0; i < leftli.length; i++) {
-        leftli[i].index = i;
-    }
-}
-
-// 点击leftli
-var clicktimer = 0;
-clickLeftli();
-
-function clickLeftli() {
-    for (var i = 0; i < leftli.length; i++) {
-        leftli[i].onclick = function() {
-            // console.log(this.index)
-
-            clearLeftli();
-            this.style.background = "#f10180";
-            this.children[0].style.color = "white";
-            this.style.color = "white";
-            window.scrollTo(0, clickArr[this.index]);
+        place.onclick = function() {
+            this.style.background = "white";
+            province.style.display = "block";
         }
-    }
-}
+        X.onclick = function() {
+                province.style.display = "none";
+                place.style.background = "transparent";
+            } <<
+            << << < HEAD
+
+        qiandaobtn.onclick = function() {
+                cCount++;
+                cCount = cCount % 8;
+                clearCircle();
+                for (var j = 0; j <= cCount; j++) {
+                    if (j == 0) {
+                        clearCircle();
+                    } else if (j == 1) {
+                        circle[j - 1].style.borderColor = "#f10180";
+                    } else {
+                        circle[j - 1].style.borderColor = "#f10180";
+                        line[j - 2].style.borderColor = "#f10180";
+                    }
+                } ===
+                === =
+                /* 签到 */
+                qiandaobtn.onclick = function() {
+                    cCount++;
+                    cCount = cCount % 8;
+                    clearCircle();
+                    for (var j = 0; j <= cCount; j++) {
+                        if (j == 0) {
+                            clearCircle();
+                        } else if (j == 1) {
+                            circle[j - 1].style.borderColor = "#f10180";
+                        } else {
+                            circle[j - 1].style.borderColor = "#f10180";
+                            line[j - 2].style.borderColor = "#f10180";
+                        }
+                    } >>>
+                    >>> > 52634 bea23e9d5dd50731558959a57601bbabb7d
+                }
+
+                function clearCircle() {
+                    for (var i = 0; i < circle.length; i++) {
+                        if (i == 0) {
+                            circle[i].style.borderColor = "#ccc";
+                        } else {
+                            circle[i].style.borderColor = "#ccc";
+                            line[i - 1].style.borderColor = "#ccc";
+                        }
+                    }
+                }
+
+                // 轮播图
+                <<
+                << << < HEAD
+                $(document).ready(function() {
+                            var aa = 0;
+                            var size = $(".banner_select>ul li").size(); //5
+                            var img_size = $(".banner_wrap>ul li").size(); //5
+                            for (var i = 0; i <= size - 1; i++) {
+                                $(".banner_select>ul li")[i].id = i;
+                                $(".banner_wrap>ul li")[i].id = i;
+                            }
+
+                            $(".banner_select>ul li").hover(function() {
+                                aa = this.id
+                                $(".J_trigger_line").css({
+                                    "left": (this.id * 195)
+                                })
+                                $(".banner_wrap>ul li").eq(this.id).addClass("on").siblings(this).stop().removeClass("on");;
+                                $(".banner_wrap>ul li").eq(this.id).fadeIn(500).siblings(this).fadeOut(500);
+                            });
+
+                            function move() {
+                                $(".J_trigger_line").css({
+                                    "left": (aa * 195)
+                                })
+                                $(".banner_wrap>ul li").eq(aa).addClass("on").siblings(aa).stop().removeClass("on");
+                                $(".banner_wrap>ul li").eq(aa).fadeIn(500).siblings(aa).fadeOut(500);
+                            }
+
+                            var t = setInterval(lunbo, 2000);
+
+                            function lunbo() {
+                                if (aa == img_size) {
+                                    aa = 0;
+                                }
+                                move();
+                                aa++
+                            }
+                            $(".banner_wrap").hover(function() {
+                                clearInterval(t);
+                            }, function() {
+                                t = setInterval(lunbo, 2000);
+                            });
+                            $(".left").click(function() {
+                                if (aa <= 1) {
+                                    aa = 3;
+                                }
+                                aa -= 2;
+                                move();
+                                aa++;
+                            })
+                            $(".right").click(function() {
+                                if (aa == 2) {
+                                    aa = 0;
+                                }
+                                aa++;
+                                aa--;
+                                move();
+                                aa++;
+                            }); ===
+                            === =
+                            $(document).ready(function() {
+                                var aa = 0;
+                                var size = $(".banner_select>ul li").size(); //5
+                                var img_size = $(".banner_wrap>ul li").size(); //5
+                                for (var i = 0; i <= size - 1; i++) {
+                                    $(".banner_select>ul li")[i].id = i;
+                                    $(".banner_wrap>ul li")[i].id = i;
+                                }
+
+                                $(".banner_select>ul li").hover(function() {
+                                    aa = this.id
+                                    $(".J_trigger_line").css({
+                                        "left": (this.id * 195)
+                                    })
+                                    $(".banner_wrap>ul li").eq(this.id).addClass("on").siblings(this).stop().removeClass("on");;
+                                    $(".banner_wrap>ul li").eq(this.id).fadeIn(500).siblings(this).fadeOut(500);
+                                });
+
+                                function move() {
+                                    $(".J_trigger_line").css({
+                                        "left": (aa * 195)
+                                    })
+                                    $(".banner_wrap>ul li").eq(aa).addClass("on").siblings(aa).stop().removeClass("on");
+                                    $(".banner_wrap>ul li").eq(aa).fadeIn(500).siblings(aa).stop().fadeOut(500);
+                                }
+
+                                var t = setInterval(lunbo, 2000);
+
+                                function lunbo() {
+                                    if (aa == img_size) {
+                                        aa = 0;
+                                    }
+                                    move();
+                                    aa++
+                                }
+                                $(".banner_wrap").hover(function() {
+                                    clearInterval(t);
+                                }, function() {
+                                    t = setInterval(lunbo, 2000);
+                                });
+                                $(".left").click(function() {
+                                    if (aa <= 1) {
+                                        aa = 3;
+                                    }
+                                    aa -= 2;
+                                    move();
+                                    aa++;
+                                })
+                                $(".right").click(function() {
+                                    if (aa == 2) {
+                                        aa = 0;
+                                    }
+                                    aa++;
+                                    aa--;
+                                    move();
+                                    aa++;
+                                }); >>>
+                                >>> > 52634 bea23e9d5dd50731558959a57601bbabb7d
+                            });
+
+                            // $(function(){
+                            // 	$(".head-inner>.main-nav-link>#list").hover(function(){
+                            // 		$(this).find(".menu").stop().slideDown();
+                            // 	},function(){
+                            // 		$(this).find(".menu").stop().slideUp();
+                            // 	})
+                            // })
+
+                            $(function() {
+
+                                $("img.lazy").lazyload({
+                                    effect: "fadeIn"
+                                });
+
+                            });
 
 
+                            //导航
+                            ; <<
+                            << << < HEAD
+                                (function() {
+                                        var menutimer = null;
+                                        $(".nav-category").hover(function() {
+                                            $(".menu").stop().slideToggle();
+                                        }, function() {
+                                            menutimer = setTimeout(function() {
+                                                $(".menu").stop().slideToggle();
+                                            }, 300)
+                                        });
+                                        $(".menu").hover(function() {
+                                                clearTimeout(menutimer);
+                                            }, function() {
+                                                $(".menu").stop().slideToggle();
+                                            }) ===
+                                            === =
+                                            (function() {
+                                                var menutimer = null;
+                                                $(".nav-category").hover(function() {
+                                                    $(".menu").stop().show();
+                                                }, function() {
+                                                    menutimer = setTimeout(function() {
+                                                        $(".menu").stop().slideUp();
+                                                    }, 300)
+                                                });
+                                                $(".menu").hover(function() {
+                                                    clearTimeout(menutimer);
+                                                }, function() {
+                                                    $(".menu").stop().slideUp();
+                                                })
+                                            }());
+                                        //倒计时
+                                        ;
+                                        (function ()  {    
+                                            function  time()  {         var  endDate  =   (new  Date("2019/10/15")).getTime();         var  nowDate  =   (new  Date()).getTime();         var  cha  =  endDate  -  nowDate;         var  day  =  toTwo(parseInt(cha  /  1000  /  60  /  60  /  24));         var  hour  =  toTwo(parseInt(cha  /  1000  /  60  /  60  %  24));         var  min  =  toTwo(parseInt(cha  /  1000  /  60  %  60));         var  sec  =  toTwo(parseInt(cha  /  1000  %  60));        
+                                                $(".dsj-hour").text(hour);        
+                                                $(".dsj-min").text(min);        
+                                                $(".dsj-sec").text(sec);     }    
+                                            time();    
+                                            setInterval(time,  1000);
 
-// 清除left里面li的样式
-function clearLeftli() {
-    for (var i = 0; i < leftli.length; i++) {
-        leftli[i].style.background = "transparent";
-        leftli[i].style.color = "#666";
-        leftli[i].children[0].style.color = "#bbb";
-    }
-}
+                                                
+                                            function  toTwo(n)  {         return  n  <  10  ?  '0'  +  n  :  ''  +  n;     }
+                                        }())
 
-//right里面的X
-var cha = document.getElementById("cha");
-var zh = document.getElementById("zh");
-cha.onclick = function() {
-    zh.style.left = 0;
-}
-
-zhanghao.onmouseover = function() {
-    zh.style.left = (-257) + "px";
-}
-
-zhanghao.onmouseleave = function() {
-    zh.style.left = 0;
-}
-
-
-
-
-
-// 地区
-addPlace();
-var ctimer;
-
-function returnTop() {
-    // document.body.scrollTop = 0;
-    cancelAnimationFrame(ctimer) || clearTimeout(ctimer);
-    ctimer = requestAnimationFrame(function fn() {
-        var top = document.body.scrollTop || document.documentElement.scrollTop;
-        if (top > 0) {
-            document.body.scrollTop = document.documentElement.scrollTop = top - 500;
-            ctimer = requestAnimationFrame(fn) || setTimeout(fn, 30)
-        } else {
-            cancelAnimationFrame(ctimer);
-        }
-    })
-}
-
-function addPlace() {
-    for (var i = 0; i < tds.length; i++) {
-        tds[i].index = i;
-        tds[i].children[0].onclick = function() {
-            place.children[0].innerHTML = this.innerHTML;
-            province.style.display = "none";
-            place.style.background = "transparent";
-        }
-    }
-}
-
-
-place.onclick = function() {
-    this.style.background = "white";
-    province.style.display = "block";
-}
-X.onclick = function() {
-    province.style.display = "none";
-    place.style.background = "transparent";
-}
-
-qiandaobtn.onclick = function() {
-    cCount++;
-    cCount = cCount % 8;
-    clearCircle();
-    for (var j = 0; j <= cCount; j++) {
-        if (j == 0) {
-            clearCircle();
-        } else if (j == 1) {
-            circle[j - 1].style.borderColor = "#f10180";
-        } else {
-            circle[j - 1].style.borderColor = "#f10180";
-            line[j - 2].style.borderColor = "#f10180";
-        }
-    }
-}
-
-function clearCircle() {
-    for (var i = 0; i < circle.length; i++) {
-        if (i == 0) {
-            circle[i].style.borderColor = "#ccc";
-        } else {
-            circle[i].style.borderColor = "#ccc";
-            line[i - 1].style.borderColor = "#ccc";
-        }
-    }
-}
-
-// 轮播图
-$(document).ready(function() {
-    var aa = 0;
-    var size = $(".banner_select>ul li").size(); //5
-    var img_size = $(".banner_wrap>ul li").size(); //5
-    for (var i = 0; i <= size - 1; i++) {
-        $(".banner_select>ul li")[i].id = i;
-        $(".banner_wrap>ul li")[i].id = i;
-    }
-
-    $(".banner_select>ul li").hover(function() {
-        aa = this.id
-        $(".J_trigger_line").css({
-            "left": (this.id * 195)
-        })
-        $(".banner_wrap>ul li").eq(this.id).addClass("on").siblings(this).stop().removeClass("on");;
-        $(".banner_wrap>ul li").eq(this.id).fadeIn(500).siblings(this).fadeOut(500);
-    });
-
-    function move() {
-        $(".J_trigger_line").css({
-            "left": (aa * 195)
-        })
-        $(".banner_wrap>ul li").eq(aa).addClass("on").siblings(aa).stop().removeClass("on");
-        $(".banner_wrap>ul li").eq(aa).fadeIn(500).siblings(aa).fadeOut(500);
-    }
-
-    var t = setInterval(lunbo, 2000);
-
-    function lunbo() {
-        if (aa == img_size) {
-            aa = 0;
-        }
-        move();
-        aa++
-    }
-    $(".banner_wrap").hover(function() {
-        clearInterval(t);
-    }, function() {
-        t = setInterval(lunbo, 2000);
-    });
-    $(".left").click(function() {
-        if (aa <= 1) {
-            aa = 3;
-        }
-        aa -= 2;
-        move();
-        aa++;
-    })
-    $(".right").click(function() {
-        if (aa == 2) {
-            aa = 0;
-        }
-        aa++;
-        aa--;
-        move();
-        aa++;
-    });
-});
-
-// $(function(){
-// 	$(".head-inner>.main-nav-link>#list").hover(function(){
-// 		$(this).find(".menu").stop().slideDown();
-// 	},function(){
-// 		$(this).find(".menu").stop().slideUp();
-// 	})
-// })
-
-$(function() {
-
-    $("img.lazy").lazyload({
-        effect: "fadeIn"
-    });
-
-});
-
-
-//导航
-;
-(function() {
-    var menutimer = null;
-    $(".nav-category").hover(function() {
-        $(".menu").stop().slideToggle();
-    }, function() {
-        menutimer = setTimeout(function() {
-            $(".menu").stop().slideToggle();
-        }, 300)
-    });
-    $(".menu").hover(function() {
-        clearTimeout(menutimer);
-    }, function() {
-        $(".menu").stop().slideToggle();
-    })
-}())
+                                        ;
+                                        (function() {
+                                            var goods = getCookie("goods") ? JSON.parse(getCookie("goods")) : [];
+                                            $(".spnum").text(goods.length); >>>
+                                            >>> > 52634 bea23e9d5dd50731558959a57601bbabb7d
+                                        }())

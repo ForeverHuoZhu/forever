@@ -5,13 +5,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>首页</title>
-    <link rel="shortcut icon" href="./images/public/favicon.ico" />
-    <link rel="bookmark" href="./images/public/favicon.ico" />
+	<link rel="shortcut icon" href="./images/public/favicon.ico" />
+	<link rel="bookmark" href="./images/public/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
 	<link rel="stylesheet" href="font/iconfont.css">
 	<link rel="stylesheet" href="./font_rx71ur82t4/iconfont.css">
 	<link rel="stylesheet" href="./css/public.css">
-	
+	<link rel="stylesheet" href="../css/xiangqing.css">
+    <link rel="stylesheet" href="../css/fangdajing.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../font_rx71ur82t4/iconfont.css">
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/jquery.lazyload.min.js"></script>
+
 </head>
 
 <body>
@@ -73,9 +82,12 @@
 				<div id="gouwudaibg">
 					<p style="line-height:36px"><i class="iconfont icon-shangpin-xianxing"
 							style="font-size: 30px; color:white;"></i></p>
-					<p>购</p>
-					<p>物</p>
-					<p>袋</p>
+					<a href="../pages/shoppingcar.html">
+						<p>购</p>
+						<p>物</p>
+						<p>袋</p>
+					</a>
+					
 					<p style="line-height:36px"><span>0</span></p>
 				</div>
 
@@ -176,8 +188,8 @@
 				</div>
 				<div class="topr">
 					<ul>
-						<li><a href="file:///C:/Users/mac/Desktop/vip/weipinhui/src/pages/login.html">请登录</a></li>
-						<li><a href="file:///C:/Users/mac/Desktop/vip/weipinhui/src/pages/register01.html">注册</a></li>
+						<li><a href="../pages/login.html">请登录</a></li>
+						<li><a href="../pages/register01.html">注册</a></li>
 						<p>/</p>
 						<li id="qiandaoyl">
 							<a href=""><i class="iconfont icon-baobei pink"
@@ -316,16 +328,16 @@
 		<div class="head-inner">
 			<div class="c-logo">
 				<div class="header-logo-dop">
-					<a href="#"><img class="lazy" data-original="./img/logo1.gif" alt=""></a>
+					<a href="../index.html"><img class="lazy" data-original="../img/logo1.gif" alt=""></a>
 				</div>
 			</div>
 			<div class="service">
-				<img class="lazy" data-original="./img/7day.png" alt="">
+				<img class="lazy" data-original="../img/7day.png" alt="">
 			</div>
 
 			<div class="shop-box">
 				<div class="shop-wrap">
-					<a href="#">
+					<a href="../pages/shoppingcar.html">
 						<span class="gwd iconfont icon-bao"></span>
 						<span class="">购物车</span>
 						<span class="num">0</span>
@@ -353,17 +365,17 @@
 						商品分类
 					</a>
 				</li>
-				<li><a href="file:///C:/Users/mac/Desktop/vip/weipinhui/src/index.html" class="main-nav-atag nav-current">首页</a></li>
-				<li><a href="file:///C:/Users/mac/Desktop/vip/weipinhui/src/pages/zuihoufengqiang.html" class="main-nav-atag">最后疯抢</a></li>
-				<li><a href="" class="main-nav-atag">唯品快抢</a></li>
-				<li><a href="" class="main-nav-atag">女装</a></li>
-				<li><a href="" class="main-nav-atag">母婴</a></li>
-				<li><a href="" class="main-nav-atag">家电</a></li>
-				<li><a href="" class="main-nav-atag">国际</a></li>
-				<li><a href="" class="main-nav-atag">美妆</a></li>
-				<li><a href="" class="main-nav-atag">鞋包</a></li>
-				<li><a href="" class="main-nav-atag">男装</a></li>
-				<li><a href="" class="main-nav-atag">预告</a></li>
+				<li><a href="./index.html" class="main-nav-atag nav-current">首页</a></li>
+				<li><a href="./pages/zuihoufengqiang.html" class="main-nav-atag">最后疯抢</a></li>
+				<li><a href="./pages/zuihoufengqiang.html" class="main-nav-atag">唯品快抢</a></li>
+				<li><a href="./index.html" class="main-nav-atag">女装</a></li>
+				<li><a href="./pages/zuihoufengqiang.html" class="main-nav-atag">母婴</a></li>
+				<li><a href="./index.html" class="main-nav-atag">家电</a></li>
+				<li><a href="./pages/zuihoufengqiang.html" class="main-nav-atag">国际</a></li>
+				<li><a href="./index.html" class="main-nav-atag">美妆</a></li>
+				<li><a href="./pages/zuihoufengqiang.html" class="main-nav-atag">鞋包</a></li>
+				<li><a href="./index.html" class="main-nav-atag">男装</a></li>
+				<li><a href="./pages/zuihoufengqiang.html" class="main-nav-atag">预告</a></li>
 				<li class="more-wrap">
 					<a href="" class="main-nav-atag">更多</a>
 					<div class="channel-item-group">
@@ -525,7 +537,7 @@
 									</dd>
 								</dl>
 							</div>
-							<div class="subright" > 
+							<div class="subright">
 								<img src="./img/list2.png" alt="">
 							</div>
 					</li>
@@ -560,18 +572,18 @@
 								</dl>
 								<dl>
 									<dt>沐浴润体</dt>
-									<dd> <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
-										 <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
-										 <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
-										 <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
+									<dd> <a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
+										<a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
+										<a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
+										<a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
 									</dd>
 								</dl>
 								<dl>
@@ -600,22 +612,22 @@
 								</dl>
 								<dl>
 									<dt>沐浴润体</dt>
-									<dd> <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
-										 <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
-										 <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
-										 <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
+									<dd> <a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
+										<a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
+										<a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
+										<a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
 									</dd>
 								</dl>
 							</div>
-							<div class="subright"> 
+							<div class="subright">
 								<img src="./img/list3.png" alt="">
 							</div>
 					</li>
@@ -626,18 +638,18 @@
 							<div class="subleft">
 								<dl>
 									<dt>沐浴润体</dt>
-									<dd> <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
-										 <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
-										 <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
-										 <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
+									<dd> <a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
+										<a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
+										<a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
+										<a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
 									</dd>
 								</dl>
 								<dl>
@@ -669,7 +681,7 @@
 									</dd>
 								</dl>
 							</div>
-							<div class="subright" > 
+							<div class="subright">
 								<img src="./img/list4.png" alt="">
 							</div>
 					</li>
@@ -712,7 +724,7 @@
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
 											href="javascript:;">绑带凉鞋</a> <a href="javascript:;">鱼嘴鞋</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -725,7 +737,7 @@
 											href="javascript:;">一脚蹬</a>
 										<a href="javascript:;">帆布鞋</a> <a href="javascript:;">豆豆鞋</a> <a
 											href="javascript:;">一脚蹬</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -756,7 +768,7 @@
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
 											href="javascript:;">绑带凉鞋</a> <a href="javascript:;">鱼嘴鞋</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -769,7 +781,7 @@
 											href="javascript:;">一脚蹬</a>
 										<a href="javascript:;">帆布鞋</a> <a href="javascript:;">豆豆鞋</a> <a
 											href="javascript:;">一脚蹬</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -777,7 +789,7 @@
 									</dd>
 								</dl>
 							</div>
-							<div class="subright" > 
+							<div class="subright">
 								<img src="./img/list5.png" alt="">
 							</div>
 					</li>
@@ -810,7 +822,7 @@
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
 											href="javascript:;">绑带凉鞋</a> <a href="javascript:;">鱼嘴鞋</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -823,7 +835,7 @@
 											href="javascript:;">一脚蹬</a>
 										<a href="javascript:;">帆布鞋</a> <a href="javascript:;">豆豆鞋</a> <a
 											href="javascript:;">一脚蹬</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -854,7 +866,7 @@
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
 											href="javascript:;">绑带凉鞋</a> <a href="javascript:;">鱼嘴鞋</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -867,7 +879,7 @@
 											href="javascript:;">一脚蹬</a>
 										<a href="javascript:;">帆布鞋</a> <a href="javascript:;">豆豆鞋</a> <a
 											href="javascript:;">一脚蹬</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -875,7 +887,7 @@
 									</dd>
 								</dl>
 							</div>
-							<div class="subright" > 
+							<div class="subright">
 								<img src="./img/list6.png" alt="">
 							</div>
 					</li>
@@ -908,7 +920,7 @@
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
 											href="javascript:;">绑带凉鞋</a> <a href="javascript:;">鱼嘴鞋</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -921,7 +933,7 @@
 											href="javascript:;">一脚蹬</a>
 										<a href="javascript:;">帆布鞋</a> <a href="javascript:;">豆豆鞋</a> <a
 											href="javascript:;">一脚蹬</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -952,7 +964,7 @@
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
 											href="javascript:;">绑带凉鞋</a> <a href="javascript:;">鱼嘴鞋</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -965,7 +977,7 @@
 											href="javascript:;">一脚蹬</a>
 										<a href="javascript:;">帆布鞋</a> <a href="javascript:;">豆豆鞋</a> <a
 											href="javascript:;">一脚蹬</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -973,7 +985,7 @@
 									</dd>
 								</dl>
 							</div>
-							<div class="subright"> 
+							<div class="subright">
 								<img src="./img/list7.png" alt="">
 							</div>
 					</li>
@@ -1006,7 +1018,7 @@
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
 											href="javascript:;">绑带凉鞋</a> <a href="javascript:;">鱼嘴鞋</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -1019,7 +1031,7 @@
 											href="javascript:;">一脚蹬</a>
 										<a href="javascript:;">帆布鞋</a> <a href="javascript:;">豆豆鞋</a> <a
 											href="javascript:;">一脚蹬</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -1027,7 +1039,7 @@
 									</dd>
 								</dl>
 							</div>
-							<div class="subright" > 
+							<div class="subright">
 								<img src="./img/list8.png" alt="">
 							</div>
 					</li>
@@ -1058,7 +1070,7 @@
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
 											href="javascript:;">绑带凉鞋</a> <a href="javascript:;">鱼嘴鞋</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -1071,7 +1083,7 @@
 											href="javascript:;">一脚蹬</a>
 										<a href="javascript:;">帆布鞋</a> <a href="javascript:;">豆豆鞋</a> <a
 											href="javascript:;">一脚蹬</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -1094,7 +1106,7 @@
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
 											href="javascript:;">绑带凉鞋</a> <a href="javascript:;">鱼嘴鞋</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -1107,7 +1119,7 @@
 											href="javascript:;">一脚蹬</a>
 										<a href="javascript:;">帆布鞋</a> <a href="javascript:;">豆豆鞋</a> <a
 											href="javascript:;">一脚蹬</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -1115,7 +1127,7 @@
 									</dd>
 								</dl>
 							</div>
-							<div class="subright" > 
+							<div class="subright">
 								<img src="./img/list9.png" alt="">
 							</div>
 					</li>
@@ -1148,7 +1160,7 @@
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
 											href="javascript:;">绑带凉鞋</a> <a href="javascript:;">鱼嘴鞋</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -1161,7 +1173,7 @@
 											href="javascript:;">一脚蹬</a>
 										<a href="javascript:;">帆布鞋</a> <a href="javascript:;">豆豆鞋</a> <a
 											href="javascript:;">一脚蹬</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -1188,18 +1200,18 @@
 								</dl>
 								<dl>
 									<dt>沐浴润体</dt>
-									<dd> <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
-										 <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
-										 <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
-										 <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
+									<dd> <a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
+										<a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
+										<a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
+										<a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
 									</dd>
 								</dl>
 								<dl>
@@ -1209,7 +1221,7 @@
 											href="javascript:;">唇部护理</a> <a href="javascript:;">眼部护理</a> </dd>
 								</dl>
 							</div>
-							<div class="subright" > 
+							<div class="subright">
 								<img src="./img/list10.png" alt="">
 							</div>
 					</li>
@@ -1240,7 +1252,7 @@
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
 											href="javascript:;">绑带凉鞋</a> <a href="javascript:;">鱼嘴鞋</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -1253,7 +1265,7 @@
 											href="javascript:;">一脚蹬</a>
 										<a href="javascript:;">帆布鞋</a> <a href="javascript:;">豆豆鞋</a> <a
 											href="javascript:;">一脚蹬</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -1276,7 +1288,7 @@
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
 											href="javascript:;">绑带凉鞋</a> <a href="javascript:;">鱼嘴鞋</a>
-											<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
+										<a href="javascript:;">凉拖</a> <a href="javascript:;">绑带凉鞋</a>
 										<a href="javascript:;">鱼嘴鞋</a>
 										<a href="javascript:;">一字带凉鞋</a>
 										<a href="javascript:;">平底凉鞋</a> <a href="javascript:;">凉拖</a> <a
@@ -1303,23 +1315,23 @@
 								</dl>
 								<dl>
 									<dt>沐浴润体</dt>
-									<dd> <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
-										 <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
-										 <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
-										 <a href="javascript:;">身体乳</a> 
-										 <a href="javascript:;">护肤皂</a> 
-										 <a href="javascript:;">沐浴套装</a>
+									<dd> <a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
+										<a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
+										<a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
+										<a href="javascript:;">身体乳</a>
+										<a href="javascript:;">护肤皂</a>
+										<a href="javascript:;">沐浴套装</a>
 									</dd>
 								</dl>
-								
+
 							</div>
-							<div class="subright" > 
+							<div class="subright">
 								<img src="./img/list11.png" alt="">
 							</div>
 					</li>
@@ -1331,1148 +1343,681 @@
 
 	</div>
 
-	<!-- 轮播图 -->
-	<div class="index">
-		<div class="banner_wrap">
-			<div class="left">
-				&lt;
-			</div>
-			<div class="right">
-				&gt;
-			</div>
-			<ul>
-				<li class="on" style="display: block;"><img src="./img/lunbo.jpg" height="340px" /></li>
-				<li><img src="./img/lunbo2.jpg" height="340px" /></li>
-
-			</ul>
-
-			<div class="banner_select">
-				<ul>
-
-					<li>
-						<a>国庆钜献·羊绒季 全场折上5折起</a>
-					</li>
-					<li>
-						<a class="last">庆钜献·型男季 低至0.9折</a>
-					</li>
-				</ul>
-				<div class="J_trigger_line"></div>
-			</div>
-		</div>
-	</div>
-	<div class="operation">
-		<div class="operation-item">
-			<a href="">
-				<img class="lazy" data-original="./img/pic1.webp" alt="">
-			</a>
-		</div>
-		<div class="pic">
-			<a href="">
-				<img class="lazy" data-original="./img/pic3 (1).webp" alt="">
-				<span class="shine">&nbsp;</span>
-			</a>
-			<a href="">
-				<img class="lazy" data-original="./img/pic4.webp" alt="">
-				<span class="shine">&nbsp;</span>
-			</a>
-			<a href="">
-				<img class="lazy" data-original="./img/pic3 (2).webp" alt="">
-				<span class="shine">&nbsp;</span>
-			</a>
-		</div>
-	</div>
-
-
-
-	<div class="container">
-		<div class="xinrenyx">
-			<div class="every">
-				<img class="lazy" data-original="./img/day-look.jpg" alt="">
-			</div>
-			<div class="floor-list-id">
-				<div id="pc-kuaiqiang:2"
-					style="width: 600px;height:372px; white-space: nowrap;position: relative; overflow: hidden;"></div>
-				<div class="ltart-clkable" style="float: left;display: flex;">
-					<img class="lazy" data-original="./img/must1.jpg" alt="">
-					<div class="ltart-clkable"
-						style="background-color: rgb(255, 255, 255); z-index: 52px; left:20px;top:104px;width: 170px;height: 170px;display: absolute;overflow: hidden;">
+	<div class="XQ-BX clear">
+			<div class="XQ-product clear">
+				<div class="M-pic">
+					<div class="M-container">
+						<div class="big">
+							<div class="big-item" style="display:block">
+								<div class="bigLess">
+									<img src="../images/xiangqing1/zs-s1.jpg" alt="">
+								</div>
+								<div class="bigMore">
+									<img src="../images/xiangqing1/zs-b1.jpg" alt="" class="bigMoreImg">
+									<div class="screen"></div>
+								</div>
+							</div>
+							<div class="big-item">
+								<div class="bigLess">
+									<img src="../images/xiangqing1/zs-s2.jpg" alt="">
+								</div>
+								<div class="bigMore">
+									<img src="../images/xiangqing1/zs-b2.jpg" alt="" class="bigMoreImg">
+									<div class="screen"></div>
+								</div>
+							</div>
+							<div class="big-item">
+								<div class="bigLess">
+									<img src="../images/xiangqing1/zs-s3.jpg" alt="">
+								</div>
+								<div class="bigMore">
+									<img src="../images/xiangqing1/zs-b3.jpg" alt="" class="bigMoreImg">
+									<div class="screen"></div>
+								</div>
+							</div>
+							<div class="big-item">
+								<div class="bigLess">
+									<img src="../images/xiangqing1/zs-s4.jpg" alt="">
+								</div>
+								<div class="bigMore">
+									<img src="../images/xiangqing1/zs-b4.jpg" alt="" class="bigMoreImg">
+									<div class="screen"></div>
+								</div>
+							</div>
+						</div>
+						<div class="small">
+							<div class="small-item"><img src="../images/xiangqing1/zs-s1.jpg" alt=""></div>
+							<div class="small-item"><img src="../images/xiangqing1/zs-s2.jpg" alt=""></div>
+							<div class="small-item"><img src="../images/xiangqing1/zs-s3.jpg" alt=""></div>
+							<div class="small-item"><img src="../images/xiangqing1/zs-s4.jpg" alt=""></div>
+						</div>
 					</div>
-					<img class="lazy ltart-clkable must2" data-original="./img/must2.jpg" alt="">
-					<div class="ltart-clkable"
-						style="z-index: 54px;left:20px;top:274px;width:170px;height:78px;overflow:hidden;position: absolute;background-color: rgb(255, 255, 255);">
+					<div class="product-text">
+						<p class="other-infoCoding">商品编码：ZA8124910</p>
+						<div class="onsell-collect">
+							<div class="goods-fav-collect">
+								<i class="star-icon star-empty-icon"></i>
+								<span class="collect-tips">收藏商品</span>
+							</div>
+						</div>
+						<div class="bdsharebuttonbox bdshare-button-style0-16 share_button">
+							<span class="share_tit_wrap">
+								<i class="tit_icon"></i>
+								<span class="tit_cnt">分享到：</span>
+								<i class="tit_arrow"></i>
+							</span>
+							<span class="share_hide_sns" style="width: 104px;display: none">
+								<a href="" class="share_gap share_gap_one"></a>
+								<a href="" class="share_gap share_gap_two"></a>
+								<a href="" class="share_gap share_gap_othree"></a>
+								<a href="" class="share_gap share_gap_last"></a>
+							</span>
+						</div>
 					</div>
-					<img class="lazy ltart-clkable must4" data-original="./img/must4.png" alt="">
-					<img class="lazy ltart-clkable must3" data-original="./img/must3.png" alt="">
-					<span class="price"><span class="ltart-label-inner">快抢价</span></span>
-					<span class="price2"><span class="ltart-label-inner">￥58</span></span>
-					<span class="price3"><span class="ltart-label-inner">338</span></span>
-					<div class="ltart-clkable"
-						style="background-color: rgb(255, 255, 255); z-index: 52px; left:200px;top:104px;width: 170px;height: 170px;display: absolute;overflow: hidden;">
+					<div class="safeguard-icon">
+						<div class="pi-promise-box">
+							<ul class="pi-promise-list">
+								<li class="pi-promise-item">
+									<i class="item-percent pi-promise-icon"></i>
+									<a href="">100%正品</a>
+								</li>
+								<li class=" pi-promise-item">
+									<i class="item-percent pi-promise-icon"></i>
+									<p>上市公司</p>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<img class="lazy ltart-clkable must2" data-original="./img/must5.jpg" alt=""
-						style="position:absolute;top:104px;left:200px;">
-					<div class="ltart-clkable"
-						style="z-index: 54px;left:200px;top:274px;width:170px;height:78px;overflow:hidden;position: absolute;background-color: rgb(255, 255, 255);">
-					</div>
-					<img class="lazy ltart-clkable must4" data-original="./img/must4.png" alt=""
-						style="position: absolute;left: 235px;top: 245px;object-fit: contain;width: 100px;height: 60px;">
-					<img class="lazy ltart-clkable must3" data-original="./img/must5.png" alt=""
-						style="width:80px;height:40px;position: absolute;left: 245px;top: 255px;overflow: hidden;">
-					<span class="price" style="position: absolute;left:208px;top:320px;"><span
-							class="ltart-label-inner">快抢价</span></span>
-					<span class="price2" style="position: absolute;left:257px;top:320px"><span
-							class="ltart-label-inner">￥58</span></span>
-					<span class="price3" style="position: absolute;left:305px;top:324px"><span
-							class="ltart-label-inner">338</span></span>
-					<div class="ltart-clkable"
-						style="background-color: rgb(255, 255, 255); z-index: 52px; left:380px;top:104px;width: 170px;height: 170px;display: absolute;overflow: hidden;">
-					</div>
-					<img class="lazy ltart-clkable must2" data-original="./img/must6.jpg" alt=""
-						style="position:absolute;top:104px;left:380px;">
-					<div class="ltart-clkable"
-						style="z-index: 54px;left:380px;top:274px;width:170px;height:78px;overflow:hidden;position: absolute;background-color: rgb(255, 255, 255);">
-					</div>
-					<img class="lazy ltart-clkable must4" data-original="./img/must4.png" alt=""
-						style="position: absolute;left: 415px;top: 245px;object-fit: contain;width: 100px;height: 60px;">
-					<img class="lazy ltart-clkable must3" data-original="./img/must7.png" alt=""
-						style="width:80px;height:40px;position: absolute;left: 425px;top: 255px;overflow: hidden;">
-					<span class="price" style="position: absolute;left:388px;top:320px;"><span
-							class="ltart-label-inner">快抢价</span></span>
-					<span class="price2" style="position: absolute;left:437px;top:320px"><span
-							class="ltart-label-inner">￥58</span></span>
-					<span class="price3" style="position: absolute;left:482px;top:324px"><span
-							class="ltart-label-inner">338</span></span>
 				</div>
-
-				<div class="ltart-clkable" style="position: absolute;width:500px;height:372px;left:600px;top:0;">
-					<img class="lazy ltart-clkable" data-original="./img/must8.jpg" alt=""
-						style="width:500px;height:372px;position: absolute;top: 0;left: 0;overflow: hidden;">
-					<img class="lazy ltart-clkable" data-original="./img/musta.jpg" alt=""
-						style="width: 150px;height:217px;position:absolute;left:12px;top:104px;">
-					<div class="ltart-clkable"
-						style="width: 122px;height:76px;overflow:hiddenp;background-color: rgba(255, 255, 255, .8);position: absolute;top:237px;left: 26px;">
+				<div class="Product-information">
+					<div class="Product-content-inner">
+						<div class="pi-title-box">
+							<p class="pib-title-class">斐乐</p>
+							<p class="pib-title-detail">斐乐FILA 高圆圆同款 意式优雅运动外套女款针织上衣</p>
+							<p><span
+									class="goods-description-title">衣身整体采用拼接撞色设计，细节感强，具有未来科技感。立立体有型，简洁大方，干练利落撞色螺纹袖口，视觉上拉长手臂线条，使身体轮廓更流畅纤细。</span>
+							</p>
+						</div>
+						<div class="pi-price-box">
+							<span class="pbox-price"><i class="pbox-yen">￥</i><b class="goodsprice"></b></span>
+							<div class="pi-dicount-box">
+								<div class="pbox-off">6折</div>
+								<div class="pbox-market">￥<del>980</del></div>
+							</div>
+						</div>
+						<div class="pi-attr-box">
+							<form action="" method="post">
+								<dl class="g-delivery-address clear">
+									<dt>配送</dt>
+									<dd>
+										<div class="delivery-address-info">
+											<p class="delivery-address-tips">请选择省市区</p>
+										</div>
+									</dd>
+								</dl>
+								<dl class="i-color">
+									<dt>颜色</dt>
+									<dd class="color-list">
+										<ul class="clearfix">
+											<li class="color-list-item color-selected">
+												<a href="">
+													<span class="color-pic-wrapper"><img
+															src="../images/xiangqing1/zs-white.jpg" alt=""></span>
+													<span class="color-item-name">白色</span>
+													<span class="i-select"></span>
+												</a>
+											</li>
+											<li class="color-list-item">
+												<a href="./xiangqingye1-1.html">
+													<span class="color-pic-wrapper"><img
+															src="../images/xiangqing1/zs-blue.jpg" alt=""></span>
+													<span class="color-item-name">深蓝</span>
+													<span class="i-select"></span>
+												</a>
+											</li>
+											<li class="color-list-item">
+												<a href="./xiangqingye1-2.html">
+													<span class="color-pic-wrapper"><img
+															src="../images/xiangqing1/zs-black.jpg" alt=""></span>
+													<span class="color-item-name">黑色</span>
+													<span class="i-select"></span>
+												</a>
+											</li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="i-size clear">
+									<dt>尺码</dt>
+									<dd class="size-list">
+										<ul class="size-ullist-item">
+	
+										</ul>
+									</dd>
+								</dl>
+								<dl class="i-num ">
+									<dt>数量</dt>
+									<dd class="num-box">
+										<a href=":" class="num-reduce viptFon">-</a>
+										<em class="num-input amount">1</em>
+										<a href=":" class="num-add viptFon">+</a>
+	
+									</dd>
+								</dl>
+								<div class="i-button">
+									<div class="button-box">
+										<botton class="ui-btn-large">
+											<span>加入购物车</span>
+										</botton>
+									</div>
+								</div>
+								<div class="vip-point">
+									<div>
+										<p>购买最多可获 <span>235</span> 个唯品币</p>
+									</div>
+								</div>
+							</form>
+						</div>
 					</div>
-					<span class="ltart-clkable span1">
-						<span class="ltart-label-inner">共884款</span>
-					</span>
-					<span class="ltart-clkable"
-						style="background-color: rgb(255, 46, 119);left: 50px;top: 330px;width: 46px;height: 22px;font-size: 14px; color: rgb(255, 255, 255);white-space: nowrap;text-align: center;position: absolute;"><span
-							class="ltart-label-inner">疯抢价</span></span>
-					<span class="ltart-clkable" style="left: 100px;top: 330px;width: 50px;height: 22px;overflow: hidden;font-size: 16px;color: rgb(0, 0, 0);white-space: nowrap;
-						text-align: left;position: absolute;">
-						<span class="ltart-label-inner">￥900</span>
-					</span>
-					<img class="lazy ltart-clkable" data-original="./img/must10.png" alt="" style="left: 48px;top: 245px;width: 80px;
-					height: 40px;overflow: hidden;object-fit: contain;position: absolute;">
-					<img class="lazy ltart-clkable" data-original="./img/must11.jpg" alt=""
-						style="width: 150px;height:217px;position:absolute;left:176px;top:104px;">
-					<div class="ltart-clkable"
-						style="width: 122px;height:76px;overflow:hiddenp;background-color: rgba(255, 255, 255, .8);position: absolute;top:237px;left: 190px;">
+					<div class="other-form-box clear">
+						<dl>
+							<dt class="c-supplier-service-title">客服</dt>
+							<dd class="c-supplier-service-item">
+								<div class="c-supplier-service-group">
+									<span class="c-supplier-service-icon-online"></span>
+									<a class="c-supplier-service-link" href="">在线客服</a>
+									<span>(09:00-18:00)</span>
+								</div>
+							</dd>
+						</dl>
+						<dl class="other-service">
+							<dt class="other-name">服务</dt>
+							<dd class="other-box">
+								<div class="other-service-tips">
+									<div class="ht-txt">
+										<div class="services-wrap">
+											<div class="iconType"></div>
+											<div class="services">唯品会自营</div>
+										</div>
+										<div class="services-wrap">
+											<div class="iconType"></div>
+											<div class="services">7天可退</div>
+										</div>
+										<div class="services-wrap">
+											<div class="iconType"></div>
+											<div class="services">退货反10元唯品币</div>
+										</div>
+										<div class="services-wrap">
+											<div class="iconType"></div>
+											<div class="services">7天可换</div>
+										</div>
+									</div>
+								</div>
+							</dd>
+						</dl>
 					</div>
-					<span class="ltart-clkable" style="left: 197px;top: 293px;width: 122px;height: 18px;overflow: hidden;
-					font-size: 14px;color: rgb(88, 92, 100);white-space: nowrap;text-align: center;position: absolute;">
-						<span class="ltart-label-inner">共884款</span>
-					</span>
-					<span class="ltart-clkable"
-						style="background-color: rgb(255, 46, 119);left: 216px;top: 330px;width: 46px;height: 22px;font-size: 14px; color: rgb(255, 255, 255);white-space: nowrap;text-align: center;position: absolute;"><span
-							class="ltart-label-inner">疯抢价</span></span>
-					<span class="ltart-clkable" style="left: 266px;top: 330px;width: 50px;height: 22px;overflow: hidden;font-size: 16px;color: rgb(0, 0, 0);white-space: nowrap;
-						text-align: left;position: absolute;">
-						<span class="ltart-label-inner">￥900</span>
-					</span>
-					<img class="lazy ltart-clkable" data-original="./img/must12.png" alt="" style="left: 215px;top: 245px;width: 80px;
-					height: 40px;overflow: hidden;object-fit: contain;position: absolute;">
-					<img class="lazy ltart-clkable" data-original="./img/mustb.jpg" alt=""
-						style="width: 150px;height:217px;position:absolute;left:339px;top:104px;">
-					<div class="ltart-clkable"
-						style="width: 122px;height:76px;overflow:hiddenp;background-color: rgba(255, 255, 255, .8);position: absolute;top:237px;left: 353px;">
-					</div>
-					<span class="ltart-clkable" style="left: 353px;top: 293px;width: 122px;height: 18px;overflow: hidden;
-				font-size: 14px;color: rgb(88, 92, 100);white-space: nowrap;text-align: center;position: absolute;">
-						<span class="ltart-label-inner">共884款</span>
-					</span>
-					<span class="ltart-clkable"
-						style="background-color: rgb(255, 46, 119);left: 373px;top: 330px;width: 46px;height: 22px;font-size: 14px; color: rgb(255, 255, 255);white-space: nowrap;text-align: center;position: absolute;"><span
-							class="ltart-label-inner">疯抢价</span></span>
-					<span class="ltart-clkable" style="left: 422px;top: 330px;width: 50px;height: 22px;overflow: hidden;font-size: 16px;color: rgb(0, 0, 0);white-space: nowrap;
-					text-align: left;position: absolute;">
-						<span class="ltart-label-inner">￥900</span>
-					</span>
-					<img class="lazy ltart-clkable" data-original="./img/must14.png" alt="" style="left: 375px;top: 245px;width: 80px;
-				height: 40px;overflow: hidden;object-fit: contain;position: absolute;">
 				</div>
 			</div>
-		</div>
-	</div>
-
-	<!-- 精选 -->
-	<div id="nvzhuang" class="container">
-		<div class="title-left">
-			<p><span><b>精选</b>品牌</span>&nbsp;</p>
-		</div>
-		<div class="nz lists-fd">
-
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/nz1.jpg" alt="">
-					<p><span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/nz2.jpg" alt="">
-					<p><span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/nz3.jpg" alt="">
-					<p><span><i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/nz4.jpg" alt="">
-					<p><span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/nz5.jpg" alt="">
-					<p><span><i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/nz6.jpg" alt="">
-					<p><span><i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<div class="line-more">
-				<p><a>逛更多女装品牌&nbsp;&nbsp;<i class="iconfont icon-xiangxiazhankai-xianxingyuankuang"></i></a></p>
+			<div class="placeholder">
+				<div class="detailTop">
+					<ul class="dt-list">
+						<li class="dt-list-item">产品详情</li>
+						<li class="dt-list-item">售后说明</li>
+						<li class="dt-list-item">全部口碑</li>
+						<li class="dt-list-item">商品咨询</li>
+						<li class="dt-list-item">关于我们</li>
+					</ul>
+				</div>
+			</div>
+			<div class="detail">
+				<!-- 商品详情 -->
+				<div class="M-detailCon">
+					<div class="size-helper-table-wrapper">
+						<div class="dc-tit-new">
+							<i class="dc-tit-new-icon"></i>
+							<p class="dc-title">商品尺码<i class="dc-title-en">SIZE</i></p>
+						</div>
+						<div class="size-helper-description">
+							<dl class="dc-size-tip">
+								<dt>TIPS:</dt>
+								<dd>1. 选购时，请综合参考尺码表中各项参数，有助于你选择到更合适的尺码。</dd>
+								<dd>2.（只适用服装）平铺测量自己的合身服装尺寸作参考，对比选购更准确！</dd>
+								<dd>3. 请放心挑选尺码，唯品7天退货无忧替你保驾护航。</dd>
+							</dl>
+							<!-- <div class="size-helper-cnt">
+								<div class="customer-size-helper-box">
+									<p class="customer-size-helper-title">我的尺码
+										<span class="customer-size-helper-add">(录入身高、体重、肩宽、三围为您推荐合适的尺码，录入一次即可为您保存长期使用哦！)</span>
+									</p>
+									<div class="size-helper-tab-form">
+										<div class="size-helper-example">
+											<div class="size-helper-example-pic"></div>
+											<div class="size-helper-example-text">三维测量示意图</div>
+										</div>
+										<div></div>
+									</div>
+								</div>
+							</div> -->
+							<h4 class="dc-size-tit">尺码对照表</h4>
+							<div class="">
+								<table class="pro-size-tab">
+									<tr class="pro-size-tab-bg-a">
+										<td>尺码</td>
+										<td>型号</td>
+										<td>肩宽(cm)</td>
+										<td>胸围(cm)</td>
+										<td>衣长(cm)</td>
+										<td>袖长(cm)</td>
+									</tr>
+									<tr>
+										<td>165</td>
+										<td>165/84A</td>
+										<td>40</td>
+										<td>92</td>
+										<td>61</td>
+										<td>56</td>
+									</tr>
+									<tr>
+										<td>170</td>
+										<td>170/88A</td>
+										<td>41.5</td>
+										<td>94</td>
+										<td>63</td>
+										<td>58</td>
+									</tr>
+									<tr>
+										<td>175</td>
+										<td>175/92A</td>
+										<td>43</td>
+										<td>98</td>
+										<td>65</td>
+										<td>59</td>
+									</tr>
+									<tr>
+										<td>180</td>
+										<td>180/96A</td>
+										<td>44.5</td>
+										<td>102</td>
+										<td>67</td>
+										<td>60</td>
+									</tr>
+									<tr>
+										<td>185</td>
+										<td>185/100A</td>
+										<td>46</td>
+										<td>106</td>
+										<td>68</td>
+										<td>61</td>
+									</tr>
+									<tr>
+										<td>190</td>
+										<td>190/104A</td>
+										<td>47</td>
+										<td>110</td>
+										<td>70</td>
+										<td>62</td>
+									</tr>
+									<tr>
+										<td class="tag" colspan="8"><span class="light-red">温馨提示：</span>请根据尺码购买</td>
+									</tr>
+								</table>
+								<div class="measure-pic-wrapper">
+									<img src="../images/xiangqing/c2cd0f43-8f66-45d7-a3a1-c74e199d42e2.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="dc-tit-new">
+							<i class="dc-tit-new-icon"></i>
+							<p class="dc-title">商品参数<i class="dc-title-en">SIZE</i></p>
+						</div>
+						<div class="dc-info">
+							<table class="dc-table">
+								<tbody>
+									<tr>
+										<th class="dc-table-tit">适用季节：</th>
+										<td>秋</td>
+										<th class="dc-table-tit">款式：</th>
+										<td>套头,日常便服</td>
+									</tr>
+									<tr>
+										<th class="dc-table-tit">弹性：</th>
+										<td>微弹</td>
+										<th class="dc-table-tit">适用人群：</th>
+										<td>青年</td>
+									</tr>
+									<tr>
+										<th class="dc-table-tit">上市时间：</th>
+										<td>2018秋</td>
+										<th class="dc-table-tit">袖长：</th>
+										<td>常规</td>
+									</tr>
+									<tr>
+										<th class="dc-table-tit">风格：</th>
+										<td>休闲,时尚,潮流,街头风</td>
+										<th class="dc-table-tit">适用场合：</th>
+										<td>运动,休闲,日常</td>
+									</tr>
+									<tr>
+										<th class="dc-table-tit">厚薄：</th>
+										<td>常规</td>
+										<th class="dc-table-tit">版型：</th>
+										<td>常规</td>
+									</tr>
+									<tr>
+										<th class="dc-table-tit">适用性别： </th>
+										<td>男</td>
+										<th class="dc-table-tit">衣门襟：</th>
+										<td>非拉链</td>
+									</tr>
+									<tr>
+										<th class="dc-table-tit">衣长：</th>
+										<td>常规</td>
+										<th class="dc-table-tit">功能：</th>
+										<td>便携</td>
+									</tr>
+									<tr>
+										<th class="dc-table-tit">领型：</th>
+										<td>立领</td>
+										<th class="dc-table-tit">图案：</th>
+										<td>几何图案</td>
+									</tr>
+									<tr>
+										<th class="dc-table-tit">品牌名称：</th>
+										<td>左岸</td>
+										<th class="dc-table-tit">商品名称：</th>
+										<td>2018男款圆领长袖T大字母印花休闲时尚男士长袖T恤</td>
+									</tr>
+									<tr>
+										<th class="dc-table-tit">产地： </th>
+										<td>中国</td>
+										<th class="dc-table-tit">洗涤说明：</th>
+										<td>缓和水洗 30ﾟC；不可漂白；平摊晾干；熨斗底板最高温度110ﾟC；常规干洗</td>
+									</tr>
+									<tr>
+										<th class="dc-table-tit">配件/备注：</th>
+										<td>图片中的各种配件均为拍摄搭配之用，是不包含在所售商品中的。</td>
+										<th class="dc-table-tit">商品编号：</th>
+										<td>ZA8124910</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="dc-tit-new">
+							<i class="dc-tit-new-icon"></i>
+							<p class="dc-title">商品展示<i class="dc-title-en">IMAGE</i></p>
+						</div>
+						<div class="dc-img">
+							<div class="dc-img-detail"></div>
+							<div class="dc-images-con">
+								<img src="../images/xiangqing/zs1.jpg" alt="">
+								<img src="../images/xiangqing/zs2.jpg" alt="">
+								<img src="../images/xiangqing/zs3.jpg" alt="">
+								<img src="../images/xiangqing/zs4.jpg" alt="">
+								<img src="../images/xiangqing/zs5.jpg" alt="">
+								<img src="../images/xiangqing/zs6.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 商品详情结束 -->
+				<!-- 售后说明 -->
+				<div class="after-sale-service">
+					<div class="dc-services">
+						<div class="services-wrap">
+							<div class="iconSuccess"></div>
+							<div class="services">唯品会自营</div>
+							<div class="description">本商品由唯品会安排发货，并提供售后服务。</div>
+						</div>
+						<div class="services-wrap">
+							<div class="iconSuccess"></div>
+							<div class="services">7天可退</div>
+							<div class="description">体用户外的商品包装可能为国外发货，包装损耗后无法补充，请您将原包装寄回。</div>
+						</div>
+						<div class="services-wrap">
+							<div class="iconSuccess"></div>
+							<div class="services">退货返10元唯品币</div>
+							<div class="description">任何原因产生的订单退货邮费，唯品会都将补贴10元唯品币（1000个）。</div>
+						</div>
+						<div class="services-wrap">
+							<div class="iconSuccess"></div>
+							<div class="services">7天可换</div>
+							<div class="description">该商品支持换货，订单签收7天内可申请换货。</div>
+						</div>
+					</div>
+				</div>
+				<!-- 售后说明结束 -->
+				<!-- 全部口碑 -->
+				<div class="pro-comment">
+					<div class="product-comment-content">
+						<div class="c-product-comment-summary clear">
+							<div class="c-product-comment-satisfy-info">
+								<span class="c-product-comment-satisfy-num">99.51%</span>
+								的用户对商品满意
+							</div>
+							<div class="c-product-comment-tags-wrapper">
+								<div class="c-product-comment-des-info">
+									<p>85%人认为尺码合适</p>
+								</div>
+							</div>
+						</div>
+						<div class="comment-list-wrapper">
+							<div class="product-comment-item">
+								<div class="c-comment-user">
+									<div class="c-comment-user-left">
+										<img class="c-comment-user-pic" src="../images/xiangqing/150598456087.png" alt="">
+									</div>
+									<div class="c-comment-user-right">
+										<span class="c-comment-user-name"> wei***iqa</span>
+										<i class="c-vip-level-D3"></i>
+										<span class="c-comment-user-level">白金卡会员</span>
+									</div>
+								</div>
+								<div class="pci-user-coments">
+									<div class="c-comment-content-normal">
+										<div class="pci-user-output">
+											<span>我是一个爱运动的人，很喜欢穿运动服，自从买了斐乐的品牌，就很少买别的品牌了，斐乐的品牌衣服穿的很舒服。就是价格杠杠的。要多搞点儿活动就好了。</span>
+										</div>
+										<div class="pci-public-info">
+											<span class="public-info-size">身材信息：160cm/59kg</span>
+											<span class="public-info-size">颜色：红色</span>
+											<span class="public-info-size">尺码：L</span>
+										</div>
+									</div>
+									<div class="clearfix">
+										<div class="pci-public-time">2019-08-17 12:48:02</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="comment-list-wrapper">
+							<div class="product-comment-item">
+								<div class="c-comment-user">
+									<div class="c-comment-user-left">
+										<img class="c-comment-user-pic" src="../images/xiangqing/150598456087.png" alt="">
+									</div>
+									<div class="c-comment-user-right">
+										<span class="c-comment-user-name"> 155*****590</span>
+										<i class="c-vip-level-D2"></i>
+										<span class="c-comment-user-level">金卡会员</span>
+									</div>
+								</div>
+								<div class="pci-user-coments">
+									<div class="c-comment-content-normal">
+										<div class="pci-user-output">
+											<span>颜色还不错，但是尺码偏小点，整体还是不错的，柔软舒适</span>
+										</div>
+										<div class="pci-public-info">
+											<span class="public-info-size">身材信息：160cm/59kg</span>
+											<span class="public-info-size">颜色：红色</span>
+											<span class="public-info-size">尺码：L</span>
+										</div>
+									</div>
+									<div class="clearfix">
+										<div class="pci-public-time">2019-09-27 18:02:27</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="comment-list-wrapper">
+							<div class="product-comment-item">
+								<div class="c-comment-user">
+									<div class="c-comment-user-left">
+										<img class="c-comment-user-pic" src="../images/xiangqing/150598456087.png" alt="">
+									</div>
+									<div class="c-comment-user-right">
+										<span class="c-comment-user-name"> 139*****456</span>
+										<i class="c-vip-level-D3"></i>
+										<span class="c-comment-user-level">白金卡会员</span>
+									</div>
+								</div>
+								<div class="pci-user-coments">
+									<div class="c-comment-content-normal">
+										<div class="pci-user-output">
+											<span>丝绒面料，衣型好，大牌，我选L码，供参考。</span>
+										</div>
+										<div class="pci-public-info">
+											<span class="public-info-size">身材信息：160cm/59kg</span>
+											<span class="public-info-size">颜色：红色</span>
+											<span class="public-info-size">尺码：L</span>
+										</div>
+									</div>
+									<div class="clearfix">
+										<div class="pci-public-time">2019-09-27 16:02:47</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 全部口碑结束 -->
+				<!-- 产品咨询 -->
+				<div class="M-question">
+					<div class="q-tit">
+						购买前如有问题，请向唯品会咨询。
+						<a href="" class="q-tit-btn"><span>联系客服</span></a>
+					</div>
+					<dl class="q-tit-item">
+						<dt class="qti-title">
+							<i class="qti-question"></i>
+							<p class="qti-txt">商品都是正品吗？</p>
+						</dt>
+						<dd class="qti-content">
+							<i class="qti-answer"></i>
+							<p class="qti-txt">请你放心，唯品会www.vip.com上所售卖的商品均确保正品，并由中国人民财产保险股份有限公司为你购买的每一件商品进行承保。 </p>
+						</dd>
+					</dl>
+					<dl class="q-tit-item">
+						<dt class="qti-title">
+							<i class="qti-question"></i>
+							<p class="qti-txt">衣服图片上搭配的腰带、项链等配件，会连商品一同送货吗？ </p>
+						</dt>
+						<dd class="qti-content">
+							<i class="qti-answer"></i>
+							<p class="qti-txt">这点请注意咯，如非特别说明，服装类商品图片中的腰带、饰品等配件均为拍摄搭配之用，是不包含在所售商品中的。 </p>
+						</dd>
+					</dl>
+					<dl class="q-tit-item">
+						<dt class="qti-title">
+							<i class="qti-question"></i>
+							<p class="qti-txt">尺码表上的尺码标准吗？ </p>
+						</dt>
+						<dd class="qti-content">
+							<i class="qti-answer"></i>
+							<p class="qti-txt">唯品会所售商品尺寸均为人工测量，可能会存在1-2cm的正常误差范围。 </p>
+						</dd>
+					</dl>
+					<dl class="q-tit-item">
+						<dt class="qti-title">
+							<i class="qti-question"></i>
+							<p class="qti-txt">图片颜色和实物颜色是否相同？ </p>
+						</dt>
+						<dd class="qti-content">
+							<i class="qti-answer"></i>
+							<p class="qti-txt">唯品会所有商品均采用专业拍摄，力求将最真实的信息传达至你的视线。但由于个人显示器不同，可能导致实物与图片存在色差，最终颜色以实物为准。</p>
+						</dd>
+					</dl>
+					<dl class="q-tit-item">
+						<dt class="qti-title">
+							<i class="qti-question"></i>
+							<p class="qti-txt">为什么我收到的商品包装和图片显示的不一致？ </p>
+						</dt>
+						<dd class="qti-content">
+							<i class="qti-answer"></i>
+							<p class="qti-txt">由于部分商品生产批次不一，你收到货品的包装有可能与网站上图片不完全一致，但唯品会保证所售商品均为正品，商品包装请以实物为准。 </p>
+						</dd>
+					</dl>
+					<dl class="q-tit-item">
+						<dt class="qti-title">
+							<i class="qti-question"></i>
+							<p class="qti-txt">唯品会的对比价格： </p>
+						</dt>
+						<dd class="qti-content">
+							<i class="qti-answer"></i>
+							<p class="qti-txt">唯品会展示的中间未划横线价格（显示如¥799）为唯品会销售价，该价格是交易成交价，是您最终决定是否购买商品的依据。
+								唯品会展示的中间划横线价格（显示如
+								¥2899）为参考价，采集自品牌专柜标价、商品吊牌价、品牌官网价格或由供应商提供的正品零售价；由于地区、时间、货币汇率等的差异及存在品牌方调价、市场行情波动、产品批次等因素，品牌专柜标价、商品吊牌价等可能会与您购物时网页显示的划线价不一致。该价格仅供您参考。
+								折扣比为唯品会销售价与参考价的对比（该值四舍五入后采小数点后1位，如¥799/¥2899=0.2756=2.8折），该对比值仅供您参考，不作为结算基数。</p>
+						</dd>
+					</dl>
+					<dl class="q-tit-item">
+						<dt class="qti-title">
+							<i class="qti-question"></i>
+							<p class="qti-txt">如何退货？ </p>
+						</dt>
+						<dd class="qti-content">
+							<i class="qti-answer"></i>
+							<p class="qti-txt">
+								在你签收商品之日起的7天之内，唯品会为你提供七天无理由放心退服务，但以下情形将不能退货：1、非唯品会销售的商品，或有明显使用痕迹影响二次销售的商品；2、法律明确规定不适用七天无理由退货的商品；3、基于安全及健康的考虑，已拆封的食品、药品、保健品、化妆品、贴身用品等；4、已经激活的手机、电脑、数码产品等；5、已在线交付的充值类商品；6、未经授权的维修、误用、碰撞、疏忽、滥用、进液、事故、改动、不正确的安装所造成的商品质量问题，或撕毁、涂改标贴、机器序号、防伪标记；7、无法提供商品的发票（如已索要发票）、保修卡等三包凭证或者三包凭证信息与商品不符及被涂改的；8、礼包或套装中的商品不可以部分退换货。详见唯品会退货政策。上述退货规则，客户一经购买，视为认可。<a
+									href=""> 查看详细退货政策»</a></p>
+						</dd>
+					</dl>
+				</div>
+				<!-- 产品咨询结束 -->
+				<!-- 关于我们 -->
+				<div class="M-aboutUs">
+					<ul class="icon-list icon-list-background">
+						<li class="selected">
+							<span class="li-item item-0"></span>
+						</li>
+						<li>
+							<span class="li-item item-1"></span>
+						</li>
+						<li>
+							<span class="li-item item-2"></span>
+						</li>
+						<li>
+							<span class="li-item item-3"></span>
+						</li>
+						<li>
+							<span class="li-item item-4"></span>
+						</li>
+						<li>
+							<span class="li-item item-5"></span>
+						</li>
+						<li>
+							<span class="li-item item-6"></span>
+						</li>
+						<li>
+							<span class="li-item item-7"></span>
+						</li>
+					</ul>
+					<div>
+						<div id="j_au_top" class="au-top-0"></div>
+						<div class="au-con">
+							<ul class="au-con-list">
+								<li>
+									<img src="../images/xiangqing/au_img01.jpg" alt="">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- 关于我们结束 -->
 			</div>
 		</div>
-	</div>
-
-	<!-- 女装 -->
-	<div id="nvzhuang" class="container">
-		<div class="title-left">
-			<p><span><b>女装</b>品牌</span>&nbsp;WOMEN'FASHION</p>
-		</div>
-		<div class="nz lists-fd">
-
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/nz1.jpg" alt="">
-					<p><span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/nz2.jpg" alt="">
-					<p><span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/nz3.jpg" alt="">
-					<p><span><i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/nz4.jpg" alt="">
-					<p><span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/nz5.jpg" alt="">
-					<p><span><i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/nz6.jpg" alt="">
-					<p><span><i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<div class="line-more">
-				<p><a>逛更多女装品牌&nbsp;&nbsp;<i class="iconfont icon-xiangxiazhankai-xianxingyuankuang"></i></a></p>
-			</div>
-		</div>
-	</div>
-
-	<!-- 鞋包 -->
-
-	<div id="nvzhuang" class="container">
-		<div class="title-left">
-			<p><span><b>鞋包</b>品牌</span>&nbsp;SHOES&&BAGS</p>
-		</div>
-		<div class="nz lists-fd">
-			<!-- <p>
-				<img src="img/nzt1.jpg" alt="" style="width:32.8%">
-				<img src="img/nzt2.jpg" alt="" style="width:32.8%">
-				<img src="img/nzt3.jpg" alt="" style="width:32.8%">
-			</p> -->
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/xb1.jpg" alt="">
-					<p><span><i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/xb2.jpg" alt="">
-					<p><span><i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/xb3.jpg" alt="">
-					<p><span><i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/xb4.jpg" alt="">
-					<p><span><i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/xb5.jpg" alt="">
-					<p><span><i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/xb6.jpg" alt="">
-					<p><span><i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<div class="line-more">
-				<p>
-					<a>逛更多鞋包品牌&nbsp;&nbsp;
-						<i class="iconfont icon-xiangxiazhankai-xianxingyuankuang"></i>
-					</a>
-				</p>
-			</div>
-		</div>
-	</div>
-
-	<!-- 男士 -->
-
-	<div id="nanshi" class="container">
-		<div class="title-left">
-			<p><span><b>男士</b>品牌</span>&nbsp;MEN'FASHION</p>
-		</div>
-		<div class="nz lists-fd">
-			<!-- <p>
-				<img src="img/nzt1.jpg" alt="" style="width:32.8%">
-				<img src="img/nzt2.jpg" alt="" style="width:32.8%">
-				<img src="img/nzt3.jpg" alt="" style="width:32.8%">
-			</p> -->
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/ns01.jpg" alt="">
-					<p><span><i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/ns02.jpg" alt="">
-					<p><span><i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/ns03.jpg" alt="">
-					<p><span><i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/ns04.jpg"  alt="">
-					<p><span><i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/ns05.jpg" alt="">
-					<p><span><i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/ns06.jpg" alt="">
-					<p><span><i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span></p>
-				</dt>
-				<dd>
-					<p><span>1.4</span>&nbsp;折起&nbsp;&nbsp;劲爆!特惠皮草一件5折</p>
-				</dd>
-			</dl>
-			<div class="line-more">
-				<p><a>逛更多男士品牌&nbsp;&nbsp;<i class="iconfont icon-xiangxiazhankai-xianxingyuankuang"></i></a></p>
-			</div>
-		</div>
-	</div>
-
-	<!-- 运动 -->
-	<div id="yundong" class="container">
-		<div class="title-left">
-			<p>
-				<span>
-					<b>运动</b>品牌</span>&nbsp;SPORTS && OUTDOORS</p>
-		</div>
-		<div class="ns lists-fd">
-			<!-- <p>
-				<img src="img/nzt1.jpg" alt="" style="width:32.8%">
-				<img src="img/nzt2.jpg" alt="" style="width:32.8%">
-				<img src="img/nzt3.jpg" alt="" style="width:32.8%">
-			</p> -->
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/yd1.jpg" alt="">
-					<p>
-
-						<span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span>
-					</p>
-				</dt>
-				<dd>
-					<p>
-						<span>1.4</span>&nbsp;折起&nbsp;&nbsp;年货好礼特惠季，男装混合专场！</p>
-
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/yd2.jpg" alt="">
-					<p>
-
-						<span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span>
-					</p>
-				</dt>
-				<dd>
-					<p>
-						<span>1.4</span>&nbsp;折起&nbsp;&nbsp;年货好礼特惠季，男装混合专场！</p>
-
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/yd3.jpg" alt="">
-					<p>
-
-						<span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span>
-					</p>
-				</dt>
-				<dd>
-					<p>
-						<span>1.4</span>&nbsp;折起&nbsp;&nbsp;年货好礼特惠季，男装混合专场！</p>
-
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/yd4.jpg" alt="">
-					<p>
-
-						<span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span>
-					</p>
-				</dt>
-				<dd>
-					<p>
-						<span>1.4</span>&nbsp;折起&nbsp;&nbsp;年货好礼特惠季，男装混合专场！</p>
-
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/yd5.jpg" alt="">
-					<p>
-
-						<span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span>
-					</p>
-				</dt>
-				<dd>
-					<p>
-						<span>1.4</span>&nbsp;折起&nbsp;&nbsp;年货好礼特惠季，男装混合专场！</p>
-
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/yd6.jpg" alt="">
-					<p>
-
-						<span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span>
-					</p>
-				</dt>
-				<dd>
-					<p>
-						<span>1.4</span>&nbsp;折起&nbsp;&nbsp;年货好礼特惠季，男装混合专场！</p>
-
-				</dd>
-			</dl>
-			<div class="line-more">
-				<p>
-					<a>逛更多运动品牌&nbsp;&nbsp;
-						<i class="iconfont icon-xiangxiazhankai-xianxingyuankuang"></i>
-					</a>
-				</p>
-			</div>
-		</div>
-	</div>
-
-	<!-- 饰品 -->
-	<div id="shipin" class="container">
-		<div class="title-left">
-			<p>
-				<span>
-					<b>饰品</b>品牌</span>&nbsp;JEWERLY && WATCHS</p>
-		</div>
-		<div class="ns lists-fd">
-			<!-- <p>
-				<img src="img/nzt1.jpg" alt="" style="width:32.8%">
-				<img src="img/nzt2.jpg" alt="" style="width:32.8%">
-				<img src="img/nzt3.jpg" alt="" style="width:32.8%">
-			</p> -->
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/sp1.jpg" alt="">
-					<p>
-
-						<span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span>
-					</p>
-				</dt>
-				<dd>
-					<p>
-						<span>1.4</span>&nbsp;折起&nbsp;&nbsp;年货好礼特惠季，男装混合专场！</p>
-
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/sp2.jpg" alt="">
-					<p>
-
-						<span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span>
-					</p>
-				</dt>
-				<dd>
-					<p>
-						<span>1.4</span>&nbsp;折起&nbsp;&nbsp;年货好礼特惠季，男装混合专场！</p>
-
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/sp3.jpg" alt="">
-					<p>
-
-						<span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span>
-					</p>
-				</dt>
-				<dd>
-					<p>
-						<span>1.4</span>&nbsp;折起&nbsp;&nbsp;年货好礼特惠季，男装混合专场！</p>
-
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/sp4.jpg" alt="">
-					<p>
-
-						<span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span>
-					</p>
-				</dt>
-				<dd>
-					<p>
-						<span>1.4</span>&nbsp;折起&nbsp;&nbsp;年货好礼特惠季，男装混合专场！</p>
-
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/sp5.jpg" alt="">
-					<p>
-
-						<span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span>
-					</p>
-				</dt>
-				<dd>
-					<p>
-						<span>1.4</span>&nbsp;折起&nbsp;&nbsp;年货好礼特惠季，男装混合专场！</p>
-
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/sp6.jpg" alt="">
-					<p>
-
-						<span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span>
-					</p>
-				</dt>
-				<dd>
-					<p>
-						<span>1.4</span>&nbsp;折起&nbsp;&nbsp;年货好礼特惠季，男装混合专场！</p>
-
-				</dd>
-			</dl>
-			<div class="line-more">
-				<p>
-					<a>逛更多饰品品牌&nbsp;&nbsp;
-						<i class="iconfont icon-xiangxiazhankai-xianxingyuankuang"></i>
-					</a>
-				</p>
-			</div>
-		</div>
-	</div>
-
-	<!-- 居家 -->
-	<div id="jvjia" class="container">
-		<div class="title-left">
-			<p>
-				<span>
-					<b>居家</b>品牌</span>&nbsp;JEWERLY && WATCHS</p>
-		</div>
-		<div class="ns lists-fd">
-			<!-- <p>
-				<img src="img/nzt1.jpg" alt="" style="width:32.8%">
-				<img src="img/nzt2.jpg" alt="" style="width:32.8%">
-				<img src="img/nzt3.jpg" alt="" style="width:32.8%">
-			</p> -->
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/jj1.jpg" alt="">
-					<p>
-
-						<span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span>
-					</p>
-				</dt>
-				<dd>
-					<p>
-						<span>1.4</span>&nbsp;折起&nbsp;&nbsp;跨品牌满298减60，上不封顶！</p>
-
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/jj2.jpg" alt="">
-					<p>
-
-						<span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span>
-					</p>
-				</dt>
-				<dd>
-					<p>
-						<span>1.4</span>&nbsp;折起&nbsp;&nbsp;跨品牌满298减60，上不封顶！</p>
-
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/jj3.jpg" alt="">
-					<p>
-
-						<span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span>
-					</p>
-				</dt>
-				<dd>
-					<p>
-						<span>1.4</span>&nbsp;折起&nbsp;&nbsp;跨品牌满298减60，上不封顶！</p>
-
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/jj4.jpg" alt="">
-					<p>
-
-						<span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span>
-					</p>
-				</dt>
-				<dd>
-					<p>
-						<span>1.4</span>&nbsp;折起&nbsp;&nbsp;跨品牌满298减60，上不封顶！</p>
-
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/jj5.jpg" alt="">
-					<p>
-
-						<span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span>
-					</p>
-				</dt>
-				<dd>
-					<p>
-						<span>1.4</span>&nbsp;折起&nbsp;&nbsp;跨品牌满298减60，上不封顶！</p>
-
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<img class="lazy" data-original="img/jj6.jpg" alt="">
-					<p>
-
-						<span>
-							<i class="iconfont icon-xihuan-xianxing" style="font-size:13px"></i>&nbsp;收藏品牌</span>
-					</p>
-				</dt>
-				<dd>
-					<p>
-						<span>1.4</span>&nbsp;折起&nbsp;&nbsp;跨品牌满298减60，上不封顶！</p>
-
-				</dd>
-			</dl>
-			<div class="line-more">
-				<p>
-					<a>逛更多居家品牌&nbsp;&nbsp;
-						<i class="iconfont icon-xiangxiazhankai-xianxingyuankuang"></i>
-					</a>
-				</p>
-			</div>
-		</div>
-	</div>
 
 
-	<div id="yugao" class="container">
-		<dl class="title">
-			<dt></dt>
-			<dd style="left:208px">
-				<p style="width:200px;margin:0 auto">明日<strong style="color:#eb58a6">预告</strong></p>
-			</dd>
-		</dl>
-		<div id="yglist">
-			<dl class="yglist">
-				<dt>
-					<img class="lazy" data-original="img/mryg01.jpg" alt="">
-					<form action="">
-						<input type="text" placeholder="请输入手机号码"><button>开售提醒</button>
-					</form>
-				</dt>
-				<dd>
-					<div class="cover">
-						<img class="lazy" data-original="img/mrygc01.png" alt="">
-						<p>商品在路上</p>
-					</div>
-					<div class="para">
-						<p class="pl">Y6拉杆箱专场直发货</p>
-						<p class="pr"><span>1.9</span>折起</p>
-					</div>
-				</dd>
-			</dl>
-			<dl class="yglist">
-				<dt>
-					<img class="lazy" data-original="img/mryg02.jpg" alt="">
-					<form action="">
-						<input type="text" placeholder="请输入手机号码"><button>开售提醒</button>
-					</form>
-				</dt>
-				<dd>
-					<div class="cover">
-						<img class="lazy" data-original="img/mrygc02.png" alt="">
-						<p>商品在路上</p>
-					</div>
-					<div class="para">
-						<p class="pl">Y6拉杆箱专场直发货</p>
-						<p class="pr"><span>1.9</span>折起</p>
-					</div>
-				</dd>
-			</dl>
-			<dl class="yglist">
-				<dt>
-					<img class="lazy" data-original="img/mryg03.jpg" alt="">
-					<form action="">
-						<input type="text" placeholder="请输入手机号码"><button>开售提醒</button>
-					</form>
-				</dt>
-				<dd>
-					<div class="cover">
-						<img class="lazy" data-original="img/mrygc03.png" alt="">
-						<p>商品在路上</p>
-					</div>
-					<div class="para">
-						<p class="pl">Y6拉杆箱专场直发货</p>
-						<p class="pr"><span>1.9</span>折起</p>
-					</div>
-				</dd>
-			</dl>
-			<dl class="yglist">
-				<dt>
-					<img class="lazy" data-original="img/mryg11.jpg" alt="">
-					<form action="">
-						<input type="text" placeholder="请输入手机号码"><button>开售提醒</button>
-					</form>
-				</dt>
-				<dd>
-					<div class="cover">
-						<img class="lazy" data-original="img/mrygc11.png" alt="">
-						<p>商品在路上</p>
-					</div>
-					<div class="para">
-						<p class="pl">Y6拉杆箱专场直发货</p>
-						<p class="pr"><span>1.9</span>折起</p>
-					</div>
-				</dd>
-			</dl>
-			<dl class="yglist">
-				<dt>
-					<img class="lazy" data-original="img/mryg12.jpg" alt="">
-					<form action="">
-						<input type="text" placeholder="请输入手机号码"><button>开售提醒</button>
-					</form>
-				</dt>
-				<dd>
-					<div class="cover">
-						<img class="lazy" data-original="img/mrygc12.png" alt="">
-						<p>商品在路上</p>
-					</div>
-					<div class="para">
-						<p class="pl">Y6拉杆箱专场直发货</p>
-						<p class="pr"><span>1.9</span>折起</p>
-					</div>
-				</dd>
-			</dl>
-			<dl class="yglist">
-				<dt>
-					<img class="lazy" data-original="img/mryg13.jpg" alt="">
-					<form action="">
-						<input type="text" placeholder="请输入手机号码"><button>开售提醒</button>
-					</form>
-				</dt>
-				<dd>
-					<div class="cover">
-						<img class="lazy" data-original="img/mrygc13.png" alt="">
-						<p>商品在路上</p>
-					</div>
-					<div class="para">
-						<p class="pl">Y6拉杆箱专场直发货</p>
-						<p class="pr"><span>1.9</span>折起</p>
-					</div>
-				</dd>
-			</dl>
-			<dl class="yglist">
-				<dt>
-					<img class="lazy" data-original="img/mryg21.jpg" alt="">
-					<form action="">
-						<input type="text" placeholder="请输入手机号码"><button>开售提醒</button>
-					</form>
-				</dt>
-				<dd>
-					<div class="cover">
-						<img class="lazy" data-original="img/mrygc21.png" alt="">
-						<p>商品在路上</p>
-					</div>
-					<div class="para">
-						<p class="pl">Y6拉杆箱专场直发货</p>
-						<p class="pr"><span>1.9</span>折起</p>
-					</div>
-				</dd>
-			</dl>
-			<dl class="yglist">
-				<dt>
-					<img class="lazy" data-original="img/mryg22.jpg" alt="">
-					<form action="">
-						<input type="text" placeholder="请输入手机号码"><button>开售提醒</button>
-					</form>
-				</dt>
-				<dd>
-					<div class="cover">
-						<img class="lazy" data-original="img/mrygc22.png" alt="">
-						<p>商品在路上</p>
-					</div>
-					<div class="para">
-						<p class="pl">Y6拉杆箱专场直发货</p>
-						<p class="pr"><span>1.9</span>折起</p>
-					</div>
-				</dd>
-			</dl>
-			<dl class="yglist">
-				<dt>
-					<img class="lazy" data-original="img/mryg23.jpg" alt="">
-					<form action="">
-						<input type="text" placeholder="请输入手机号码"><button>开售提醒</button>
-					</form>
-				</dt>
-				<dd>
-					<div class="cover">
-						<img class="lazy" data-original="img/mrygc23.png" alt="">
-						<p>商品在路上</p>
-					</div>
-					<div class="para">
-						<p class="pl">Y6拉杆箱专场直发货</p>
-						<p class="pr"><span>1.9</span>折起</p>
-					</div>
-				</dd>
-			</dl>
-			<dl class="yglist">
-				<dt>
-					<img class="lazy" data-original="img/mryg31.jpg" alt="">
-					<form action="">
-						<input type="text" placeholder="请输入手机号码"><button>开售提醒</button>
-					</form>
-				</dt>
-				<dd>
-					<div class="cover">
-						<img class="lazy" data-original="img/mrygc31.png" alt="">
-						<p>商品在路上</p>
-					</div>
-					<div class="para">
-						<p class="pl">Y6拉杆箱专场直发货</p>
-						<p class="pr"><span>1.9</span>折起</p>
-					</div>
-				</dd>
-			</dl>
-			<dl class="yglist">
-				<dt>
-					<img class="lazy" data-original="img/mryg32.jpg" alt="">
-					<form action="">
-						<input type="text" placeholder="请输入手机号码"><button>开售提醒</button>
-					</form>
-				</dt>
-				<dd>
-					<div class="cover">
-						<img class="lazy" data-original="img/mrygc32.png" alt="">
-						<p>商品在路上</p>
-					</div>
-					<div class="para">
-						<p class="pl">Y6拉杆箱专场直发货</p>
-						<p class="pr"><span>1.9</span>折起</p>
-					</div>
-				</dd>
-			</dl>
-			<dl class="yglist">
-				<dt>
-					<img class="lazy" data-original="img/mryg33.jpg" alt="">
-					<form action="">
-						<input type="text" placeholder="请输入手机号码"><button>开售提醒</button>
-					</form>
-				</dt>
-				<dd>
-					<div class="cover">
-						<img class="lazy" data-original="img/mrygc33.png" alt="">
-						<p>商品在路上</p>
-					</div>
-					<div class="para">
-						<p class="pl">Y6拉杆箱专场直发货</p>
-						<p class="pr"><span>1.9</span>折起</p>
-					</div>
-				</dd>
-			</dl>
-			<dl class="yglist">
-				<dt>
-					<img class="lazy" data-original="img/mryg41.jpg" alt="">
-					<form action="">
-						<input type="text" placeholder="请输入手机号码"><button>开售提醒</button>
-					</form>
-				</dt>
-				<dd>
-					<div class="cover">
-						<img class="lazy" data-original="img/mrygc41.png" alt="">
-						<p>商品在路上</p>
-					</div>
-					<div class="para">
-						<p class="pl">Y6拉杆箱专场直发货</p>
-						<p class="pr"><span>1.9</span>折起</p>
-					</div>
-				</dd>
-			</dl>
-			<dl class="yglist">
-				<dt>
-					<img class="lazy" data-original="img/mryg42.jpg" alt="">
-					<form action="">
-						<input type="text" placeholder="请输入手机号码"><button>开售提醒</button>
-					</form>
-				</dt>
-				<dd>
-					<div class="cover">
-						<img class="lazy" data-original="img/mrygc42.png" alt="">
-						<p>商品在路上</p>
-					</div>
-					<div class="para">
-						<p class="pl">Y6拉杆箱专场直发货</p>
-						<p class="pr"><span>1.9</span>折起</p>
-					</div>
-				</dd>
-			</dl>
-			<dl class="yglist">
-				<dt>
-					<img class="lazy" data-original="img/mryg43.jpg" alt="">
-					<form action="">
-						<input type="text" placeholder="请输入手机号码"><button>开售提醒</button>
-					</form>
-				</dt>
-				<dd>
-					<div class="cover">
-						<img class="lazy" data-original="img/mrygc43.png" alt="">
-						<p>商品在路上</p>
-					</div>
-					<div class="para">
-						<p class="pl">Y6拉杆箱专场直发货</p>
-						<p class="pr"><span>1.9</span>折起</p>
-					</div>
-				</dd>
-			</dl>
-			<dl class="yglist">
-				<dt>
-					<img class="lazy" data-original="img/mryg51.jpg" alt="">
-					<form action="">
-						<input type="text" placeholder="请输入手机号码"><button>开售提醒</button>
-					</form>
-				</dt>
-				<dd>
-					<div class="cover">
-						<img class="lazy" data-original="img/mrygc51.png" alt="">
-						<p>商品在路上</p>
-					</div>
-					<div class="para">
-						<p class="pl">Y6拉杆箱专场直发货</p>
-						<p class="pr"><span>1.9</span>折起</p>
-					</div>
-				</dd>
-			</dl>
-			<dl class="yglist">
-				<dt>
-					<img class="lazy" data-original="img/mryg52.jpg" alt="">
-					<form action="">
-						<input type="text" placeholder="请输入手机号码"><button>开售提醒</button>
-					</form>
-				</dt>
-				<dd>
-					<div class="cover">
-						<img class="lazy" data-original="img/mrygc52.png" alt="">
-						<p>商品在路上</p>
-					</div>
-					<div class="para">
-						<p class="pl">Y6拉杆箱专场直发货</p>
-						<p class="pr"><span>1.9</span>折起</p>
-					</div>
-				</dd>
-			</dl>
-			<dl class="yglist">
-				<dt>
-					<img class="lazy" data-original="img/mryg53.jpg" alt="">
-					<form action="">
-						<input type="text" placeholder="请输入手机号码"><button>开售提醒</button>
-					</form>
-				</dt>
-				<dd>
-					<div class="cover">
-						<img class="lazy" data-original="img/mrygc53.png" alt="">
-						<p>商品在路上</p>
-					</div>
-					<div class="para">
-						<p class="pl">Y6拉杆箱专场直发货</p>
-						<p class="pr"><span>1.9</span>折起</p>
-					</div>
-				</dd>
-			</dl>
-		</div>
-		<div class="gdyg">
-			<p><a>查看更多预告档期</a></p>
-		</div>
-	</div>
 
-	<!-- 底部开始 -->
-		<footer class="footer">
+	<footer class="footer">
 			<div class="footer-inner clear">
 				<ul class="footer-vip clear">
 					<li>
@@ -2573,13 +2118,63 @@
 							href="">医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号</a>
 					</p>
 				</div>
-			</footer>
-				<!-- 底部结束 -->
-				<script src="./js/jquery-1.11.0.min.js"></script>
-				<script src="./js/jquery.lazyload.min.js"></script>
-
-				<script type="text/javascript" src="js/index.js"></script>
-		
-</body>
-
-</html>
+		</footer>
+		<!-- 底部结束 -->
+		<script src="../js/fangdajing.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/xiangqing.js"></script>
+    
+    <script>
+            $(function () {
+                $(".other-infoCoding").text("商品编码：ZA8124910")
+                $(".pib-title-class").text("左岸")
+                $(".pib-title-detail").text("2020男款圆领长袖T大字母印花休闲时尚男士长袖T恤")
+                $(".goods-description-title").text("男款圆领长袖T恤 舒适微弹 大字母印花")
+                $(".goodsprice").html(`59`)
+                $(".pbox-off").text("3折")
+                $(".pbox-market>del").text("198")
+                $(".size-ullist-item").html(`
+                                            <li class="size-list-item">165
+                                                <span class="i-select" style="display:none"></span>
+                                            </li>
+                                            <li class="size-list-item">170
+                                                <span class="i-select" style="display:none"></span>
+                                            </li>
+                                            <li class="size-list-item">175
+                                                <span class="i-select" style="display:none"></span>
+                                            </li>
+                                            <li class="size-list-item">180
+                                                <span class="i-select" style="display:none"></span>
+                                            </li>
+                                            <li class="size-list-item">185
+                                                <span class="i-select" style="display:none"></span>
+                                            </li>
+                                            <li class="size-list-item">190
+                                                <span class="i-select" style="display:none"></span>
+                                            </li>`)
+                $(".dc-images-con").html(
+                    `<img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs1.jpg" alt="">
+                    <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs2.jpg" alt="">
+                    <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs3.jpg" alt="">
+                    <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs4.jpg" alt="">
+                    <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs5.jpg" alt="">
+                    <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs6.jpg" alt="">
+                    <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs7.jpg" alt="">
+                    <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs8.jpg" alt="">
+                    <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs9.jpg" alt="">
+                    <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs10.jpg" alt="">
+                    <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs11.jpg" alt="">
+                    <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs12.jpg" alt="">
+                    <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs13.jpg" alt="">`
+                )
+    
+            })
+        </script>
+		<script src="./js/jquery-1.11.0.min.js"></script>
+		<script src="./js/jquery.lazyload.min.js"></script>
+	
+		<script type="text/javascript" src="js/index.js"></script>
+	
+	</body>
+	
+	</html>
