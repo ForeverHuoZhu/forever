@@ -35,7 +35,6 @@ window.onload = window.onresize = function() {
 
         window.onscroll = function() {
             var scrolltop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-            console.log(scrolltop);
             if (scrolltop >= 623) {
                 left.style.display = "block";
             } else {
@@ -306,7 +305,7 @@ $(function() {
     if(goods){
         $(".spnum").text(goods.length);
     }
-    if(user){
+    if(user[user.length-1]){
         $(".username").html("您好<span>&nbsp;"+user[user.length-1].phone+"</span>");
         $(".username-nh").html("您好");
         $(".username-top").html(user[user.length-1].phone);
