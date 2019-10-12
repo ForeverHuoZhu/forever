@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-01-03 16:35:22
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2019-10-12 14:23:12
+ * @Last Modified time: 2019-10-12 14:39:16
 */
  
  * {
@@ -3253,7 +3253,7 @@
      z-index: 2;
  }
  
- .main-nav .head-inner {}
+
  
  .head-inner {
      width: 1170px;
@@ -3458,9 +3458,6 @@
      width: 100%;
  }
  
- .on {
-     /* z-index: 9; */
- }
  
  .banner_select {
      text-align: center;

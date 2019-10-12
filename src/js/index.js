@@ -207,7 +207,7 @@ $(document).ready(function() {
             "left": (this.id * 195)
         })
         $(".banner_wrap>ul li").eq(this.id).addClass("on").siblings(this).stop().removeClass("on");;
-        $(".banner_wrap>ul li").eq(this.id).fadeIn(500).siblings(this).fadeOut(500);
+        $(".banner_wrap>ul li").eq(this.id).fadeIn(500).siblings(this).stop().fadeOut(500);
     });
 
     function move() {
@@ -304,3 +304,4 @@ $(function() {
     var goods = getCookie("goods") ? JSON.parse(getCookie("goods")) : [];
     $(".spnum").text(goods.length);
 }());
+
