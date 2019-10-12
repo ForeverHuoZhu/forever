@@ -4,6 +4,7 @@ var regpwd = /^\w{6,20}$/;
 
 var phone = 0;
 var pwd = '';
+var user = getCookie("user") ? JSON.parse(getCookie("user")) : [];
 
 $("#phone").blur(function () {
     if (!regphone.test($("#phone").val())) {
@@ -15,9 +16,12 @@ $("#phone").blur(function () {
     if (!$("#phone").val()) {
         $(".input-phone").html("手机号不能为空");
     }
-    if (getCookie($("#phone").val())) {
-        $(".input-phone").html("该手机号已注册");
+    for (var i = 0; i < user.length; i++) {
+        if ($("#phone").val() == user[i].phone) {
+            $(".input-phone").html("该手机号已注册");
+        }
     }
+
 });
 $("#pvcode").blur(function () {
     if (!regyzm.test($("#pvcode").val()) || !$("#pvcode").val()) {
@@ -56,10 +60,14 @@ $("#phone-agree").blur(function () {
 });
 $("#btn-reg").click(function () {
     if (regphone.test($("#phone").val()) && regyzm.test($("#pvcode").val()) && regpwd.test($("#pwd")
-            .val()) && $("#pwd-a").val() == $("#pwd").val() && $("#phone-agree").is(':checked') && !getCookie($("#phone").val())) {
+            .val()) && $("#pwd-a").val() == $("#pwd").val() && $("#phone-agree").is(':checked')) {
         alert("注册成功");
-        setCookie($("#phone").val(), $("#phone").val(), 6);
-        setCookie($("#phone").val() + "pwd", $("#pwd-a").val(), 6)
+        var userarr = {
+            phone: $("#phone").val(),
+            pwd: $("#pwd-a").val()
+        };
+        user.push(userarr);
+        setCookie("user", JSON.stringify(user), 6);
     } else {
         return false;
     }
