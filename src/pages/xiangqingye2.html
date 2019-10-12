@@ -16,327 +16,331 @@
     <link rel="stylesheet" href="../font/iconfont.css">
     <link rel="stylesheet" href="../font_rx71ur82t4/iconfont.css">
     <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/jquery.lazyload.min.js"></script>
+    
 </head>
 
 <body>
-       <!-- 右侧边栏 -->
-       <div id="right">
-            <div id="rightCenter">
-                <div id="zhanghao">
-                    <div id="zhanghaobg">
-                        <p style="height:30px;"><i class="iconfont icon-yonghu-xianxing"
-                                style="font-size: 30px;color: white;line-height:30px"></i></p>
-                        <p><a>账号</a></p>
-                    </div>
+
     
-    
-                    <dl id="zh">
-                        <p style="padding:5px"><i id="cha" class="iconfont icon-cuowuguanbiquxiao"
-                                style="font-size: 15px;"></i></p>
-                        <dt>
-                            <img src="../img/touxiang2.jpg" alt="">
-                            <p>您好！请<span>&nbsp;登录</span>&nbsp;|&nbsp;<span>注册</span></p>
-                        </dt>
-                        <dd>
-                            <ul>
-                                <li>
-                                    <a>
-                                        <i class="iconfont icon-jiesuan"
-                                            style="font-size: 30px;color: #aaa;line-height:30px"></i>
-                                        <p>我的订单</p>
-                                    </a>
-                                </li>
-                                <li style="width:1px;background:#ccc;height:60px;padding:0;margin-top:20px"></li>
-                                <li>
-                                    <a href="">
-                                        <i class="iconfont icon-liaotianduihua"
-                                            style="font-size: 30px;color: #aaa;line-height:30px"></i>
-                                        <p>我的消息</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </dd>
-                        <p><a href="">会员俱乐部</a></p>
-                    </dl>
-    
+    <!-- 右侧边栏 -->
+    <div id="right">
+        <div id="rightCenter">
+            <div id="zhanghao">
+                <div id="zhanghaobg">
+                    <p style="height:30px;"><i class="iconfont icon-yonghu-xianxing"
+                            style="font-size: 30px;color: white;line-height:30px"></i></p>
+                    <p><a>账号</a></p>
                 </div>
-                <div id="gouwudai">
-                    <div id="gouwudaibg">
-                        <p style="line-height:36px"><i class="iconfont icon-shangpin-xianxing"
-                                style="font-size: 30px; color:white;"></i></p>
-                        <a href="./shoppingcar.html">
-                                <p>购</p>
-                                <p>物</p>
-                                <p>袋</p>
-                        </a>
-                        
-                        <p style="line-height:36px"><span class="spnum">0</span></p>
-                    </div>
-    
-                </div>
-                <ul>
-                    <li>
-                        <i class="iconfont icon-youhuijuan-xianxing" style="font-size: 20px; color:white;"></i>
-                        <p>我的优惠券</p>
-                    </li>
-                    <li>
-                        <i class="iconfont icon-xihuan-xianxing" style="font-size: 20px; color:white;"></i>
-                        <p>品牌收藏</p>
-                    </li>
-                    <li>
-                        <i class="iconfont icon-shoucang-xianxing" style="font-size: 20px; color:white;"></i>
-                        <p>商品收藏</p>
-                    </li>
-                    <li>
-                        <i class="iconfont icon-shijian-xianxing" style="font-size: 20px; color:white;"></i>
-                        <p>我的足迹</p>
-                    </li>
-                </ul>
-            </div>
-            <div id="rightBottom">
-                <ul>
-                    <li>
-                        <i class="iconfont icon-bianjishuru-xianxing" style="font-size: 20px; color:white;"></i>
-                        <p>客户反馈</p>
-                    </li>
-                    <li id="backTop" onclick="returnTop()">
-                        <i class="iconfont icon-zhixiangshang" style="font-size: 20px; color:white;"></i>
-                        <p>回到顶部</p>
-                    </li>
-                </ul>
-            </div>
-    
-        </div>
-        <!-- 顶部 -->
-        <div class="head">
-            <div class="container">
-                <div class="top">
-                    <div class="topl">
-                        <p id="place"><span>合肥市</span>&nbsp;<i class="iconfont icon-xiangxiazhankai"
-                                style="font-size: 10px"></i></p>
-                        <div id="province">
-                            <p>请选择你所在的收货地区<button id="X" style="width:20px">x</button></p>
-                            <dl>
-                                <dt>省份</dt>
-                                <dd></dd>
-                            </dl>
-                            <table>
-                                <tr>
-                                    <td width="90" height="30"><a>北京市</a></td>
-                                    <td width="90"><a>天津市</a></td>
-                                    <td width="90"><a>河北省</a></td>
-                                    <td width="90"><a>山西省</a></td>
-                                    <td width="90"><a>内蒙古…</a></td>
-                                    <td width="90"><a>辽宁省</a></td>
-                                </tr>
-                                <tr>
-                                    <td height="30"><a>吉林省</a></td>
-                                    <td><a>黑龙江…</a></td>
-                                    <td><a>上海市</a></td>
-                                    <td><a>江苏省</a></td>
-                                    <td><a>浙江省</a></td>
-                                    <td><a>安徽省</a></td>
-                                </tr>
-                                <tr>
-                                    <td height="30"><a>福建省</a></td>
-                                    <td><a>江西省</a></td>
-                                    <td><a>山东省</a></td>
-                                    <td><a>河南省</a></td>
-                                    <td><a>湖北省</a></td>
-                                    <td><a>湖南省</a></td>
-                                </tr>
-                                <tr>
-                                    <td height="30"><a>广东省</a></td>
-                                    <td><a>广西壮…</a></td>
-                                    <td><a>海南省</a></td>
-                                    <td><a>重庆市</a></td>
-                                    <td><a>四川省</a></td>
-                                    <td><a>贵州省</a></td>
-                                </tr>
-                                <tr>
-                                    <td height="30"><a>云南省</a></td>
-                                    <td><a>西藏自…</a></td>
-                                    <td><a>陕西省</a></td>
-                                    <td><a>甘肃省</a></td>
-                                    <td><a>青海省</a></td>
-                                    <td><a>宁夏回…</a></td>
-                                </tr>
-                                <tr>
-                                    <td height="30"><a>新疆维…</a></td>
-                                </tr>
-                            </table>
-    
-                        </div>
-                    </div>
-                    <div class="topr">
+                <dl id="zh">
+                    <p style="padding:5px"><i id="cha" class="iconfont icon-cuowuguanbiquxiao"
+                            style="font-size: 15px;"></i></p>
+                    <dt>
+                        <img src="../img/touxiang2.jpg" alt="">
+                        <p>您好！请<span>&nbsp;登录</span>&nbsp;|&nbsp;<span>注册</span></p>
+                    </dt>
+                    <dd>
                         <ul>
-                            <li><a href="">请登录</a></li>
-                            <li><a href="">注册</a></li>
-                            <p>/</p>
-                            <li id="qiandaoyl">
-                                <a href=""><i class="iconfont icon-baobei pink"
-                                        style="font-size: 12px;line-height:20px"></i> 签到有礼</a>
-                                <dl id="qiandao">
-                                    <dt>
-                                        <ul id="circles">
-                                            <li class="circle"></li>
-                                            <li class="line"></li>
-                                            <li class="circle"></li>
-                                            <li class="line"></li>
-                                            <li class="circle"></li>
-                                            <li class="line"></li>
-                                            <li class="circle"></li>
-                                            <li class="line"></li>
-                                            <li class="circle"></li>
-                                            <li class="line"></li>
-                                            <li class="circle"></li>
-                                            <li class="line"></li>
-                                            <li class="circle"></li>
-                                        </ul>
-                                        <ul class="days">
-                                            <li>1天</li>
-                                            <li>2天</li>
-                                            <li>3天</li>
-                                            <li>4天</li>
-                                            <li>5天</li>
-                                            <li>6天</li>
-                                            <li>7天</li>
-                                        </ul>
-                                    </dt>
-                                    <dd>
-                                        <div class="hr"></div>
-                                        <p><a href="">每天签到送惊喜，连续签到更享心动奖励！</a><button id="qiandaobtn">签到</button></p>
-                                    </dd>
-                                </dl>
+                            <li>
+                                <a>
+                                    <i class="iconfont icon-jiesuan"
+                                        style="font-size: 30px;color: #aaa;line-height:30px"></i>
+                                    <p>我的订单</p>
+                                </a>
                             </li>
-                            <p>/</p>
-                            <li><a href="">我的订单</a></li>
-                            <p>/</p>
-                            <li id="wodetemai"><a href="">&nbsp;我的特卖<i class="iconfont icon-biaotou-daoxu"
-                                        style="font-size: 8px"></i></a>
-                                <ul id="temai">
-                                    <li><a>品牌收藏</a></li>
-                                    <li><a>商品收藏</a></li>
-                                    <li><a>我的足迹</a></li>
-                                </ul>
-    
-                            </li>
-                            <p>/</p>
-                            <li id="huiyuanjlb">
-                                <a href="">会员俱乐部<i class="iconfont icon-biaotou-daoxu" style="font-size: 8px"></i></a>
-                                <ul id="jlb">
-                                    <li><a>俱乐部首页</a></li>
-                                    <li><a>唯品币兑换</a></li>
-                                    <li><a>免费抽大奖</a></li>
-                                </ul>
-                            </li>
-                            <p>/</p>
-                            <li id="kehufuwu">
-                                <a href=""> &nbsp;客户服务<i class="iconfont icon-biaotou-daoxu" style="font-size: 8px"></i></a>
-                                <ul id="fuwu">
-                                    <li><a>联系客服</a></li>
-                                    <li><a>帮助中心</a></li>
-                                    <li><a>服务中心</a></li>
-                                    <li><a>知产投诉</a></li>
-                                </ul>
-                            </li>
-                            <p>/</p>
-                            <li id="shoujiban">
-                                <a href=""> <i class="iconfont icon-shuma" style="font-size: 12px"></i> 手机版 </a>
-                                <dl id="qrcode">
-                                    <dt><img src="../img/qrcode.jpg "></dt>
-                                    <dd>随时逛&nbsp;及时抢</dd>
-                                </dl>
-                            </li>
-                            <p>/</p>
-                            <li id="more">
-                                <a href=""> 更多<i class="iconfont icon-biaotou-daoxu" style="font-size: 8px"></i></a>
-                                <dl id="more-cont" style="z-index: 20">
-                                    <dt>
-                                        <p><b>合作专区</b></p>
-                                        <p>
-                                            <a href="">唯品卡</a>
-                                        </p>
-    
-                                    <dt>
-                                        <p><b>关于我们</b></p>
-                                        <p>
-                                            <a href="">Sell on vip&nbsp;&nbsp;&nbsp;</a>
-                                            <a href="">品牌招商&nbsp;&nbsp;&nbsp;</a>
-                                            <a href="">官方博客</a>
-                                        </p>
-                                    </dt>
-    
-                                    </dt>
-    
-                                </dl>
+                            <li style="width:1px;background:#ccc;height:60px;padding:0;margin-top:20px"></li>
+                            <li>
+                                <a href="">
+                                    <i class="iconfont icon-liaotianduihua"
+                                        style="font-size: 30px;color: #aaa;line-height:30px"></i>
+                                    <p>我的消息</p>
+                                </a>
                             </li>
                         </ul>
-                        <div id="denglu">
-                            <dl>
+                    </dd>
+                    <p><a href="">会员俱乐部</a></p>
+                </dl>
+
+            </div>
+            <div id="gouwudai">
+                <div id="gouwudaibg">
+                    <p style="line-height:36px"><i class="iconfont icon-shangpin-xianxing"
+                            style="font-size: 30px; color:white;"></i></p>
+                    <a href="./shoppingcar.html">
+                            <p>购</p>
+                            <p>物</p>
+                            <p>袋</p>
+                    </a>
+                    
+                    <p style="line-height:36px"><span class="spnum">0</span></p>
+                </div>
+
+            </div>
+            <ul>
+                <li>
+                    <i class="iconfont icon-youhuijuan-xianxing" style="font-size: 20px; color:white;"></i>
+                    <p>我的优惠券</p>
+                </li>
+                <li>
+                    <i class="iconfont icon-xihuan-xianxing" style="font-size: 20px; color:white;"></i>
+                    <p>品牌收藏</p>
+                </li>
+                <li>
+                    <i class="iconfont icon-shoucang-xianxing" style="font-size: 20px; color:white;"></i>
+                    <p>商品收藏</p>
+                </li>
+                <li>
+                    <i class="iconfont icon-shijian-xianxing" style="font-size: 20px; color:white;"></i>
+                    <p>我的足迹</p>
+                </li>
+            </ul>
+        </div>
+        <div id="rightBottom">
+            <ul>
+                <li>
+                    <i class="iconfont icon-bianjishuru-xianxing" style="font-size: 20px; color:white;"></i>
+                    <p>客户反馈</p>
+                </li>
+                <li id="backTop" onclick="returnTop()">
+                    <i class="iconfont icon-zhixiangshang" style="font-size: 20px; color:white;"></i>
+                    <p>回到顶部</p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- 顶部 -->
+    <div class="head">
+        <div class="container">
+            <div class="top">
+                <div class="topl">
+                    <p id="place"><span>合肥市</span>&nbsp;<i class="iconfont icon-xiangxiazhankai"
+                            style="font-size: 10px"></i></p>
+                    <div id="province">
+                        <p>请选择你所在的收货地区<button id="X" style="width:20px">x</button></p>
+                        <dl>
+                            <dt>省份</dt>
+                            <dd></dd>
+                        </dl>
+                        <table>
+                            <tr>
+                                <td width="90" height="30"><a>北京市</a></td>
+                                <td width="90"><a>天津市</a></td>
+                                <td width="90"><a>河北省</a></td>
+                                <td width="90"><a>山西省</a></td>
+                                <td width="90"><a>内蒙古…</a></td>
+                                <td width="90"><a>辽宁省</a></td>
+                            </tr>
+                            <tr>
+                                <td height="30"><a>吉林省</a></td>
+                                <td><a>黑龙江…</a></td>
+                                <td><a>上海市</a></td>
+                                <td><a>江苏省</a></td>
+                                <td><a>浙江省</a></td>
+                                <td><a>安徽省</a></td>
+                            </tr>
+                            <tr>
+                                <td height="30"><a>福建省</a></td>
+                                <td><a>江西省</a></td>
+                                <td><a>山东省</a></td>
+                                <td><a>河南省</a></td>
+                                <td><a>湖北省</a></td>
+                                <td><a>湖南省</a></td>
+                            </tr>
+                            <tr>
+                                <td height="30"><a>广东省</a></td>
+                                <td><a>广西壮…</a></td>
+                                <td><a>海南省</a></td>
+                                <td><a>重庆市</a></td>
+                                <td><a>四川省</a></td>
+                                <td><a>贵州省</a></td>
+                            </tr>
+                            <tr>
+                                <td height="30"><a>云南省</a></td>
+                                <td><a>西藏自…</a></td>
+                                <td><a>陕西省</a></td>
+                                <td><a>甘肃省</a></td>
+                                <td><a>青海省</a></td>
+                                <td><a>宁夏回…</a></td>
+                            </tr>
+                            <tr>
+                                <td height="30"><a>新疆维…</a></td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="topr">
+                    <ul>
+                        <li><a href="">请登录</a></li>
+                        <li><a href="">注册</a></li>
+                        <p>/</p>
+                        <li id="qiandaoyl">
+                            <a href=""><i class="iconfont icon-baobei pink"
+                                    style="font-size: 12px;line-height:20px"></i> 签到有礼</a>
+                            <dl id="qiandao">
                                 <dt>
-                                    <img class="lazy" src="../img/touxiang.png" alt="">
-                                    <p>您好！[请登录]</p>
+                                    <ul id="circles">
+                                        <li class="circle"></li>
+                                        <li class="line"></li>
+                                        <li class="circle"></li>
+                                        <li class="line"></li>
+                                        <li class="circle"></li>
+                                        <li class="line"></li>
+                                        <li class="circle"></li>
+                                        <li class="line"></li>
+                                        <li class="circle"></li>
+                                        <li class="line"></li>
+                                        <li class="circle"></li>
+                                        <li class="line"></li>
+                                        <li class="circle"></li>
+                                    </ul>
+                                    <ul class="days">
+                                        <li>1天</li>
+                                        <li>2天</li>
+                                        <li>3天</li>
+                                        <li>4天</li>
+                                        <li>5天</li>
+                                        <li>6天</li>
+                                        <li>7天</li>
+                                    </ul>
                                 </dt>
                                 <dd>
-                                    <table>
-                                        <tr>
-                                            <td width="120"><a>我的收藏</a></td>
-                                            <td><a>我的订单</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a>零钱</a></td>
-                                            <td><a>我的优惠券</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a>我的唯品币</a></td>
-                                            <td><a>唯品金融</a></td>
-                                        </tr>
-                                    </table>
+                                    <div class="hr"></div>
+                                    <p><a href="">每天签到送惊喜，连续签到更享心动奖励！</a><button id="qiandaobtn">签到</button></p>
                                 </dd>
                             </dl>
-                        </div>
-    
-    
-    
-    
+                        </li>
+                        <p>/</p>
+                        <li><a href="">我的订单</a></li>
+                        <p>/</p>
+                        <li id="wodetemai"><a href="">&nbsp;我的特卖<i class="iconfont icon-biaotou-daoxu"
+                                    style="font-size: 8px"></i></a>
+                            <ul id="temai">
+                                <li><a>品牌收藏</a></li>
+                                <li><a>商品收藏</a></li>
+                                <li><a>我的足迹</a></li>
+                            </ul>
+
+                        </li>
+                        <p>/</p>
+                        <li id="huiyuanjlb">
+                            <a href="">会员俱乐部<i class="iconfont icon-biaotou-daoxu" style="font-size: 8px"></i></a>
+                            <ul id="jlb">
+                                <li><a>俱乐部首页</a></li>
+                                <li><a>唯品币兑换</a></li>
+                                <li><a>免费抽大奖</a></li>
+                            </ul>
+                        </li>
+                        <p>/</p>
+                        <li id="kehufuwu">
+                            <a href=""> &nbsp;客户服务<i class="iconfont icon-biaotou-daoxu" style="font-size: 8px"></i></a>
+                            <ul id="fuwu">
+                                <li><a>联系客服</a></li>
+                                <li><a>帮助中心</a></li>
+                                <li><a>服务中心</a></li>
+                                <li><a>知产投诉</a></li>
+                            </ul>
+                        </li>
+                        <p>/</p>
+                        <li id="shoujiban">
+                            <a href=""> <i class="iconfont icon-shuma" style="font-size: 12px"></i> 手机版 </a>
+                            <dl id="qrcode">
+                                <dt><img src="../img/qrcode.jpg "></dt>
+                                <dd>随时逛&nbsp;及时抢</dd>
+                            </dl>
+                        </li>
+                        <p>/</p>
+                        <li id="more">
+                            <a href=""> 更多<i class="iconfont icon-biaotou-daoxu" style="font-size: 8px"></i></a>
+                            <dl id="more-cont" style="z-index: 20">
+                                <dt>
+                                    <p><b>合作专区</b></p>
+                                    <p>
+                                        <a href="">唯品卡</a>
+                                    </p>
+
+                                <dt>
+                                    <p><b>关于我们</b></p>
+                                    <p>
+                                        <a href="">Sell on vip&nbsp;&nbsp;&nbsp;</a>
+                                        <a href="">品牌招商&nbsp;&nbsp;&nbsp;</a>
+                                        <a href="">官方博客</a>
+                                    </p>
+                                </dt>
+
+                                </dt>
+
+                            </dl>
+                        </li>
+                    </ul>
+                    <div id="denglu">
+                        <dl>
+                            <dt>
+                                <img class="lazy" src="../img/touxiang.png" alt="">
+                                <p>您好！[请登录]</p>
+                            </dt>
+                            <dd>
+                                <table>
+                                    <tr>
+                                        <td width="120"><a>我的收藏</a></td>
+                                        <td><a>我的订单</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a>零钱</a></td>
+                                        <td><a>我的优惠券</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a>我的唯品币</a></td>
+                                        <td><a>唯品金融</a></td>
+                                    </tr>
+                                </table>
+                            </dd>
+                        </dl>
                     </div>
+
+
+
+
                 </div>
             </div>
-    
         </div>
-    
-        <div class="head-search">
-            <div class="head-inner">
-                <div class="c-logo">
-                    <div class="header-logo-dop">
-                        <a href="./index.html"><img class="lazy" src="../img/logo1.gif" alt=""></a>
-                    </div>
+
+    </div>
+
+    <div class="head-search">
+        <div class="head-inner">
+            <div class="c-logo">
+                <div class="header-logo-dop">
+                    <a href="./index.html"><img class="lazy" src="../img/logo1.gif" alt=""></a>
                 </div>
-                <div class="service">
-                    <img class="lazy" src="../img/7day.png" alt="">
+            </div>
+            <div class="service">
+                <img class="lazy" src="../img/7day.png" alt="">
+            </div>
+
+            <div class="shop-box">
+                <div class="shop-wrap">
+                    <a href="#">
+                        <span class="gwd iconfont icon-bao"></span>
+                        <span class="">购物车</span>
+                        <span class="num">0</span>
+                    </a>
                 </div>
-    
-                <div class="shop-box">
-                    <div class="shop-wrap">
-                        <a href="#">
-                            <span class="gwd iconfont icon-bao"></span>
-                            <span class="">购物车</span>
-                            <span class="num">0</span>
-                        </a>
-                    </div>
-                </div>
-    
-                <div class="search-inner">
-                    <div class="input-from">
-                        <input type="text">
-                        <a class="button" href="#">
-                            <span class="iconfont icon-sousuo"></span>
-                        </a>
-                    </div>
+            </div>
+
+            <div class="search-inner">
+                <div class="input-from">
+                    <input type="text">
+                    <a class="button" href="#">
+                        <span class="iconfont icon-sousuo"></span>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
+
+
     <div class="XQ-BX clear">
         <div class="XQ-product clear">
             <div class="M-pic">
@@ -344,46 +348,46 @@
                     <div class="big">
                         <div class="big-item" style="display:block">
                             <div class="bigLess">
-                                <img src="../images/xiangqing1/zs1-1-s1.jpg" alt="">
+                                <img src="../images/xiangqing2/zs-s1.jpg" alt="">
                             </div>
                             <div class="bigMore">
-                                <img src="../images/xiangqing1/zs1-1-b1.jpg" alt="" class="bigMoreImg">
+                                <img src="../images/xiangqing2/zs-b1.jpg" alt="" class="bigMoreImg">
                                 <div class="screen"></div>
                             </div>
                         </div>
                         <div class="big-item">
                             <div class="bigLess">
-                                <img src="../images/xiangqing1/zs1-1-s2.jpg" alt="">
+                                <img src="../images/xiangqing2/zs-s2.jpg" alt="">
                             </div>
                             <div class="bigMore">
-                                <img src="../images/xiangqing1/zs1-1-b2.jpg" alt="" class="bigMoreImg">
+                                <img src="../images/xiangqing2/zs-b2.jpg" alt="" class="bigMoreImg">
                                 <div class="screen"></div>
                             </div>
                         </div>
                         <div class="big-item">
                             <div class="bigLess">
-                                <img src="../images/xiangqing1/zs1-1-s3.jpg" alt="">
+                                <img src="../images/xiangqing2/zs-s3.jpg" alt="">
                             </div>
                             <div class="bigMore">
-                                <img src="../images/xiangqing1/zs1-1-b3.jpg" alt="" class="bigMoreImg">
+                                <img src="../images/xiangqing2/zs-b3.jpg" alt="" class="bigMoreImg">
                                 <div class="screen"></div>
                             </div>
                         </div>
                         <div class="big-item">
                             <div class="bigLess">
-                                <img src="../images/xiangqing1/zs1-1-s4.jpg" alt="">
+                                <img src="../images/xiangqing2/zs-s4.jpg" alt="">
                             </div>
                             <div class="bigMore">
-                                <img src="../images/xiangqing1/zs1-1-b4.jpg" alt="" class="bigMoreImg">
+                                <img src="../images/xiangqing2/zs-b4.jpg" alt="" class="bigMoreImg">
                                 <div class="screen"></div>
                             </div>
                         </div>
                     </div>
                     <div class="small">
-                        <div class="small-item"><img src="../images/xiangqing1/zs1-1-s1.jpg" alt=""></div>
-                        <div class="small-item"><img src="../images/xiangqing1/zs1-1-s2.jpg" alt=""></div>
-                        <div class="small-item"><img src="../images/xiangqing1/zs1-1-s3.jpg" alt=""></div>
-                        <div class="small-item"><img src="../images/xiangqing1/zs1-1-s4.jpg" alt=""></div>
+                        <div class="small-item"><img src="../images/xiangqing2/zs-s1.jpg" alt=""></div>
+                        <div class="small-item"><img src="../images/xiangqing2/zs-s2.jpg" alt=""></div>
+                        <div class="small-item"><img src="../images/xiangqing2/zs-s3.jpg" alt=""></div>
+                        <div class="small-item"><img src="../images/xiangqing2/zs-s4.jpg" alt=""></div>
                     </div>
                 </div>
                 <div class="product-text">
@@ -449,39 +453,12 @@
                                     </div>
                                 </dd>
                             </dl>
-                            <dl class="i-color">
-                                <dt>颜色</dt>
-                                <dd class="color-list">
-                                    <ul class="clearfix">
-                                        <li class="color-list-item">
-                                            <a href="./xiangqingye1.html">
-                                                <span class="color-pic-wrapper"><img src="../images/xiangqing1/zs-white.jpg" alt=""></span>
-                                                <span class="color-item-name">白色</span>
-                                                <span class="i-select"></span>
-                                            </a>
-                                        </li>
-                                        <li class="color-list-item color-selected">
-                                            <a href="">
-                                                <span class="color-pic-wrapper"><img src="../images/xiangqing1/zs-blue.jpg" alt=""></span>
-                                                <span class="color-item-name">深蓝</span>
-                                                <span class="i-select"></span>
-                                            </a>
-                                        </li>
-                                        <li class="color-list-item">
-                                            <a href="./xiangqingye1-2.html">
-                                                <span class="color-pic-wrapper"><img src="../images/xiangqing1/zs-black.jpg" alt=""></span>
-                                                <span class="color-item-name">黑色</span>
-                                                <span class="i-select"></span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </dd>
-                            </dl>
+                            
                             <dl class="i-size clear">
                                 <dt>尺码</dt>
                                 <dd class="size-list">
                                     <ul class="size-ullist-item">
-                                        
+
                                     </ul>
                                 </dd>
                             </dl>
@@ -593,66 +570,45 @@
                             <table class="pro-size-tab">
                                 <tr class="pro-size-tab-bg-a">
                                     <td>尺码</td>
-                                    <td>型号</td>
-                                    <td>肩宽(cm)</td>
-                                    <td>胸围(cm)</td>
-                                    <td>衣长(cm)</td>
-                                    <td>袖长(cm)</td>
+                                    <td>欧洲码</td>
+                                    <td>脚长(cm)</td>
                                 </tr>
                                 <tr>
-                                    <td>165</td>
-                                    <td>165/84A</td>
-                                    <td>40</td>
-                                    <td>92</td>
-                                    <td>61</td>
-                                    <td>56</td>
+                                    <td>33</td>
+                                    <td>33</td>
+                                    <td>20.2</td>
                                 </tr>
                                 <tr>
-                                    <td>170</td>
-                                    <td>170/88A</td>
-                                    <td>41.5</td>
-                                    <td>94</td>
-                                    <td>63</td>
-                                    <td>58</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>21</td>
                                 </tr>
                                 <tr>
-                                    <td>175</td>
-                                    <td>175/92A</td>
-                                    <td>43</td>
-                                    <td>98</td>
-                                    <td>65</td>
-                                    <td>59</td>
+                                    <td>35</td>
+                                    <td>35</td>
+                                    <td>21.4</td>
                                 </tr>
                                 <tr>
-                                    <td>180</td>
-                                    <td>180/96A</td>
-                                    <td>44.5</td>
-                                    <td>102</td>
-                                    <td>67</td>
-                                    <td>60</td>
+                                    <td>36</td>
+                                    <td>36</td>
+                                    <td>22.3</td>
                                 </tr>
                                 <tr>
-                                    <td>185</td>
-                                    <td>185/100A</td>
-                                    <td>46</td>
-                                    <td>106</td>
-                                    <td>68</td>
-                                    <td>61</td>
+                                    <td>37</td>
+                                    <td>37</td>
+                                    <td>22.7</td>
                                 </tr>
                                 <tr>
-                                    <td>190</td>
-                                    <td>190/104A</td>
-                                    <td>47</td>
-                                    <td>110</td>
-                                    <td>70</td>
-                                    <td>62</td>
+                                    <td>38</td>
+                                    <td>38</td>
+                                    <td>23.6</td>
                                 </tr>
                                 <tr>
                                     <td class="tag" colspan="8"><span class="light-red">温馨提示：</span>请根据尺码购买</td>
                                 </tr>
                             </table>
                             <div class="measure-pic-wrapper">
-                                <img src="../images/xiangqing/c2cd0f43-8f66-45d7-a3a1-c74e199d42e2.jpg" alt="">
+                                <img src="../images/xiangqing2/168397ee-9d95-4cb3-813c-ec005f5a887b.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -665,27 +621,27 @@
                             <tbody>
                                 <tr>
                                     <th class="dc-table-tit">适用季节：</th>
-                                    <td>秋</td>
-                                    <th class="dc-table-tit">款式：</th>
-                                    <td>套头,日常便服</td>
+                                    <td>冬</td>
+                                    <th class="dc-table-tit">面材质：</th>
+                                    <td>牛剖层革/人造革</td>
                                 </tr>
                                 <tr>
-                                    <th class="dc-table-tit">弹性：</th>
-                                    <td>微弹</td>
-                                    <th class="dc-table-tit">适用人群：</th>
-                                    <td>青年</td>
-                                </tr>
-                                <tr>
-                                    <th class="dc-table-tit">上市时间：</th>
-                                    <td>2018秋</td>
-                                    <th class="dc-table-tit">袖长：</th>
-                                    <td>常规</td>
-                                </tr>
-                                <tr>
-                                    <th class="dc-table-tit">风格：</th>
-                                    <td>休闲,时尚,潮流,街头风</td>
                                     <th class="dc-table-tit">适用场合：</th>
-                                    <td>运动,休闲,日常</td>
+                                    <td>日常休闲</td>
+                                    <th class="dc-table-tit">鞋底材质：</th>
+                                    <td>橡胶底</td>
+                                </tr>
+                                <tr>
+                                    <th class="dc-table-tit">适用性别：</th>
+                                    <td>女童</td>
+                                    <th class="dc-table-tit">类型：</th>
+                                    <td>休闲靴</td>
+                                </tr>
+                                <tr>
+                                    <th class="dc-table-tit">适用人群：</th>
+                                    <td>通用</td>
+                                    <th class="dc-table-tit">鞋头款式：</th>
+                                    <td>圆头</td>
                                 </tr>
                                 <tr>
                                     <th class="dc-table-tit">厚薄：</th>
@@ -694,40 +650,16 @@
                                     <td>常规</td>
                                 </tr>
                                 <tr>
-                                    <th class="dc-table-tit">适用性别： </th>
-                                    <td>男</td>
-                                    <th class="dc-table-tit">衣门襟：</th>
-                                    <td>非拉链</td>
-                                </tr>
-                                <tr>
-                                    <th class="dc-table-tit">衣长：</th>
-                                    <td>常规</td>
-                                    <th class="dc-table-tit">功能：</th>
-                                    <td>便携</td>
-                                </tr>
-                                <tr>
-                                    <th class="dc-table-tit">领型：</th>
-                                    <td>立领</td>
-                                    <th class="dc-table-tit">图案：</th>
-                                    <td>几何图案</td>
-                                </tr>
-                                <tr>
+                                    <th class="dc-table-tit">闭合方式：</th>
+                                    <td>系带</td>
                                     <th class="dc-table-tit">品牌名称：</th>
-                                    <td>左岸</td>
+                                    <td>其乐</td>
+                                </tr>
+                                <tr>
                                     <th class="dc-table-tit">商品名称：</th>
-                                    <td>2018男款圆领长袖T大字母印花休闲时尚男士长袖T恤</td>
-                                </tr>
-                                <tr>
-                                    <th class="dc-table-tit">产地： </th>
-                                    <td>中国</td>
-                                    <th class="dc-table-tit">洗涤说明：</th>
-                                    <td>缓和水洗 30ﾟC；不可漂白；平摊晾干；熨斗底板最高温度110ﾟC；常规干洗</td>
-                                </tr>
-                                <tr>
-                                    <th class="dc-table-tit">配件/备注：</th>
-                                    <td>图片中的各种配件均为拍摄搭配之用，是不包含在所售商品中的。</td>
+                                    <td>其乐PattieRosy Jnr亲子休闲鞋儿童短靴女童时装靴</td>
                                     <th class="dc-table-tit">商品编号：</th>
-                                    <td>ZA8124910</td>
+                                    <td>261194548</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -805,12 +737,12 @@
                             <div class="pci-user-coments">
                                 <div class="c-comment-content-normal">
                                     <div class="pci-user-output">
-                                        <span>我是一个爱运动的人，很喜欢穿运动服，自从买了斐乐的品牌，就很少买别的品牌了，斐乐的品牌衣服穿的很舒服。就是价格杠杠的。要多搞点儿活动就好了。</span>
+                                        <span>鞋子拿到手非常漂亮，也很选样式，也是孩子喜欢了，她非常喜欢。只是感觉鞋子整体是那种比较硬的，不是很随脚型。</span>
                                     </div>
                                     <div class="pci-public-info">
                                         <span class="public-info-size">身材信息：160cm/59kg</span>
-                                        <span class="public-info-size">颜色：红色</span>
-                                        <span class="public-info-size">尺码：L</span>
+                                        <span class="public-info-size">颜色：莓果色皮革</span>
+                                        <span class="public-info-size">尺码：35</span>
                                     </div>
                                 </div>
                                 <div class="clearfix">
@@ -839,7 +771,7 @@
                                     <div class="pci-public-info">
                                         <span class="public-info-size">身材信息：160cm/59kg</span>
                                         <span class="public-info-size">颜色：红色</span>
-                                        <span class="public-info-size">尺码：L</span>
+                                        <span class="public-info-size">尺码：34</span>
                                     </div>
                                 </div>
                                 <div class="clearfix">
@@ -863,12 +795,13 @@
                             <div class="pci-user-coments">
                                 <div class="c-comment-content-normal">
                                     <div class="pci-user-output">
-                                        <span>丝绒面料，衣型好，大牌，我选L码，供参考。</span>
+                                        <span> 白金卡会员
+                                            做工精致，比预想的好不少。孩子很喜欢。虽然是亮皮，但没有那种低俗的感觉，其乐的鞋不错。</span>
                                     </div>
                                     <div class="pci-public-info">
                                         <span class="public-info-size">身材信息：160cm/59kg</span>
                                         <span class="public-info-size">颜色：红色</span>
-                                        <span class="public-info-size">尺码：L</span>
+                                        <span class="public-info-size">尺码：34</span>
                                     </div>
                                 </div>
                                 <div class="clearfix">
@@ -1134,57 +1067,54 @@
             </p>
         </div>
     </footer>
-    <script src="../js/jquery.js"></script>
+
     <script src="../js/fangdajing.js"></script>
     <script src="../js/cookie.js"></script>
-    
     <script>
-        $(function () {
-            $(".other-infoCoding").text("商品编码：ZA8124971")
-            $(".pib-title-class").text("左岸")
-            $(".pib-title-detail").text("2018男款圆领长袖T大字母印花休闲时尚男士长袖T恤")
-            $(".goods-description-title").text("男款圆领长袖T恤 舒适微弹 大字母印花")
-            $(".goodsprice").html(`59`)
-            $(".pbox-off").text("3折")
-            $(".pbox-market>del").text("198")
-            $(".size-ullist-item").html(`
-                                        <li class="size-list-item">165
-                                            <span class="i-select" style="display:none"></span>
-                                        </li>
-                                        <li class="size-list-item">170
-                                            <span class="i-select" style="display:none"></span>
-                                        </li>
-                                        <li class="size-list-item">175
-                                            <span class="i-select" style="display:none"></span>
-                                        </li>
-                                        <li class="size-list-item">180
-                                            <span class="i-select" style="display:none"></span>
-                                        </li>
-                                        <li class="size-list-item">185
-                                            <span class="i-select" style="display:none"></span>
-                                        </li>
-                                        <li class="size-list-item">190
-                                            <span class="i-select" style="display:none"></span>
-                                        </li>`)
-            $(".dc-images-con").html(
-                `<img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs1.jpg" alt="">
-                <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs2.jpg" alt="">
-                <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs3.jpg" alt="">
-                <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs4.jpg" alt="">
-                <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs5.jpg" alt="">
-                <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs6.jpg" alt="">
-                <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs7.jpg" alt="">
-                <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs8.jpg" alt="">
-                <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs9.jpg" alt="">
-                <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs10.jpg" alt="">
-                <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs11.jpg" alt="">
-                <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs12.jpg" alt="">
-                <img src="../images/xiangqing1/ljz.gif" data-src="../images/xiangqing1/zs13.jpg" alt="">`
-            )
-        })
-    </script>
-    <script src="../js/xiangqing.js"></script>
-    <script type="text/javascript" src="../js/index.js"></script>
+            $(function () {
+                $(".other-infoCoding").text("商品编码：261194548")
+                $(".pib-title-class").text("其乐")
+                $(".pib-title-detail").text("其乐PattieRosy Jnr亲子休闲鞋儿童短靴女童时装靴")
+                $(".goods-description-title").text("男款圆领长袖T恤 舒适微弹 大字母印花")
+                $(".goodsprice").html(`59`)
+                $(".pbox-off").text("3折")
+                $(".pbox-market>del").text("198")
+                $(".size-ullist-item").html(`
+                                            <li class="size-list-item">33
+                                                <span class="i-select" style="display:none"></span>
+                                            </li>
+                                            <li class="size-list-item">34
+                                                <span class="i-select" style="display:none"></span>
+                                            </li>
+                                            <li class="size-list-item">35
+                                                <span class="i-select" style="display:none"></span>
+                                            </li>
+                                            <li class="size-list-item">36
+                                                <span class="i-select" style="display:none"></span>
+                                            </li>
+                                            <li class="size-list-item">37
+                                                <span class="i-select" style="display:none"></span>
+                                            </li>
+                                            <li class="size-list-item">38
+                                                <span class="i-select" style="display:none"></span>
+                                            </li>`)
+                $(".dc-images-con").html(
+                    `<img src="../images/xiangqing/ljz.gif" data-src="../images/xiangqing2/zs1.jpg" alt="">
+                    <img src="../images/xiangqing/ljz.gif" data-src="../images/xiangqing2/zs2.jpg" alt="">
+                    <img src="../images/xiangqing/ljz.gif" data-src="../images/xiangqing2/zs3.jpg" alt="">
+                    <img src="../images/xiangqing/ljz.gif" data-src="../images/xiangqing2/zs4.jpg" alt="">
+                    <img src="../images/xiangqing/ljz.gif" data-src="../images/xiangqing2/zs5.jpg" alt="">
+                    <img src="../images/xiangqing/ljz.gif" data-src="../images/xiangqing2/zs6.jpg" alt="">
+                    <img src="../images/xiangqing/ljz.gif" data-src="../images/xiangqing2/zs7.jpg" alt="">
+                    <img src="../images/xiangqing/ljz.gif" data-src="../images/xiangqing2/zs8.jpg" alt="">
+                    <img src="../images/xiangqing/ljz.gif" data-src="../images/xiangqing2/zs9.jpg" alt="">
+                    <img src="../images/xiangqing/ljz.gif" data-src="../images/xiangqing2/zs10.jpg" alt="">`
+                )
+    
+            })
+        </script>
+        <script src="../js/xiangqing.js"></script>
+        <script type="text/javascript" src="../js/index.js"></script>
 </body>
 
 </html>
