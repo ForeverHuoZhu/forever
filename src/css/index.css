@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-01-03 16:35:22
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2019-10-12 17:11:01
+ * @Last Modified time: 2019-10-12 17:43:22
 */
  
  * {
@@ -4476,4 +4476,8 @@
     color: #fff;
     background-color: #333;
     font-size: 18px;
+}
+#banner-wrap{
+    width: 100%;
+    height: 100%;
 }

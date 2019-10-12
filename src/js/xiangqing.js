@@ -26,6 +26,12 @@ $(function () {
     $(".dt-list-item").eq(0).click(function () {
         $(".detail>div").show()
     })
+    $(".other-box .ht-txt .services-wrap").click(function(){
+        $("html,body").stop().animate({
+            scrollTop:$(".detailTop").offset().top
+        },0)
+        $(".dt-list-item").eq(1).click()
+    })
 })
 $(function () {
     $(".size-list-item").click(function () {
@@ -33,13 +39,25 @@ $(function () {
         $(this).children().show();
     })
     $(".num-add").click(function () {
-        $(".num-input").text(parseInt($(".num-input").text()) + 1)
+        if(!($(".size-list-item").hasClass("sli-selected"))){
+            $(".remind-ullist").show()
+            $(".i-size").addClass("status-notice")
+            setTimeout(function(){
+                $(".i-size").removeClass("status-notice")
+                $(".remind-ullist").hide()
+            },1000)
+        }else{
+            $(".num-input").text(parseInt($(".num-input").text()) + 1)
+        }
+        
     })
     $(".num-reduce").click(function () {
         if ($(".num-input").text() == 1) {
+            $(".remind-num").show()
             $(".i-num").addClass("status-notice")
             setTimeout(function () {
                 $(".i-num").removeClass("status-notice")
+                $(".remind-num").hide()
             }, 1000);
         } else {
             $(".num-input").text(parseInt($(".num-input").text()) - 1)
