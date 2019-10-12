@@ -1,7 +1,7 @@
 var body = document.getElementsByTagName("body")[0];
 var cCount = 0;
-var clickArr = [1428, 2488, 3568, 4620, 5666, 6748, 7792, 8860];
-var scrollArr = [1424, 2340, 3528, 4580, 5633, 6734, 7792, 8834];
+var clickArr = [1428, 2488, 3568, 4620, 5666, 6734, 7792, 8860];
+var scrollArr = [1424, 2340, 3528, 4580, 5633, 6730, 7780, 8834];
 var leftli = document.querySelectorAll("#left>ul>li");
 var place = document.getElementById("place");
 var province = document.getElementById("province");
@@ -251,13 +251,6 @@ $(document).ready(function() {
     });
 });
 
-// $(function(){
-// 	$(".head-inner>.main-nav-link>#list").hover(function(){
-// 		$(this).find(".menu").stop().slideDown();
-// 	},function(){
-// 		$(this).find(".menu").stop().slideUp();
-// 	})
-// })
 
 $(function() {
 
@@ -304,4 +297,10 @@ $(function() {
     var goods = getCookie("goods") ? JSON.parse(getCookie("goods")) : [];
     $(".spnum").text(goods.length);
 }());
-
+;$(function(){
+    $(".main-nav-link>li").click(function(){
+        
+        $(this).addClass("nav-current").siblings().removeClass("nav-current");
+        
+    })
+})
