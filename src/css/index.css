@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-01-03 16:35:22
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2019-10-11 20:25:26
+ * @Last Modified time: 2019-10-12 17:11:01
 */
  
  * {
@@ -1338,6 +1338,15 @@
      height: 425px;
      overflow: hidden;
  }
+ .index1 {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    background: url(../img/PC.jpg)no-repeat;
+    background-size: 100% 100%;
+    height: 425px;
+    overflow: hidden;
+}
  
  .operation {
      width: 1100px;
@@ -1375,7 +1384,7 @@
      transition: all 1s ease;
  }
  
- .xinrenyx img:hover {
+ .xinrenyx a img:hover {
      opacity: 0.7;
      transition: all 0.5s ease;
  }
@@ -1646,7 +1655,6 @@
  
  .temaigoods>dl:hover dd {
      opacity: 1;
-     ;
  }
  
  .temaigoods>dl:hover dt {
@@ -1749,7 +1757,14 @@
      margin: 20px 0 20px 0;
      border-bottom: 1px solid #000;
  }
- 
+ #title-left {
+    display: block;
+    margin: 20px 0 20px 0;
+    border-bottom: none;
+}
+#title-left img{
+    width: 1100px;
+}
  .title-left>p {
      display: inline-block;
      font-size: 15px;
@@ -1781,7 +1796,7 @@
      overflow: hidden;
  }
  
- .lists-fd>dl>dt>img {
+ .lists-fd>dl>dt>a>img {
      width: 100%;
      position: absolute;
      top: 0;
@@ -1852,7 +1867,7 @@
      margin-right: 30px;
  }
  
- .lists-fd>dl>dt>img:hover {
+ .lists-fd>dl>dt>a>img:hover {
      width: 540px;
      top: -5px;
      left: -6px;
@@ -3254,7 +3269,7 @@
      z-index: 2;
  }
  
- .main-nav .head-inner {}
+
  
  .head-inner {
      width: 1170px;
@@ -3400,7 +3415,7 @@
  
  .banner-aa img {
      width: 100%;
-     height: 240px;
+     height: 116px;
  }
  
  .banner_wrap {
@@ -3459,9 +3474,6 @@
      width: 100%;
  }
  
- .on {
-     /* z-index: 9; */
- }
  
  .banner_select {
      text-align: center;
