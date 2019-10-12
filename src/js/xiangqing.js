@@ -51,7 +51,6 @@ $(function () {
     lazyRender();
 
     $(window).on('scroll', function () {
-        console.log('运行了一次');
         lazyRender();
     });
 
@@ -83,10 +82,12 @@ $(function () {
 //加入购物车
 $(function () {
     var goods = getCookie("goods") ? JSON.parse(getCookie("goods")) : [];
-
+    $(".spnum").text(goods.length);
+    console.log(goods);
     $(".ui-btn-large").click(function () {
         // 插入数据
         // 去重
+        
         var flag = true;
         for (var i = 0; i < goods.length; i++) {
             if (goods[i].goodsName == $(".pib-title-detail").text()) {
@@ -96,13 +97,15 @@ $(function () {
         if (flag) {
             var items = {
                 goodsName: $(".pib-title-detail").text(),
-                goodsPrice: $(".goodsprice").text()
+                goodsPrice: $(".goodsprice").text(),
+                itemNum:$(".amount").text()
             };
             goods.push(items);
+            $(".spnum").text(goods.length);
             setCookie("goods", JSON.stringify(goods),6);
             alert("加入购物车成功");
         } else {
             alert("已添加，请勿重复添加");
         }
     })
-})
+});

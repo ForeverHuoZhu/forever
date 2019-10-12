@@ -52,7 +52,7 @@ function fillCart() {
         add[i].index = i;
         add[i].onclick = function () {
             //alert(1);
-            cart.items[this.index].itemNum = cart.items[this.index].itemNum + 1;
+            cart.items[this.index].itemNum = parseInt(cart.items[this.index].itemNum) + 1;
             fillCart();
             $(".countNum").eq(this.index).html(cart.items[this.index].itemNum);
         }
@@ -117,11 +117,10 @@ function fillCart() {
     for (var i = 0; i < del.length; i++) {
         del[i].index = i;
         del[i].onclick = function () {
-            var index1 = this.index;
             if (confirm("您确认删除吗")) {
                 cart.items.splice(this.index, 1);
                 fillCart();
-                setCookie("goods", JSON.stringify(goods),6);
+                setCookie("goods", JSON.stringify(cart.items),6);
             }
         }
     }
@@ -131,9 +130,6 @@ function fillCart() {
 // 计算小计
 function subTotal() {
     for (var i = 0; i < cart.items.length; i++) {
-        if (!cart.items[i].itemNum) {
-            cart.items[i].itemNum = 1;
-        }
         cart.items[i].subTotal = parseFloat((cart.items[i].goodsPrice * cart.items[i].itemNum).toFixed(2));
     }
 }

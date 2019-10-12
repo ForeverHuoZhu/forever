@@ -1,2 +1,100 @@
 @charset "utf-8";
-.japan {}
+.japan img {
+    width: 100%;
+}
+
+.top {
+    width: 1200px;
+    margin: 50px auto;
+}
+
+.top p {
+    font-size: 30px;
+    text-align: center;
+    color: #505050;
+}
+
+.among {
+    width: 1000px;
+    height: 115px;
+    margin: 40px auto;
+    background: #a24363;
+}
+
+.among p {
+    font-size: 30px;
+    text-align: center;
+    color: #f8fafa;
+    line-height: 115px;
+}
+
+.entry {
+    width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.entry dl {
+    width: 230px;
+}
+
+.entry dl dd {
+    padding: 7px;
+}
+
+.entry a {
+    cursor: pointer;
+}
+
+.entry-1 {
+    margin: 50px 0 0 0;
+}
+
+.entry-1 p {
+    text-align: center;
+    color: #f10180;
+    border: 1px solid #f10180;
+    padding: 4px;
+}
+
+.entry-1 p:hover {
+    background: #f10180;
+    color: #fff;
+}
+
+.entry-2 b {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.entry-2 s {
+    color: #aeadad;
+}
+
+.entry-2 span {
+    color: #9c9a9a;
+}
+
+.entry-3 {
+    font-size: 14px;
+}
+
+.entry dl {
+    border: 1px solid transparent;
+    padding: 10px;
+}
+
+.entry dl:hover {
+    border: 1px solid #f10180;
+}
+
+.bot {
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+.bot span {
+    color: #a24363;
+    margin: 0 0 30px 0;
+}
