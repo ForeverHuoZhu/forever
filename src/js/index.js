@@ -295,7 +295,15 @@ $(function() {
 ;
 (function() {
     var goods = getCookie("goods") ? JSON.parse(getCookie("goods")) : [];
-    $(".spnum").text(goods.length);
+    var user = getCookie("user") ? JSON.parse(getCookie("user")) : [];
+    if(goods){
+        $(".spnum").text(goods.length);
+    }
+    if(user){
+        $(".username").html("您好<span>&nbsp;"+user[user.length-1].phone+"</span>");
+        $(".username-nh").html("您好");
+        $(".username-top").html(user[user.length-1].phone);
+    }
 }());
 ;$(function(){
     $(".main-nav-link>li").click(function(){
