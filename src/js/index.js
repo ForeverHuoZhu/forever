@@ -304,3 +304,4 @@ $(function() {
     var goods = getCookie("goods") ? JSON.parse(getCookie("goods")) : [];
     $(".spnum").text(goods.length);
 }());
+
