@@ -305,10 +305,10 @@ $(function() {
         $(".username-top").html(user[user.length-1].phone);
     }
 }());
-;$(function(){
-    $(".main-nav-link>li").click(function(){
+// ;$(function(){
+//     $(".main-nav-link>li").click(function(){
         
-        $(this).addClass("nav-current").siblings().removeClass("nav-current");
+//         $(this).addClass("nav-current").siblings().removeClass("nav-current");
         
-    })
-})
+//     })
+// })
