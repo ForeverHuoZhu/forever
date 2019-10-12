@@ -11,86 +11,8 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../font/download (5)/font_7jyb9hgif2n/iconfont.css">
     <link rel="stylesheet" href="../css/register.css">
-    <style>
-        .table-header a.active {
-            color: #f10180;
-        }
+    <link rel="stylesheet" href="../css/login.css">
 
-        .table-header {
-            padding: 0;
-        }
-
-        .table-header a {
-            width: 178px;
-            text-align: center;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .table-header span {
-            width: 1px;
-            color: #ccc;
-        }
-
-        .table-btm {
-            padding-bottom: 22px;
-        }
-
-        .table-btm a {
-            color: #333;
-            cursor: pointer;
-        }
-
-        .table-btm a:hover {
-            color: #f10180;
-        }
-
-        .saoma {
-            text-align: center;
-            padding-top: 36px;
-            display: none;
-        }
-
-        .other {
-            width: 300px;
-            height: 74px;
-            padding: 30px 30px 15px;
-            position: relative;
-        }
-
-        .other p {
-            height: 40px;
-            color: #ccc;
-        }
-
-        .other a {
-            color: #999;
-            font-size: 12px;
-        }
-
-        .other span {
-            font-size: 12px;
-            color: #e0e0e0;
-            padding: 0px 5px;
-
-        }
-
-        .other .free {
-            position: absolute;
-            right: 30px;
-            font-size: 14px;
-            color: #000;
-        }
-
-        .other .free:hover {
-            color: #f10180;
-        }
-
-        .table-body {
-            display: none;
-            padding-bottom: 0px;
-        }
-    </style>
 </head>
 
 <body>
@@ -130,7 +52,7 @@
                             <!-- 设置密码 -->
                             <div class="table-p">
                                 <div class="password">
-                                    <input id="pwd" type="text" placeholder="密码由6-20位字母，数字和符号组合">
+                                    <input id="pwd" type="password" placeholder="密码由6-20位字母，数字和符号组合">
                                     <span class=" icon iconfont icon-Group- icon-suo"></span>
                                     <span></span>
                                 </div>
@@ -144,7 +66,7 @@
                             </div>
                             <!-- 登录 -->
                             <div class="btn-register">
-                                <a href="../index.html" role="button" id="btn-reg">
+                                <a href="./index.html" role="button" id="btn-reg">
                                     <span>登录</span>
                                 </a>
                             </div>
@@ -170,26 +92,8 @@
     </div>
     <script src="../js/jquery.js"></script>
     <script src="../js/cookie.js"></script>
-    <script>
-        $(".table-header-left").click(function () {
-            var index = $(this).index();
-            if (index == 2) {
-                index = 1
-            }
-            $(this).addClass("active").siblings().removeClass("active");
-            $(".cut>div").eq(index).show().siblings().hide();
-        });
-        $("#btn-reg").click(function () {
-            var phone = getCookie($("#phone").val());
-            var pwd = getCookie($("#phone").val()+"pwd");
-            if ($("#phone").val() == phone && $("#pwd").val() == pwd) {
-                alert("登录成功");
-            } else {
-                alert("请输入正确的帐号或密码！");
-                return false;
-            }
-        });
-    </script>
+    <script src="../js/login.js"></script>
+
 </body>
 
 </html>
