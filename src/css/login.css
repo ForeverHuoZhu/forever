@@ -1,0 +1,78 @@
+.table-header a.active {
+    color: #f10180;
+}
+
+.table-header {
+    padding: 0;
+}
+
+.table-header a {
+    width: 178px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.table-header span {
+    width: 1px;
+    color: #ccc;
+}
+
+.table-btm {
+    padding-bottom: 22px;
+}
+
+.table-btm a {
+    color: #333;
+    cursor: pointer;
+}
+
+.table-btm a:hover {
+    color: #f10180;
+}
+
+.saoma {
+    text-align: center;
+    padding-top: 36px;
+    display: none;
+}
+
+.other {
+    width: 300px;
+    height: 74px;
+    padding: 30px 30px 15px;
+    position: relative;
+}
+
+.other p {
+    height: 40px;
+    color: #ccc;
+}
+
+.other a {
+    color: #999;
+    font-size: 12px;
+}
+
+.other span {
+    font-size: 12px;
+    color: #e0e0e0;
+    padding: 0px 5px;
+
+}
+
+.other .free {
+    position: absolute;
+    right: 30px;
+    font-size: 14px;
+    color: #000;
+}
+
+.other .free:hover {
+    color: #f10180;
+}
+
+.table-body {
+    display: none;
+    padding-bottom: 0px;
+}
