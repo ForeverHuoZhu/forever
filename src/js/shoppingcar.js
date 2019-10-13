@@ -62,6 +62,9 @@ function fillCart() {
         reduce[i].onclick = function () {
             //alert(1);
             cart.items[this.index].itemNum = cart.items[this.index].itemNum - 1;
+            if (cart.items[this.index].itemNum<=0) {
+                cart.items[this.index].itemNum = 1;
+            }
             fillCart();
             $(".countNum").eq(this.index).html(cart.items[this.index].itemNum);
         }
