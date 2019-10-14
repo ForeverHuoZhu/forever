@@ -2594,6 +2594,7 @@
      color: #666;
      line-height: 25px;
      padding-left: 5px;
+     cursor: pointer;
  }
  
  .topl>#province {
@@ -2631,6 +2632,7 @@
      border-bottom: 0;
      text-align: center;
      line-height: 30px;
+     cursor: pointer;
  }
  
  .topl>#province>dl>dd {
@@ -2638,6 +2640,7 @@
      height: 1px;
      width: 100%;
      border-bottom: 1px solid #ccc;
+     cursor: pointer;
  }
  
  .topl>#province>table {
@@ -2646,6 +2649,7 @@
  
  .topl>#province>table tr>td>a {
      color: #999;
+     cursor: pointer;
  }
  
  .topl>#province>table tr>td>a:hover {
