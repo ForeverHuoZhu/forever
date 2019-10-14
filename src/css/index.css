@@ -913,6 +913,7 @@
  
  .head-search .service {
      float: left;
+     position: relative;
  }
  
  .head-search .service li {
@@ -4484,4 +4485,19 @@
 #banner-wrap{
     width: 100%;
     height: 100%;
+}
+
+.lazy-a{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+}
+.lazy-b{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 100px;
 }
