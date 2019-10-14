@@ -28,7 +28,7 @@ $(function () {
                                 <div class="remind-ullist" style="display: none;">请选择尺码</div>`
                                 )
     $(".dc-images-con").html(
-        `<img src="../images/xiangqing/ljz.gif" data-src="../images/xiangqing2/zs1.jpg" alt="">
+        `<img class="cokpic" src="../images/xiangqing/ljz.gif" data-src="../images/xiangqing2/zs1.jpg" alt="">
         <img src="../images/xiangqing/ljz.gif" data-src="../images/xiangqing2/zs2.jpg" alt="">
         <img src="../images/xiangqing/ljz.gif" data-src="../images/xiangqing2/zs3.jpg" alt="">
         <img src="../images/xiangqing/ljz.gif" data-src="../images/xiangqing2/zs4.jpg" alt="">

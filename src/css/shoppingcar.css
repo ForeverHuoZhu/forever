@@ -210,3 +210,19 @@
 .count i{
     cursor: pointer;
 }
+
+
+.cokpic{
+    width: 58px;
+    height: 74px;
+    vertical-align: middle;
+    float: left;
+}
+
+.firtd span{
+    font-size: 14px;
+    line-height: 20px;
+    float: left;
+    width: 200px;
+    padding: 20px 0;
+}
