@@ -116,7 +116,8 @@ $(function () {
             var items = {
                 goodsName: $(".pib-title-detail").text(),
                 goodsPrice: $(".goodsprice").text(),
-                itemNum:$(".amount").text()
+                itemNum:$(".amount").text(),
+                pic:$(".cokpic").attr("src")
             };
             goods.push(items);
             $(".spnum").text(goods.length);

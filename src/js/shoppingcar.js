@@ -14,13 +14,13 @@ fillCart();
 
 function fillCart() {
     // 计算 小计
-
-    subTotal()
+    console.log(cart.items);
+    subTotal();
     var str = "";
     for (var i = 0; i < cart.items.length; i++) {
         str = str + `
         <tr>
-            <td>${cart.items[i].goodsName}</td>
+            <td class="firtd"><img class="cokpic" src="${cart.items[i].pic}" alt=""><span>${cart.items[i].goodsName}</span></td>
             <td class="price">￥${cart.items[i].goodsPrice}</td>
             <td class="count">
                 <i class="reduce">-</i>
